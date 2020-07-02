@@ -1,0 +1,74 @@
+.features-glue
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 480px
+		position: absolute
+		top: 50%
+		left: 0
+		z-index: -1
+		transform: translateY(-50%)
+		background: linear-gradient(180deg, rgba(237, 247, 255, 0) 0%, #EDF7FF 50.64%, rgba(237, 247, 255, 0) 100%)
+	.container
+		display: flex
+		justify-content: space-around
+		align-items: center
+	.img-wrap
+		position: relative
+		@include mq($max-width: 550px)
+			width: 25%
+	.bubbles
+		position: absolute
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		transition: all .3s ease-out
+		animation: bubbles  2s infinite
+	img
+		@include mq($max-width: 700px)
+			width: 100px
+		@include mq($max-width: 550px)
+			width: 100%
+	.inner
+		max-width: 500px
+		@include mq($max-width: 550px)
+			max-width: 700px
+			width: 75%
+			padding-left: 20px
+	.list
+		li
+			font: 500 26px 'Gilroy', sans-serif
+			position: relative
+			padding-left: 50px
+			@include mq($max-width: 700px)
+				font-size: 18px
+			@include mq($max-width: 550px)
+				font-size: 16px
+				padding-left: 35px
+			&:not(:last-child)
+				margin-bottom: 40px
+				@include mq($max-width: 550px)
+					margin-bottom: 20px
+			&:before
+				content: ''
+				width: 35px
+				height: 35px
+				background: url($imgUrl+'features-glue/check.png') no-repeat center center / contain
+				position: absolute
+				left: 0
+				top: 0
+				@include mq($max-width: 550px)
+					width: 25px
+					height: 25px
+
+
+@keyframes bubbles
+	0%
+		bottom: 0
+		opacity: 1
+	100%
+		bottom: auto
+		bottom: calc(100% - 336px)
+		opacity: 0

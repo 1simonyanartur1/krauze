@@ -1,0 +1,91 @@
+.universal-glue
+	margin: 40px 0 65px
+	.caption
+		margin-bottom: 35px
+		text-align: center
+		&__title
+			margin-bottom: 10px
+	.images
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		position: relative
+		align-items: center
+		margin-bottom: 50px
+		li
+			width: 36%
+			margin: 0 1%
+			overflow: hidden
+			&:first-child
+				clip-path: polygon(0 0, 100% 0%, 67% 100%, 0 100%)
+				margin-left: 0
+			&:nth-child(2)
+				clip-path: polygon(25% 0, 100% 0%, 70% 100%, 0 100%)
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 50%
+			&:last-child
+				margin-right: 0
+				clip-path: polygon(37% 0, 100% 0%, 100% 100%, 0 100%)
+
+		// img
+		// 	position: absolute
+		// 	width: 40%
+		// 	height: auto
+		// 	top: 50%
+		// 	transform: translateY(-50%)
+		// 	&:nth-child(1)
+		// 		left: 0
+		// 	&:nth-child(2)
+		// 		left: 23%
+		// 		width: 54%
+		// 	&:nth-child(3)
+		// 		right: 0
+	.list
+		display: flex
+		align-items: center
+		justify-content: space-around
+		list-style: none
+		counter-reset: my-awesome-counter
+		position: relative
+		&:before
+			content: ''
+			display: block
+			height: 1px
+			width: 100%
+			background: #C5C5C5
+			position: absolute
+			left: 0
+			bottom: -10px
+			@include mq($max-width: 700px)
+				display: none
+		li
+			counter-increment: my-awesome-counter
+			font: 700 26px 'Gilroy', sans-serif
+			position: relative
+			@include mq($max-width: 550px)
+				font-size: 20px
+				text-align: center
+			@include mq($max-width: 550px)
+				font-size: 18px
+			&:before
+				content: counter(my-awesome-counter)
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+				background: #F1F1F1
+				width: 56px
+				height: 56px
+				display: flex
+				position: absolute
+				left: -70px
+				bottom: -35px
+				align-items: center
+				justify-content: center
+				font: 500 26px 'Gilroy', sans-serif
+				color: #A8A8A8
+				border-radius: 100%
+				@include mq($max-width: 700px)
+					position: static
+					margin-left: auto
+					margin-right: auto
