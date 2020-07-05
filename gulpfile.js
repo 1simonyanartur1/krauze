@@ -15,7 +15,7 @@ var path = {
 		pug: './app/pug/pages/*.pug',
 		sass: ['./app/sass/style.sass'],
 		js: './app/js/*.js',
-		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/slick-carousel/slick/slick.min.js'],
+		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/jquery-ui/jquery-ui.min.js'],
 		cssLibs: ['./app/libs/slick-carousel/slick/slick.css'],
 		deleteLibs: ['./dist/js/libs.js', './dist/css/libs.css']
 	},

@@ -1,0 +1,300 @@
+- var imgUrl = 'img/';
+    
+doctype
+html
+	include ../blocks/head.pug
+		title Краузе - Ножницы
+	body
+
+		.page-container
+			section.mainblock-clippers
+				.container
+					.inner
+						p Ножницы ErichKrause<sup>®</sup>
+						h1 Продуманы и созданы профессионалами!
+						ul.btns
+							li
+								a(href="#").btn1 Перейти в каталог
+
+			section.video
+				.container
+					<video controls="controls" poster="img/poster2.jpg">
+						//- <source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						//- <source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
+						p Тег video не поддерживается вашим браузером.
+					</video>
+					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
+						.caption
+							h2.caption__title Ножницы ErichKrause<sup>®</sup>
+							p.caption__text Компания Erich Krause представляет широкий ассортимент ножниц для офиса и дома. Надежные и комфортные ножницы ErichKrause® созданы профессионалами и пользуются огромной популярностью во всем мире.
+			section.types-clippers
+				.container
+					.caption
+						h2.caption__title Типы лезвий
+					ul.items
+						li.item
+							img.item__label(src=imgUrl+"types-clippers/label1.jpg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clipper1.jpg", alt="")
+						li.item
+							img.item__label(src=imgUrl+"types-clippers/label2.jpg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clipper2.jpg", alt="")
+						li.item
+							img.item__label(src=imgUrl+"types-clippers/label3.jpg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clipper3.jpg", alt="")
+						li.item
+							img.item__label(src=imgUrl+"types-clippers/label4.jpg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clipper4.jpg", alt="")
+						li.item
+							img.item__label(src=imgUrl+"types-clippers/label5.jpg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clipper5.jpg", alt="")
+
+			section.new-clippers
+				.container
+					.caption
+						h2.caption__title Новинка
+					img(src=imgUrl+"new-clippers/img.jpg", alt="")
+
+			section.assortment-clippers
+				.container
+					.caption
+						h2.caption__title Ассортимент
+					.tabs
+						ul
+							li
+								a(href="#tab1")
+									img(src=imgUrl+"assortment-clippers/img1.jpg", alt="")
+							li
+								a(href="#tab2")
+									img(src=imgUrl+"assortment-clippers/img2.jpg", alt="")
+							li
+								a(href="#tab3")
+									img(src=imgUrl+"assortment-clippers/img3.jpg", alt="")
+							li
+								a(href="#tab4")
+									img(src=imgUrl+"assortment-clippers/img4.jpg", alt="")
+							li
+								a(href="#tab5")
+									img(src=imgUrl+"assortment-clippers/img5.jpg", alt="")
+						#tab1.tab
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
+								h3.card__title Standard
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c1.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
+								h3.card__title Standard+
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c2.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img33.jpg", alt="")
+								h3.card__title Standard+ Ergo
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c3.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img44.jpg", alt="")
+								h3.card__title Dynamic
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c4.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+						#tab2.tab
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
+								h3.card__title Standard
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c1.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
+								h3.card__title Standard+
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c2.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img33.jpg", alt="")
+								h3.card__title Standard+ Ergo
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c3.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+						#tab3.tab
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
+								h3.card__title Standard
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c1.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
+								h3.card__title Standard+
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c2.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+						#tab4.tab
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
+								h3.card__title Standard
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c1.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+						#tab5.tab
+							a(href="#").card
+								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
+								h3.card__title Standard
+								h4.card__subtitle ErichKrause<sup>®</sup>
+								.card-bottom
+									.color
+										img.color__img(src=imgUrl+"assortment-clippers/c1.jpg", alt="")
+										span Цвет
+									.length
+										strong Длина
+										span 17 см
+					ul.btns
+						li
+							a(href="#").btn1 Перейти в каталог
+
+			section.brand
+				img.tape1(src=imgUrl+"brand/tape1.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")
+				img.tape2(src=imgUrl+"brand/tape2.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")
+				.container
+					img.cup(src=imgUrl+"brand/cup.png", alt="" data-aos="fade-right" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
+					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
+						.caption
+							h2.caption__title ErichKrause - брэнд канцтоваров №1 в России
+							p.caption__text По результатам ежегодного всероссийского репрезентативного опроса, проводимого аналитическим центром Юрия Левады («Левада-Центр»), ErichKrause® в пятый год подряд признается самым известным брендом канцелярских товаров в Российской Федерации. 
+			section.reviews
+				.container
+					.caption
+						h2.caption__title(data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Отзывы наших клиентов
+					.slider(data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
+						.slide
+							h3.slide__title Мария
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Клеит буквально всё: картон и бумага, понятное дело, плюс ткань, нитки, фотографии. Плотно и надёжно сцепляется. Моментально схватывается с бумагой или другим источником, быстро сохнет. Резкого запаха нет.
+						.slide
+							h3.slide__title Анастасия
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Поделки с этим клеем получаются аккуратными. Сохнет очень быстро и просто отлично выполняет свою задачу. Легко смывается с рук тёплой водой.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+
+		include ../blocks/footer.pug
+
+		p.copyright Разработано студией 
+			a(href="https://mnogoland.ru/" target="_blank") MNOGOLAND
+		
+		include ../blocks/scripts.pug

@@ -1,0 +1,50 @@
+.types-clippers
+	padding: 150px 0
+	.container
+		position: relative
+		min-height: 850px
+		max-width: 1000px
+	.list
+	.item
+		height: 380px
+		width: 155px
+		// height: 155px
+		// width: 380px
+		position: absolute
+		&:nth-child(1)
+			left: 50%
+			top: 5%
+			transform: translate(-50%, 0) rotate(5deg)
+		&:nth-child(2)
+			right: 0
+			top: 50%
+			transform: translate(-50%, -50%) rotate(75deg)
+		&:nth-child(3)
+			right: 30%
+			bottom: -10%
+			transform: translate(50%, 0) rotate(135deg)
+		&:nth-child(4)
+			left: 0
+			top: 50%
+			transform: translate(50%, -50%) rotate(-75deg)
+			.item__clipper
+				width: 120%
+		&:nth-child(5)
+			left: 30%
+			bottom: -10%
+			transform: translate(-50%, 0) rotate(-135deg)
+		&__label
+			display: block
+			position: absolute
+			z-index: 2
+			top: 0
+			left: 0
+		&__clipper
+			display: block
+			width: 140%
+			height: auto
+			position: absolute
+			z-index: 1
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)

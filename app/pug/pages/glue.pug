@@ -1,5 +1,5 @@
 - var imgUrl = 'img/';
- 
+    
 doctype
 html
 	include ../blocks/head.pug
@@ -30,13 +30,13 @@ html
 			
 			section.video
 				.container
-					<video controls="controls">
+					<video controls="controls" poster="img/poster1.jpg">
 						//- <source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
 						<source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 						//- <source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
 						p Тег video не поддерживается вашим браузером.
 					</video>
-					.inner
+					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
 						.caption
 							h2.caption__title ErichKrause<sup>®</sup> Crystal
 							p.caption__text Идеально прозрачный и невероятно густой канцелярский клей. Оригинальный состав обеспечивает более высокую клеящую способность.
