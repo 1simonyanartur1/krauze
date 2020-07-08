@@ -1,5 +1,5 @@
 - var imgUrl = 'img/';
-    
+     
 doctype
 html
 	include ../blocks/head.pug
@@ -14,12 +14,13 @@ html
 					img.c1(src=imgUrl+"mainblock-glue/c1.png", alt="", data-depth="0.20")
 					img.c2(src=imgUrl+"mainblock-glue/c2.png", alt="", data-depth="0.20")
 					img.c3(src=imgUrl+"mainblock-glue/c3.png", alt="", data-depth="0.20")
-					img.c4(src=imgUrl+"mainblock-glue/c4.png", alt="", data-depth="0.05")
-					img.c5(src=imgUrl+"mainblock-glue/c5.png", alt="", data-depth="0.1")
 				.container
+					img.c4(src=imgUrl+"mainblock-glue/c4.png", alt="" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="")
+					img.c5(src=imgUrl+"mainblock-glue/c5.png", alt="" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="")
 					.inner
-						h1(data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Клей канцелярский ErichKrause
-						img.crystal(src=imgUrl+"mainblock-glue/crystal.svg", alt="" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1200" data-aos-offset="0")
+						h1(data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="") Клей канцелярский ErichKrause
+						.crystal-wrap
+							img.crystal(src=imgUrl+"mainblock-glue/crystal.svg", alt="" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1200" data-aos-offset="0")
 						h2(data-aos="fade-right" data-aos-delay="350" data-aos-duration="1300" data-aos-offset="0") Не имеет аналогов по густоте среди своих конкурентов!
 						ul.btns(data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="0")
 							li
@@ -30,12 +31,13 @@ html
 			
 			section.video
 				.container
-					<video controls="controls" poster="img/poster1.jpg">
+					img.video__img(src=imgUrl+"poster1.jpg", alt="")
+					//- <video controls="controls" poster="img/poster1.jpg">
 						//- <source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						//- <source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 						//- <source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
-						p Тег video не поддерживается вашим браузером.
-					</video>
+						//- p Тег video не поддерживается вашим браузером.
+					//- </video>
 					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
 						.caption
 							h2.caption__title ErichKrause<sup>®</sup> Crystal
@@ -64,7 +66,7 @@ html
 						img.glue(src=imgUrl+"banner-glue/img3.png", alt="" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="100")
 			section.formats-glue
 				.container
-					.prlx#prlx2(data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1500" data-aos-offset="200")
+					.prlx#prlx2(data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" data-aos-offset="200")
 						img.c1(src=imgUrl+"formats-glue/c1.png", alt="", data-depth="0.1")
 						img.c2(src=imgUrl+"formats-glue/c2.png", alt="", data-depth="0.1")
 						img.c3(src=imgUrl+"formats-glue/c3.png", alt="", data-depth="0.1")
@@ -110,6 +112,7 @@ html
 							p жидкий клей серии Crystal — 65 г; <br> тетраборат натрия — 1-2 ч.л.; <br> блестки по желанию.
 					.bottom(data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
 						img(src=imgUrl+"slaim/img.jpg", alt="")
+						img.hand2(src=imgUrl+"slaim/hand2.jpg", alt="")
 						.text-container
 							h3 Рецепт приготовления
 							.line
@@ -133,7 +136,7 @@ html
 					ul.list
 						li(data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
 							.icon-wrap
-								img(src=imgUrl+"advantages-glue/chain.svg", alt="")
+								img(src=imgUrl+"advantages-glue/Icon_02-01.png", alt="")
 							p Обладает высокой <br> клеящей способностью
 						li(data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1100" data-aos-offset="200")
 							.icon-wrap
@@ -141,11 +144,11 @@ html
 							p Требует меньше времени <br> для склеивания
 						li(data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1200" data-aos-offset="200")
 							.icon-wrap
-								img(src=imgUrl+"advantages-glue/washing-hands.svg", alt="")
+								img(src=imgUrl+"advantages-glue/Icon_03-01.png", alt="")
 							p Легко смывается <br> водой с рук и одежды
 						li(data-aos="zoom-in" data-aos-delay="450" data-aos-duration="1300" data-aos-offset="200")
 							.icon-wrap
-								img(src=imgUrl+"advantages-glue/leaf.svg", alt="")
+								img(src=imgUrl+"advantages-glue/Icon_01-01.png", alt="")
 							p Не содержит растворителей, <br>  поэтому безопасен для здоровья
 					ul.btns(data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
 						li

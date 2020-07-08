@@ -48,13 +48,13 @@
 		.glue1
 			position: absolute
 			bottom: -50px
-			right: -75px
+			right: -60px
+			width: 100px
 			@include mq($max-width: 1000px)
-				width: 100px
 				bottom: -20px
 			@include mq($max-width: 550px)
-				right: -10px
-				width: 80px
+				right: 20px
+				width: 60px
 		.glue2
 			bottom: -55px
 			left: -85px
@@ -64,8 +64,8 @@
 				left: -50px
 				bottom: -20px
 			@include mq($max-width: 550px)
-				left: 0
-				width: 80px
+				left: 20px
+				width: 90px
 		&__title
 			font: 700 20px 'Gilroy', sans-serif
 			margin-bottom: 25px
@@ -88,13 +88,13 @@
 			padding-right: 50px
 			align-items: flex-end
 			@include mq($max-width: 550px)
-				padding-right: 100px
+				padding-right: 130px
 		&:last-child
 			text-align: left
 			align-items: flex-start
 			padding-left: 50px
 			@include mq($max-width: 550px)
-				padding-left: 100px
+				padding-left: 130px
 			.card__img
 				margin-top: -120px
 				@include mq($max-width: 1200px)

@@ -1,6 +1,9 @@
 .mainblock-glue
 	position: relative
 	margin-bottom: 80px
+	.btn1:after
+		@include mq($max-width: 400px)
+			display: none
 	&:after
 		content: ''
 		display: block
@@ -11,8 +14,27 @@
 		left: 0
 		bottom: 0
 		z-index: -1
+	.c4
+		position: absolute
+		left: 45%
+		bottom: 0
+		width: 250px
+		display: block
+		height: auto
+		@include mq($max-width: 1200px)
+			display: none
+	.c5
+		position: absolute
+		right: -120px
+		bottom: 0
+		width: 100px
+		display: block
+		height: auto
+		@include mq($max-width: 1200px)
+			display: none
 	.container
 		min-height: 575px
+		position: relative
 		display: flex
 		align-items: flex-end
 		justify-content: space-between
@@ -33,6 +55,27 @@
 	.inner
 		@include mq($max-width: 1000px)
 			width: 60%
+		@include mq($max-width: 550px)
+			width: 50%
+	.crystal-wrap
+		position: relative
+		&:after
+			content: ""
+			position: absolute 
+			top: 0 
+			left: 0em
+			width: 100%
+			height: 100%
+			background: linear-gradient(to left, rgba(121, 117, 117, 0), rgba(255,255,255,.8), rgba(121, 117, 117, 0)) no-repeat -4em 0%
+			background-size: 4em 100%
+			-moz-transform: skewX(40deg)
+			-o-transform: skewX(40deg)
+			-webkit-transform: skewX(40deg)
+			transform: skewX(40deg)
+		&.active
+			&:after
+				transition: 1.5s linear
+				background-position: 130% 0%
 	.crystal
 		display: block
 		width: 600px
@@ -70,6 +113,8 @@
 			width: 40%
 		@include mq($max-width: 700px)
 			text-align: right
+		@include mq($max-width: 700px)
+			width: 50%
 		img
 			margin: 0 10px
 			@include mq($max-width: 1000px)
@@ -77,9 +122,13 @@
 		.small
 			@include mq($max-width: 1000px)
 				width: 25%
+			@include mq($max-width: 550px)
+				width: 35%
 		.big
 			@include mq($max-width: 1000px)
 				width: 40%
+			@include mq($max-width: 550px)
+				width: 55%
 	.prlx
 		position: absolute
 		z-index: 0
@@ -89,11 +138,11 @@
 		top: 0
 		right: 0
 		bottom: 0
+		@include mq($max-width: 550px)
+			display: none
 		.c1,
 		.c2,
-		.c3,
-		.c4,
-		.c5
+		.c3
 			position: absolute
 		.c1
 			top: 30% !important
@@ -122,21 +171,3 @@
 				right: 30% !important
 			@include mq($max-width: 400px)
 				display: none
-		.c4
-			top: auto !important
-			right: auto !important
-			bottom: 0 !important
-			left: 47% !important
-			width: 255px
-			@include mq($max-width: 1000px)
-				display: none
-		.c5
-			top: auto !important
-			right: 20% !important
-			bottom: 5% !important
-			left: auto !important
-			width: 80px
-			@include mq($max-width: 1500px)
-				right: 7% !important
-			@include mq($max-width: 1200px)
-				bottom: -15% !important

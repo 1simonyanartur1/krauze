@@ -9,13 +9,40 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		position: relative
 		align-items: center
+		position: relative
 		margin-bottom: 50px
+		@include mq($max-width: 1200px)
+			display: block
 		li
 			width: 36%
 			margin: 0 1%
 			overflow: hidden
+			display: flex
+			align-content: center
+			justify-content: center
+			position: relative
+			@include mq($max-width: 1200px)
+				clip-path: none !important
+				margin: 0 !important
+				height: 400px
+				overflow: hidden
+				display: block
+				position: relative
+				img
+					width: 100%
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			@include mq($max-width: 800px)
+				height: 300px
+			@include mq($max-width: 700px)
+				height: 250px
+			@include mq($max-width: 550px)
+				height: 200px
+			@include mq($max-width: 400px)
+				height: 150px
 			&:first-child
 				clip-path: polygon(0 0, 100% 0%, 67% 100%, 0 100%)
 				margin-left: 0
@@ -59,7 +86,7 @@
 			position: absolute
 			left: 0
 			bottom: -10px
-			@include mq($max-width: 700px)
+			@include mq($max-width: 800px)
 				display: none
 		li
 			counter-increment: my-awesome-counter
@@ -85,7 +112,7 @@
 				font: 500 26px 'Gilroy', sans-serif
 				color: #A8A8A8
 				border-radius: 100%
-				@include mq($max-width: 700px)
+				@include mq($max-width: 800px)
 					position: static
 					margin-left: auto
 					margin-right: auto
