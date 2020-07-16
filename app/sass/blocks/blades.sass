@@ -1,0 +1,64 @@
+.blade
+	display: flex
+	align-items: center
+	position: relative
+	.container
+		display: flex
+		align-items: center
+		position: relative
+		z-index: 2
+		min-height: 530px
+	.inner
+		width: 60%
+		position: relative
+		z-index: 2
+	&__img
+		position: absolute
+		z-index: 1
+		top: 50%
+		right: -5%
+		transform: translate(0, -50%)
+		@include mq($max-width: 1200px)
+			top: auto
+			right: 0
+			bottom: 0
+			width: 40%
+			transform: translate(0, 0)
+	&__label
+		display: block
+		width: 70px
+		height: auto
+		margin-right: 30px
+	&__title
+		font: 700 45px 'Gilroy', sans-serif
+		margin-bottom: 15px
+	&__text
+		font: 400 16px/1.6 'Gilroy', sans-serif
+		margin-left: 100px
+		margin-bottom: 65px
+	&-list
+		display: flex
+		align-items: flex-start
+		font: 400 16px/1.6 'Gilroy', sans-serif
+		text-align: center
+		img
+			margin-bottom: 15px
+			display: inline-block
+			height: 90px
+		li
+			padding: 0 15px
+	&-line
+		display: flex
+		align-items: flex-start
+	&.type1
+		background: url($imgUrl+'blades/bg1.jpg') no-repeat center center / cover
+		color: $white
+	&.type2
+		background: url($imgUrl+'blades/bg2.jpg') no-repeat center center / cover
+	&.type3
+		background: url($imgUrl+'blades/bg3.jpg') no-repeat center center / cover
+		color: $white
+	&.type4
+		background: url($imgUrl+'blades/bg4.jpg') no-repeat center center / cover
+	&.type5
+		background: url($imgUrl+'blades/bg5.jpg') no-repeat center center / cover

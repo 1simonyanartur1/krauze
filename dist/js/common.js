@@ -1,5 +1,6 @@
 (function ($) {
 	$(document).ready(function () {
+
 		setTimeout(function () {
 			$('.crystal-wrap').addClass('active');
 			setTimeout(function () {
@@ -12,11 +13,11 @@
 			var $st = $(this).scrollTop();
 			if ($st > $scrollPos) {
 				// Скролл Вниз
-				$('.features-glue .bubbles').addClass('active');
 			} else {
 				// Скролл Вверх
 			}
-			if ($st == 0) {
+			if ($st > 700) {
+				$('.features-glue .bubbles').addClass('active');
 			}
 			$scrollPos = $st;
 		});
@@ -41,7 +42,7 @@
 				console.log('#prlx3 not found on this page');
 			}
 		} else {
-			$('.universal-glue .images').slick({
+			$('.universal-glue .images2').slick({
 				dots: false,
 				arrows: false,
 				infinite: true,
@@ -49,7 +50,12 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-				autoplaySpeed: 2000
+				autoplaySpeed: 5000
+			});
+
+			$('.universal-glue .list li[data-slide]').on('click', function () {
+				var slideno = $(this).data('slide');
+				$('.universal-glue .images2').slick('slickGoTo', slideno - 1);
 			});
 		}
 
@@ -78,6 +84,10 @@
 
 		$(".tabs").tabs();
 
+		$('.types-clippers .item__clipper').on('mouseover', function() {
+			$('.types-clippers .item__clipper').css({'opacity' : '.5'})
+			$(this).css({'opacity' : '1'});
+		});
 	});
 
 	setTimeout(function () {

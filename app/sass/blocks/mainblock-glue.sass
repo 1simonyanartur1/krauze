@@ -1,6 +1,8 @@
 .mainblock-glue
 	position: relative
 	margin-bottom: 80px
+	@include mq($max-width: 800px)
+		margin-bottom: 20px
 	.btn1:after
 		@include mq($max-width: 400px)
 			display: none
@@ -138,8 +140,6 @@
 		top: 0
 		right: 0
 		bottom: 0
-		@include mq($max-width: 550px)
-			display: none
 		.c1,
 		.c2,
 		.c3
@@ -155,12 +155,19 @@
 				left: 2% !important
 				top: 10% !important
 			@include mq($max-width: 700px)
-				display: none
+				left: 40% !important
+			@include mq($max-width: 550px)
+				left: 5% !important
+			@include mq($max-width: 370px)
+				top: 0 !important
 		.c2
 			top: auto !important
 			right: auto !important
 			bottom: -10% !important
 			left: 40% !important
+			@include mq($max-width: 550px)
+				right: auto !important
+				left: 5% !important
 		.c3
 			top: 50% !important
 			right: 2% !important
@@ -169,5 +176,8 @@
 			@include mq($max-width: 1200px)
 				top: 16% !important
 				right: 30% !important
-			@include mq($max-width: 400px)
-				display: none
+			@include mq($max-width: 550px)
+				left: 30% !important
+				right: auto !important
+			@include mq($max-width: 370px)
+				top: 2% !important

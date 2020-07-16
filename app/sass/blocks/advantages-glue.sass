@@ -1,12 +1,14 @@
 .advantages-glue
 	padding: 50px 0
+	@include mq($max-width: 550px)
+		padding: 25px 0
 	.caption
 		text-align: center
 	.list
 		display: flex
 		flex-wrap: wrap
 		align-items: flex-start
-		justify-content: space-between
+		justify-content: space-around
 		.icon-wrap
 			margin-bottom: 30px
 			width: 130px
@@ -17,11 +19,11 @@
 			margin-left: auto
 			margin-right: auto
 			border-radius: 100%
-			border: 1px solid $gray2
 		img
 			max-width: 100%
 			height: auto
 		li
+			width: 300px
 			margin-bottom: 50px
 			text-align: center
 			font: 19px 'Gilroy', sans-serif

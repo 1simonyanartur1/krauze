@@ -65,19 +65,26 @@ body
 	display: flex
 	flex-direction: column
 
-// body,
-// .change-scroll
-// 	&::-webkit-scrollbar
-// 		width: 10px
-// 	&::-webkit-scrollbar-track
-// 		background: $blue2
-// 	&::-webkit-scrollbar-thumb
-// 		background: $blue
-// 	&::-webkit-scrollbar-thumb:hover
-// 		background: $dark
+body,
+.change-scroll
+	&::-webkit-scrollbar
+		width: 10px
+	&::-webkit-scrollbar-track
+		background: $gray1
+	&::-webkit-scrollbar-thumb
+		background: $red
+	&::-webkit-scrollbar-thumb:hover
+		background: $gray2
+
+.site-block
+	padding: 50px 0
+	@include mq($max-width: 550px)
+		padding: 25px 0
 
 .caption
 	margin-bottom: 50px
+	@include mq($max-width: 550px)
+		margin-bottom: 20px
 	&__title
 		font: 700 36px 'Gilroy', sans-serif
 		@include mq($max-width: 700px)

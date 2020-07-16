@@ -4,35 +4,94 @@
 		position: relative
 		min-height: 850px
 		max-width: 1000px
-	.list
+	.caption
+		@include mq($max-width: 1200px)
+			text-align: center
+			margin-bottom: 75px
+	.items
+		@include mq($max-width: 1200px)
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
 	.item
 		height: 380px
 		width: 155px
-		// height: 155px
-		// width: 380px
 		position: absolute
+		@include mq($max-width: 1200px)
+			width: 48%
+			height: auto
+			position: static
+			transform: translate(0,0) rotate(0) !important
+			margin-bottom: 25px
+		&:hover
+			z-index: 10
+			.window
+				display: block
 		&:nth-child(1)
 			left: 50%
 			top: 5%
 			transform: translate(-50%, 0) rotate(5deg)
+			.window
+				transform: translate(-100%, -50%) rotate(-4deg)
 		&:nth-child(2)
 			right: 0
 			top: 50%
 			transform: translate(-50%, -50%) rotate(75deg)
+			.window
+				transform: translate(-100%, -50%) rotate(-74deg)
 		&:nth-child(3)
 			right: 30%
 			bottom: -10%
 			transform: translate(50%, 0) rotate(135deg)
+			.window
+				transform: translate(-100%, -50%) rotate(-134deg)
 		&:nth-child(4)
 			left: 0
 			top: 50%
 			transform: translate(50%, -50%) rotate(-75deg)
 			.item__clipper
 				width: 120%
+			.window
+				transform: translate(-100%, -50%) rotate(75deg)
 		&:nth-child(5)
 			left: 30%
 			bottom: -10%
 			transform: translate(-50%, 0) rotate(-135deg)
+			.window
+				transform: translate(-100%, -50%) rotate(135deg)
+		.window
+			position: absolute
+			z-index: 10
+			left: 0
+			top: 50%
+			width: 440px
+			background: $white
+			box-shadow: 0px 4px 25px #BFC2C9
+			border-radius: 5px
+			padding: 15px 15px 0
+			display: none
+			@include mq($max-width: 1200px)
+				position: static
+				width: 100%
+				padding: 20px
+				display: block
+				transform: translate(0,0) rotate(0) !important
+			&-top
+				display: flex
+				align-items: center
+				margin-bottom: 15px
+			&__label
+				margin-right: 15px
+			&__title
+				font: 700 14px 'Gilroy', sans-serif
+			&__text
+				font: 300 12px/1.6 'Gilroy', sans-serif
+				margin-bottom: 10px
+			&__img
+				display: block
+				width: 205px
+				height: auto
+				margin: 0 auto
 		&__label
 			display: block
 			position: absolute
@@ -48,3 +107,11 @@
 			left: 50%
 			top: 50%
 			transform: translate(-50%, -50%)
+			transition: all .3s ease-out
+			@include mq($max-width: 1200px)
+				position: static
+				transform: translate(0,0) rotate(0) !important
+				height: 450px
+				width: auto !important
+				margin-left: auto
+				margin-right: auto

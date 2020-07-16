@@ -1,5 +1,7 @@
 .universal-glue
 	margin: 40px 0 65px
+	@include mq($max-width: 550px)
+		margin: 20px 0
 	.caption
 		margin-bottom: 35px
 		text-align: center
@@ -7,69 +9,47 @@
 			margin-bottom: 10px
 	.images
 		display: flex
-		flex-wrap: wrap
 		justify-content: space-between
 		align-items: center
 		position: relative
 		margin-bottom: 50px
+		position: relative
+		height: 470px
+		@include mq($max-width: 1500px)
+			margin-bottom: 30px
+			height: 400px
+		@include mq($max-width: 1400px)
+			height: 340px
+		@include mq($max-width: 1200px)
+			display: none
+			height: auto
+		img
+			display: block
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			&:first-child
+				left: 0
+				width: 43%
+				clip-path: polygon(0 0, 100% 0%, 61% 100%, 0% 100%)
+			&:nth-child(2)
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 47%
+				clip-path: polygon(39% 0, 100% 0%, 61% 100%, 0 100%)
+			&:last-child
+				right: 0
+				width: 43%
+				clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%)
+	.images2
+		display: none
+		margin-bottom: 20px
 		@include mq($max-width: 1200px)
 			display: block
-		li
-			width: 36%
-			margin: 0 1%
-			overflow: hidden
-			display: flex
-			align-content: center
-			justify-content: center
-			position: relative
-			@include mq($max-width: 1200px)
-				clip-path: none !important
-				margin: 0 !important
-				height: 400px
-				overflow: hidden
-				display: block
-				position: relative
-				img
-					width: 100%
-					position: absolute
-					top: 50%
-					left: 50%
-					transform: translate(-50%, -50%)
-			@include mq($max-width: 800px)
-				height: 300px
-			@include mq($max-width: 700px)
-				height: 250px
-			@include mq($max-width: 550px)
-				height: 200px
-			@include mq($max-width: 400px)
-				height: 150px
-			&:first-child
-				clip-path: polygon(0 0, 100% 0%, 67% 100%, 0 100%)
-				margin-left: 0
-			&:nth-child(2)
-				clip-path: polygon(25% 0, 100% 0%, 70% 100%, 0 100%)
-				position: absolute
-				left: 50%
-				top: 50%
-				transform: translate(-50%, -50%)
-				width: 50%
-			&:last-child
-				margin-right: 0
-				clip-path: polygon(37% 0, 100% 0%, 100% 100%, 0 100%)
-
-		// img
-		// 	position: absolute
-		// 	width: 40%
-		// 	height: auto
-		// 	top: 50%
-		// 	transform: translateY(-50%)
-		// 	&:nth-child(1)
-		// 		left: 0
-		// 	&:nth-child(2)
-		// 		left: 23%
-		// 		width: 54%
-		// 	&:nth-child(3)
-		// 		right: 0
+		img
+			display: block
+			width: 100%
+			height: auto
 	.list
 		display: flex
 		align-items: center
@@ -86,7 +66,7 @@
 			position: absolute
 			left: 0
 			bottom: -10px
-			@include mq($max-width: 800px)
+			@include mq($max-width: 1200px)
 				display: none
 		li
 			counter-increment: my-awesome-counter
@@ -112,7 +92,12 @@
 				font: 500 26px 'Gilroy', sans-serif
 				color: #A8A8A8
 				border-radius: 100%
-				@include mq($max-width: 800px)
+				@include mq($max-width: 1200px)
 					position: static
 					margin-left: auto
 					margin-right: auto
+				@include mq($max-width: 550px)
+					width: 35px
+					height: 35px
+					font-size: 16px
+					margin-bottom: 10px
