@@ -1507,6 +1507,12 @@ section.one-glue {
   @media only screen and (max-width: 1500px) {
     .mainblock-clippers {
       background-position: center center; } }
+  @media only screen and (max-width: 1000px) {
+    .mainblock-clippers {
+      background: url("../img/mainblock-clippers/bg2.jpg") no-repeat left center/cover; } }
+  @media only screen and (max-width: 700px) {
+    .mainblock-clippers {
+      background-position: center center; } }
   .mainblock-clippers .container {
     min-height: 480px;
     display: -webkit-box;
@@ -1523,14 +1529,36 @@ section.one-glue {
     -ms-flex-pack: center;
     justify-content: center;
     text-align: right; }
+    @media only screen and (max-width: 1000px) {
+      .mainblock-clippers .container {
+        min-height: 350px; } }
+    @media only screen and (max-width: 700px) {
+      .mainblock-clippers .container {
+        min-height: 300px; } }
+    @media only screen and (max-width: 550px) {
+      .mainblock-clippers .container {
+        min-height: 330px; } }
   .mainblock-clippers .inner {
     max-width: 450px; }
   .mainblock-clippers h1 {
     font: 700 42px 'Gilroy', sans-serif;
     margin-bottom: 50px; }
+    @media only screen and (max-width: 1000px) {
+      .mainblock-clippers h1 {
+        font-size: 34px;
+        margin-bottom: 25px; } }
+    @media only screen and (max-width: 550px) {
+      .mainblock-clippers h1 {
+        font-size: 24px; } }
   .mainblock-clippers p {
     font: 300 25px 'Gilroy', sans-serif;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 1000px) {
+      .mainblock-clippers p {
+        font-size: 22px; } }
+    @media only screen and (max-width: 550px) {
+      .mainblock-clippers p {
+        font-size: 18px; } }
 
 .new-clippers {
   padding: 50px 0; }
@@ -1562,6 +1590,14 @@ section.one-glue {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 35px 0; }
+    @media only screen and (max-width: 1000px) {
+      .assortment-clippers .tab {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    @media only screen and (max-width: 700px) {
+      .assortment-clippers .tab {
+        padding: 25px 0 0; } }
   .assortment-clippers .card {
     width: 25%;
     display: -webkit-box;
@@ -1576,6 +1612,13 @@ section.one-glue {
     align-items: center;
     padding: 0 35px;
     position: relative; }
+    @media only screen and (max-width: 1000px) {
+      .assortment-clippers .card {
+        width: 49%; } }
+    @media only screen and (max-width: 700px) {
+      .assortment-clippers .card {
+        padding: 0 10px;
+        margin-bottom: 25px; } }
     .assortment-clippers .card:not(:last-child) {
       position: relative; }
       .assortment-clippers .card:not(:last-child):after {
@@ -1587,15 +1630,28 @@ section.one-glue {
         position: absolute;
         top: 0;
         right: 0; }
+        @media only screen and (max-width: 550px) {
+          .assortment-clippers .card:not(:last-child):after {
+            display: none; } }
     .assortment-clippers .card__img {
       display: block;
-      width: 210px;
+      width: 100%;
       height: auto;
       margin-bottom: 18px; }
+      @media only screen and (max-width: 550px) {
+        .assortment-clippers .card__img {
+          width: 90%; } }
     .assortment-clippers .card__title {
       font: 700 27px 'Gilroy', sans-serif;
       color: #5F5F5F;
       margin-bottom: 5px; }
+      @media only screen and (max-width: 1200px) {
+        .assortment-clippers .card__title {
+          font-size: 22px; } }
+      @media only screen and (max-width: 550px) {
+        .assortment-clippers .card__title {
+          font-size: 18px;
+          margin-bottom: 0; } }
     .assortment-clippers .card__subtitle {
       font: 500 12px 'Gilroy', sans-serif;
       color: #919191;
@@ -1611,6 +1667,15 @@ section.one-glue {
       -ms-flex-align: center;
       align-items: center;
       width: 100%; }
+      @media only screen and (max-width: 550px) {
+        .assortment-clippers .card-bottom {
+          width: 80%;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
     .assortment-clippers .card .color {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1622,6 +1687,9 @@ section.one-glue {
       color: #000; }
       .assortment-clippers .card .color__img {
         margin-right: 10px; }
+        @media only screen and (max-width: 550px) {
+          .assortment-clippers .card .color__img {
+            width: 10px; } }
     .assortment-clippers .card .length {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1641,12 +1709,25 @@ section.one-glue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media only screen and (max-width: 700px) {
+      .assortment-clippers .ui-tabs-nav {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
     .assortment-clippers .ui-tabs-nav li {
       width: 20%; }
+      @media only screen and (max-width: 700px) {
+        .assortment-clippers .ui-tabs-nav li {
+          width: 33.3%; } }
       .assortment-clippers .ui-tabs-nav li:last-child a {
         border-right: none; }
+        @media only screen and (max-width: 700px) {
+          .assortment-clippers .ui-tabs-nav li:last-child a {
+            border-right: 1px solid #ACACAC; } }
     .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
       border-bottom: none; }
+      @media only screen and (max-width: 700px) {
+        .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
+          border-bottom: 1px solid #ACACAC; } }
     .assortment-clippers .ui-tabs-nav .ui-tabs-active img {
       -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25);
       box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25); }
@@ -1663,20 +1744,29 @@ section.one-glue {
       height: 140px;
       border-bottom: 1px solid #ACACAC;
       border-right: 1px solid #ACACAC; }
+      @media only screen and (max-width: 550px) {
+        .assortment-clippers .ui-tabs-nav a {
+          height: 100px; } }
       .assortment-clippers .ui-tabs-nav a:hover img {
         opacity: .5; }
     .assortment-clippers .ui-tabs-nav img {
       display: block;
-      width: 108px;
-      height: 108px;
+      max-width: 50%;
+      max-height: 90%;
       padding: 10px;
       border-radius: 10px;
       background: #fff;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out; }
+      @media only screen and (max-width: 550px) {
+        .assortment-clippers .ui-tabs-nav img {
+          max-width: 80%; } }
 
 .types-clippers {
   padding: 150px 0; }
+  @media only screen and (max-width: 1000px) {
+    .types-clippers {
+      padding: 20px 0 50px; } }
   .types-clippers .container {
     position: relative;
     min-height: 850px;
@@ -1707,6 +1797,9 @@ section.one-glue {
         -webkit-transform: translate(0, 0) rotate(0) !important;
         transform: translate(0, 0) rotate(0) !important;
         margin-bottom: 25px; } }
+    @media only screen and (max-width: 380px) {
+      .types-clippers .item {
+        width: 100%; } }
     .types-clippers .item:hover {
       z-index: 10; }
       .types-clippers .item:hover .window {
@@ -1773,6 +1866,9 @@ section.one-glue {
           display: block;
           -webkit-transform: translate(0, 0) rotate(0) !important;
           transform: translate(0, 0) rotate(0) !important; } }
+      @media only screen and (max-width: 550px) {
+        .types-clippers .item .window {
+          padding: 10px; } }
       .types-clippers .item .window-top {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1781,16 +1877,26 @@ section.one-glue {
         -ms-flex-align: center;
         align-items: center;
         margin-bottom: 15px; }
+        @media only screen and (max-width: 550px) {
+          .types-clippers .item .window-top {
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
       .types-clippers .item .window__label {
         margin-right: 15px; }
+        @media only screen and (max-width: 1200px) {
+          .types-clippers .item .window__label {
+            display: none; } }
       .types-clippers .item .window__title {
         font: 700 14px 'Gilroy', sans-serif; }
+        @media only screen and (max-width: 550px) {
+          .types-clippers .item .window__title {
+            width: 100%; } }
       .types-clippers .item .window__text {
         font: 300 12px/1.6 'Gilroy', sans-serif;
         margin-bottom: 10px; }
       .types-clippers .item .window__img {
         display: block;
-        width: 205px;
+        width: 50%;
         height: auto;
         margin: 0 auto; }
     .types-clippers .item__label {
@@ -1820,6 +1926,10 @@ section.one-glue {
           width: auto !important;
           margin-left: auto;
           margin-right: auto; } }
+      @media only screen and (max-width: 550px) {
+        .types-clippers .item__clipper {
+          max-height: 250px;
+          max-width: 100% !important; } }
 
 .blade {
   display: -webkit-box;
@@ -1829,6 +1939,9 @@ section.one-glue {
   -ms-flex-align: center;
   align-items: center;
   position: relative; }
+  @media only screen and (max-width: 1000px) {
+    .blade {
+      padding: 25px 0; } }
   .blade .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1839,10 +1952,23 @@ section.one-glue {
     position: relative;
     z-index: 2;
     min-height: 530px; }
+    @media only screen and (max-width: 1000px) {
+      .blade .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   .blade .inner {
     width: 60%;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 1000px) {
+      .blade .inner {
+        width: 100%;
+        text-align: center; } }
   .blade__img {
     position: absolute;
     z-index: 1;
@@ -1858,18 +1984,45 @@ section.one-glue {
         width: 40%;
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0); } }
+    @media only screen and (max-width: 1000px) {
+      .blade__img {
+        position: static;
+        width: 30%; } }
+    @media only screen and (max-width: 550px) {
+      .blade__img {
+        width: 50%; } }
   .blade__label {
     display: block;
     width: 70px;
     height: auto;
     margin-right: 30px; }
+    @media only screen and (max-width: 1000px) {
+      .blade__label {
+        margin-right: 0;
+        margin-bottom: 10px; } }
   .blade__title {
     font: 700 45px 'Gilroy', sans-serif;
     margin-bottom: 15px; }
+    @media only screen and (max-width: 700px) {
+      .blade__title {
+        font-size: 40px; } }
+    @media only screen and (max-width: 550px) {
+      .blade__title {
+        font-size: 28px; } }
   .blade__text {
     font: 400 16px/1.6 'Gilroy', sans-serif;
     margin-left: 100px;
     margin-bottom: 65px; }
+    @media only screen and (max-width: 1000px) {
+      .blade__text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%; } }
+    @media only screen and (max-width: 550px) {
+      .blade__text {
+        width: 100%;
+        margin-bottom: 25px;
+        font-size: 14px; } }
   .blade-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1878,13 +2031,33 @@ section.one-glue {
     -ms-flex-align: start;
     align-items: flex-start;
     font: 400 16px/1.6 'Gilroy', sans-serif;
-    text-align: center; }
+    text-align: center;
+    word-wrap: break-word; }
+    @media only screen and (max-width: 1000px) {
+      .blade-list {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    @media only screen and (max-width: 550px) {
+      .blade-list {
+        font-size: 12px;
+        line-height: 1.4;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
     .blade-list img {
       margin-bottom: 15px;
       display: inline-block;
       height: 90px; }
+      @media only screen and (max-width: 550px) {
+        .blade-list img {
+          height: 50px; } }
     .blade-list li {
       padding: 0 15px; }
+      @media only screen and (max-width: 550px) {
+        .blade-list li {
+          width: 33.3%;
+          margin-bottom: 15px;
+          padding: 0 5px; } }
   .blade-line {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1892,6 +2065,16 @@ section.one-glue {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
+    @media only screen and (max-width: 1000px) {
+      .blade-line {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center; } }
   .blade.type1 {
     background: url("../img/blades/bg1.jpg") no-repeat center center/cover;
     color: #fff; }

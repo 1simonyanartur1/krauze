@@ -2,6 +2,10 @@
 	background: url($imgUrl+'mainblock-clippers/bg.jpg') no-repeat left center / cover
 	@include mq($max-width: 1500px)
 		background-position: center center
+	@include mq($max-width: 1000px)
+		background: url($imgUrl+'mainblock-clippers/bg2.jpg') no-repeat left center / cover
+	@include mq($max-width: 700px)
+		background-position: center center
 	.container
 		min-height: 480px
 		display: flex
@@ -9,11 +13,26 @@
 		align-items: flex-end
 		justify-content: center
 		text-align: right
+		@include mq($max-width: 1000px)
+			min-height: 350px
+		@include mq($max-width: 700px)
+			min-height: 300px
+		@include mq($max-width: 550px)
+			min-height: 330px
 	.inner
 		max-width: 450px
 	h1
 		font: 700 42px 'Gilroy', sans-serif
 		margin-bottom: 50px
+		@include mq($max-width: 1000px)
+			font-size: 34px
+			margin-bottom: 25px
+		@include mq($max-width: 550px)
+			font-size: 24px
 	p
 		font: 300 25px 'Gilroy', sans-serif
 		margin-bottom: 10px
+		@include mq($max-width: 1000px)
+			font-size: 22px
+		@include mq($max-width: 550px)
+			font-size: 18px

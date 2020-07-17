@@ -15,6 +15,10 @@
 		display: flex
 		flex-wrap: wrap
 		padding: 35px 0
+		@include mq($max-width: 1000px)
+			justify-content: space-between
+		@include mq($max-width: 700px)
+			padding: 25px 0 0
 	.card
 		width: 25%
 		display: flex
@@ -22,6 +26,11 @@
 		align-items: center
 		padding: 0 35px
 		position: relative
+		@include mq($max-width: 1000px)
+			width: 49%
+		@include mq($max-width: 700px)
+			padding: 0 10px
+			margin-bottom: 25px
 		&:not(:last-child)
 			position: relative
 			&:after
@@ -33,15 +42,24 @@
 				position: absolute
 				top: 0
 				right: 0
+				@include mq($max-width: 550px)
+					display: none
 		&__img
 			display: block
-			width: 210px
+			width: 100%
 			height: auto
 			margin-bottom: 18px
+			@include mq($max-width: 550px)
+				width: 90%
 		&__title
 			font: 700 27px 'Gilroy', sans-serif
 			color: #5F5F5F
 			margin-bottom: 5px
+			@include mq($max-width: 1200px)
+				font-size: 22px
+			@include mq($max-width: 550px)
+				font-size: 18px
+				margin-bottom: 0
 		&__subtitle
 			font: 500 12px 'Gilroy', sans-serif
 			color: #919191
@@ -51,6 +69,10 @@
 			justify-content: space-between
 			align-items: center
 			width: 100%
+			@include mq($max-width: 550px)
+				width: 80%
+				flex-wrap: wrap
+				flex-direction: column
 		.color
 			display: flex
 			align-items: center
@@ -58,6 +80,8 @@
 			color: #000
 			&__img
 				margin-right: 10px
+				@include mq($max-width: 550px)
+					width: 10px
 		.length
 			display: flex
 			align-items: center
@@ -71,14 +95,22 @@
 		text-align: center
 	.ui-tabs-nav
 		display: flex
+		@include mq($max-width: 700px)
+			flex-wrap: wrap
 		li
 			width: 20%
+			@include mq($max-width: 700px)
+				width: 33.3%
 			&:last-child
 				a
 					border-right: none
+					@include mq($max-width: 700px)
+						border-right: 1px solid #ACACAC
 		.ui-tabs-active
 			a
 				border-bottom: none
+				@include mq($max-width: 700px)
+					border-bottom: 1px solid #ACACAC
 			img
 				box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25)
 		a
@@ -88,15 +120,18 @@
 			height: 140px
 			border-bottom: 1px solid #ACACAC
 			border-right: 1px solid #ACACAC
+			@include mq($max-width: 550px)
+				height: 100px
 			&:hover
 				img
 					opacity: .5
 		img
 			display: block
-			width: 108px
-			height: 108px
+			max-width: 50%
+			max-height: 90%
 			padding: 10px
 			border-radius: 10px
 			background: $white
 			transition: all .3s ease-out
-		
+			@include mq($max-width: 550px)
+				max-width: 80%
