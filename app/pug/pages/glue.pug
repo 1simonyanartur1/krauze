@@ -44,7 +44,7 @@ html
 			section.features-glue
 				.container
 					.img-wrap(data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
-						img(src=imgUrl+"features-glue/img.png", alt="")
+						img.features-glue__img(src=imgUrl+"features-glue/img.png", alt="")
 						img.bubbles(src=imgUrl+"features-glue/bubbles.png", alt="")
 					.inner
 						.caption
@@ -88,10 +88,10 @@ html
 					.caption
 						h2.caption__title(data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") <span>ErichKrause</span> Crystal - универсальный клей
 						p.caption__text(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Новый клей от Erich Krause станет вашим надежным помощником в домашних делах, <br> на работе, во время творческих занятий и при создании слаймов.
-				ul.images
-					img(src=imgUrl+"universal-glue/img11.jpg", alt="")
-					img(src=imgUrl+"universal-glue/img22.jpg", alt="")
-					img(src=imgUrl+"universal-glue/img33.jpg", alt="")
+				.images
+					img(src=imgUrl+"universal-glue/img1.png", alt="")
+					img(src=imgUrl+"universal-glue/img2.png", alt="")
+					img(src=imgUrl+"universal-glue/img3.png", alt="")
 				.images2
 					.slide
 						img(src=imgUrl+"universal-glue/img11.jpg", alt="")
@@ -116,9 +116,22 @@ html
 						img(src=imgUrl+"slaim/img.jpg", alt="")
 						img.hand2(src=imgUrl+"slaim/hand2.jpg", alt="")
 						.text-container
-							h3 Рецепт приготовления
-							.line
-							p В воде разбавляем тетраборат натрия. В отдельную посуду выливаем клей и, тщательно размешивая, добавляем по одной чайной ложке раствор тетрабората натрия. Затем можно добавить блестки.
+							h3 Ингредиенты:
+							ol
+								li 135 мл канцелярского клея Crystal
+								li 1 ч.л. тетрабората натрия
+								li 200 мл воды
+							h3 Пошаговое описание процесса изготовления:
+							ul
+								li В емкость помещают 200мл воды.
+								li Добавляют чайную ложку тетрабората натрия и перемешивают
+								li Далее аккуратно вливают клей Crystal и ложкой собирают клей от краев к центру
+								li Получившуюся массу перекладывают в другую посуду и вымешивают руками.
+								li Далее заготовку кладут в прозрачный контейнер с крышкой и оставляют на 4-5 суток, пока масса не станет прозрачной.
+								li Дополнительно: во время замеса в массу можно добавить блестки, чтобы получить прозрачный слайм с красивым вкраплением блесток.
+							//- h3 Рецепт приготовления
+							//- .line
+							//- p В воде разбавляем тетраборат натрия. В отдельную посуду выливаем клей и, тщательно размешивая, добавляем по одной чайной ложке раствор тетрабората натрия. Затем можно добавить блестки.
 			section.one-glue
 				.container
 					.prlx#prlx3(data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="200")
@@ -130,7 +143,7 @@ html
 						img.c6(src=imgUrl+"one-glue/c6.png", alt="", data-depth="0.2")
 						img.c7(src=imgUrl+"one-glue/c7.png", alt="", data-depth="0.2")
 					img.glue(src=imgUrl+"one-glue/glue.png", alt="" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
-					img.wave(src=imgUrl+"one-glue/wave.png", alt="")
+					img.wave(src=imgUrl+"one-glue/wave.png", alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" data-aos-offset="200")
 			section.advantages-glue
 				.container
 					.caption

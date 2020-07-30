@@ -18,8 +18,18 @@
 		align-items: center
 	.img-wrap
 		position: relative
+		@include mq($max-width: 1700px)
+			height: 90vh
+		@include mq($max-width: 1200px)
+			height: auto
 		@include mq($max-width: 550px)
 			width: 25%
+			height: auto
+	&__img
+		@include mq($max-width: 1700px)
+			height: 100%
+		@include mq($max-width: 1200px)
+			height: auto
 	.bubbles
 		position: absolute
 		left: 50%

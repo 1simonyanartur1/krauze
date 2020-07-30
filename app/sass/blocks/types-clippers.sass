@@ -41,18 +41,24 @@
 			right: 0
 			top: 50%
 			transform: translate(-50%, -50%) rotate(75deg)
+			.item__label
+				transform: rotate(-75deg)
 			.window
 				transform: translate(-100%, -50%) rotate(-74deg)
 		&:nth-child(3)
 			right: 30%
 			bottom: -10%
 			transform: translate(50%, 0) rotate(135deg)
+			.item__label
+				transform: rotate(-135deg)
 			.window
 				transform: translate(-100%, -50%) rotate(-134deg)
 		&:nth-child(4)
 			left: 0
 			top: 50%
 			transform: translate(50%, -50%) rotate(-75deg)
+			.item__label
+				transform: rotate(-285deg)
 			.item__clipper
 				width: 120%
 			.window
@@ -63,6 +69,8 @@
 			transform: translate(-50%, 0) rotate(-135deg)
 			.window
 				transform: translate(-100%, -50%) rotate(135deg)
+			.item__label
+				transform: rotate(-226deg)
 		.window
 			position: absolute
 			z-index: 10
@@ -110,6 +118,8 @@
 			z-index: 2
 			top: 0
 			left: 0
+			@include mq($max-width: 1200px)
+				transform: rotate(0) !important
 		&__clipper
 			display: block
 			width: 140%

@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb:hover,
   box-shadow: 0px 4px 20px rgba(255, 0, 0, 0.4);
   color: #fff;
   background: #E91C2E;
-  font: 700 17px 'Gilroy', sans-serif;
+  font: 700 18px 'Gilroy', sans-serif;
   padding: 15px 25px; }
   @media only screen and (max-width: 550px) {
     .btn1 {
@@ -446,9 +446,22 @@ body::-webkit-scrollbar-thumb:hover,
     align-items: center; }
   .features-glue .img-wrap {
     position: relative; }
+    @media only screen and (max-width: 1700px) {
+      .features-glue .img-wrap {
+        height: 90vh; } }
+    @media only screen and (max-width: 1200px) {
+      .features-glue .img-wrap {
+        height: auto; } }
     @media only screen and (max-width: 550px) {
       .features-glue .img-wrap {
-        width: 25%; } }
+        width: 25%;
+        height: auto; } }
+  @media only screen and (max-width: 1700px) {
+    .features-glue__img {
+      height: 100%; } }
+  @media only screen and (max-width: 1200px) {
+    .features-glue__img {
+      height: auto; } }
   .features-glue .bubbles {
     position: absolute;
     left: 50%;
@@ -519,20 +532,39 @@ body::-webkit-scrollbar-thumb:hover,
   .banner-glue .container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1700px) {
+      .banner-glue .container {
+        max-width: 1000px; } }
+    @media only screen and (max-width: 1400px) {
+      .banner-glue .container {
+        max-width: 900px; } }
+    @media only screen and (max-width: 1200px) {
+      .banner-glue .container {
+        max-width: 760px; } }
   .banner-glue .img-wrap {
     width: 435px;
     position: relative;
     z-index: 2; }
+    @media only screen and (max-width: 1700px) {
+      .banner-glue .img-wrap {
+        width: 300px; } }
     @media only screen and (max-width: 700px) {
       .banner-glue .img-wrap {
         display: none; } }
     .banner-glue .img-wrap .paper {
       position: absolute;
-      top: -50%; }
+      top: -50%;
+      display: block;
+      width: 130%; }
+      @media only screen and (max-width: 1400px) {
+        .banner-glue .img-wrap .paper {
+          width: 120%; } }
       @media only screen and (max-width: 1200px) {
         .banner-glue .img-wrap .paper {
-          display: block;
           width: 100%;
           top: 0;
           left: 0; } }
@@ -540,10 +572,15 @@ body::-webkit-scrollbar-thumb:hover,
       position: absolute;
       left: 72%;
       top: -20px; }
+      @media only screen and (max-width: 1700px) {
+        .banner-glue .img-wrap .glue {
+          left: 50%;
+          top: -38px; } }
       @media only screen and (max-width: 1500px) {
         .banner-glue .img-wrap .glue {
           left: 42%;
-          top: -55px; } }
+          top: -45px;
+          width: 120%; } }
       @media only screen and (max-width: 1200px) {
         .banner-glue .img-wrap .glue {
           width: 100%;
@@ -559,6 +596,9 @@ body::-webkit-scrollbar-thumb:hover,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media only screen and (max-width: 1700px) {
+      .banner-glue .inner {
+        width: calc(100% - 320px); } }
     @media only screen and (max-width: 1200px) {
       .banner-glue .inner {
         -webkit-box-orient: vertical;
@@ -583,6 +623,10 @@ body::-webkit-scrollbar-thumb:hover,
       width: 240px;
       height: auto;
       margin-right: 40px; }
+      @media only screen and (max-width: 1700px) {
+        .banner-glue .inner img {
+          width: 170px;
+          margin-right: 20px; } }
       @media only screen and (max-width: 1200px) {
         .banner-glue .inner img {
           margin-right: 0;
@@ -593,6 +637,9 @@ body::-webkit-scrollbar-thumb:hover,
     .banner-glue .inner p {
       font: 500 19px 'Gilroy', sans-serif;
       color: #fff; }
+      @media only screen and (max-width: 1700px) {
+        .banner-glue .inner p {
+          font-size: 18px; } }
       @media only screen and (max-width: 700px) {
         .banner-glue .inner p {
           text-align: center; } }
@@ -797,16 +844,17 @@ body::-webkit-scrollbar-thumb:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     position: relative;
     margin-bottom: 50px;
     position: relative;
-    height: 470px; }
+    width: 100%; }
     @media only screen and (max-width: 1500px) {
       .universal-glue .images {
         margin-bottom: 30px;
@@ -819,28 +867,19 @@ body::-webkit-scrollbar-thumb:hover,
         display: none;
         height: auto; } }
     .universal-glue .images img {
-      display: block;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      display: block; }
       .universal-glue .images img:first-child {
         left: 0;
-        width: 43%;
-        -webkit-clip-path: polygon(0 0, 100% 0%, 61% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0%, 61% 100%, 0% 100%); }
+        width: 40%; }
       .universal-glue .images img:nth-child(2) {
+        position: absolute;
         left: 50%;
+        top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        width: 47%;
-        -webkit-clip-path: polygon(39% 0, 100% 0%, 61% 100%, 0 100%);
-        clip-path: polygon(39% 0, 100% 0%, 61% 100%, 0 100%); }
+        width: 54%; }
       .universal-glue .images img:last-child {
-        right: 0;
-        width: 43%;
-        -webkit-clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%);
-        clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%); }
+        width: 40%; }
   .universal-glue .images2 {
     display: none;
     margin-bottom: 20px; }
@@ -878,7 +917,8 @@ body::-webkit-scrollbar-thumb:hover,
     .universal-glue .list li {
       counter-increment: my-awesome-counter;
       font: 700 26px 'Gilroy', sans-serif;
-      position: relative; }
+      position: relative;
+      color: #686868; }
       @media only screen and (max-width: 550px) {
         .universal-glue .list li {
           font-size: 20px;
@@ -976,9 +1016,9 @@ body::-webkit-scrollbar-thumb:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
     @media only screen and (max-width: 550px) {
       .slaim .bottom {
         -ms-flex-wrap: wrap;
@@ -999,14 +1039,13 @@ body::-webkit-scrollbar-thumb:hover,
           -webkit-box-shadow: none;
           box-shadow: none; } }
     .slaim .bottom .text-container {
-      max-width: 430px; }
+      max-width: 700px; }
       @media only screen and (max-width: 700px) {
         .slaim .bottom .text-container {
-          max-width: 700px;
-          text-align: center; } }
+          max-width: 700px; } }
 
 section.one-glue {
-  padding: 50px 0 150px; }
+  padding: 50px 0; }
   @media only screen and (max-width: 700px) {
     section.one-glue {
       padding: 50px 0 75px; } }
@@ -1017,6 +1056,13 @@ section.one-glue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1027,13 +1073,11 @@ section.one-glue {
         max-width: 800px;
         width: auto; } }
   section.one-glue .wave {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    -webkit-transform: translate(-50%, 30%);
-    transform: translate(-50%, 30%); }
+    position: relative;
+    margin-top: -350px; }
     @media only screen and (max-width: 700px) {
       section.one-glue .wave {
+        margin-top: -40%;
         width: 100%;
         display: block;
         height: auto; } }
@@ -1150,7 +1194,7 @@ section.one-glue {
       height: auto; }
     .advantages-glue .list li {
       width: 300px;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
       text-align: center;
       font: 19px 'Gilroy', sans-serif; }
       @media only screen and (max-width: 1200px) {
@@ -1817,6 +1861,9 @@ section.one-glue {
       top: 50%;
       -webkit-transform: translate(-50%, -50%) rotate(75deg);
       transform: translate(-50%, -50%) rotate(75deg); }
+      .types-clippers .item:nth-child(2) .item__label {
+        -webkit-transform: rotate(-75deg);
+        transform: rotate(-75deg); }
       .types-clippers .item:nth-child(2) .window {
         -webkit-transform: translate(-100%, -50%) rotate(-74deg);
         transform: translate(-100%, -50%) rotate(-74deg); }
@@ -1825,6 +1872,9 @@ section.one-glue {
       bottom: -10%;
       -webkit-transform: translate(50%, 0) rotate(135deg);
       transform: translate(50%, 0) rotate(135deg); }
+      .types-clippers .item:nth-child(3) .item__label {
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg); }
       .types-clippers .item:nth-child(3) .window {
         -webkit-transform: translate(-100%, -50%) rotate(-134deg);
         transform: translate(-100%, -50%) rotate(-134deg); }
@@ -1833,6 +1883,9 @@ section.one-glue {
       top: 50%;
       -webkit-transform: translate(50%, -50%) rotate(-75deg);
       transform: translate(50%, -50%) rotate(-75deg); }
+      .types-clippers .item:nth-child(4) .item__label {
+        -webkit-transform: rotate(-285deg);
+        transform: rotate(-285deg); }
       .types-clippers .item:nth-child(4) .item__clipper {
         width: 120%; }
       .types-clippers .item:nth-child(4) .window {
@@ -1846,6 +1899,9 @@ section.one-glue {
       .types-clippers .item:nth-child(5) .window {
         -webkit-transform: translate(-100%, -50%) rotate(135deg);
         transform: translate(-100%, -50%) rotate(135deg); }
+      .types-clippers .item:nth-child(5) .item__label {
+        -webkit-transform: rotate(-226deg);
+        transform: rotate(-226deg); }
     .types-clippers .item .window {
       position: absolute;
       z-index: 10;
@@ -1905,6 +1961,10 @@ section.one-glue {
       z-index: 2;
       top: 0;
       left: 0; }
+      @media only screen and (max-width: 1200px) {
+        .types-clippers .item__label {
+          -webkit-transform: rotate(0) !important;
+          transform: rotate(0) !important; } }
     .types-clippers .item__clipper {
       display: block;
       width: 140%;
