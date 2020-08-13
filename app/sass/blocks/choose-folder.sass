@@ -1,0 +1,115 @@
+.choose-folder
+	&__img
+		display: block
+		@include mq($max-width: 700px)
+			width: 200px
+		@include mq($max-width: 575px)
+			display: none
+	.container
+		display: flex
+		align-items: flex-start
+		justify-content: center
+	&__title
+		font: 700 30px/1.6 'Inter', sans-serif
+		color: $black
+		@include mq($max-width: 700px)
+			font-size: 20px
+	&__subtitle
+		font: 700 24px/1.6 'Inter', sans-serif
+		color: #E91C2E
+		margin-bottom: 15px
+		@include mq($max-width: 700px)
+			font-size: 16px
+	.inner
+		margin-left: 130px
+		@include mq($max-width: 1000px)
+			margin-left: 20px
+		@include mq($max-width: 575px)
+			margin-left: 0
+	&-block
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin: 30px 0
+		p
+			font: 500 17px 'Inter', sans-serif
+			margin-right: 50px
+			@include mq($max-width: 800px)
+				width: 100%
+				margin-bottom: 15px
+		ul
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			@include mq($max-width: 800px)
+				padding-left: 30px
+			li
+				font: 500 17px 'Inter', sans-serif
+				position: relative
+				cursor: pointer
+				&:not(:last-child)
+					margin-right: 50px
+				&.active
+					&:after
+						display: block
+				&:before
+					content: ''
+					display: block
+					width: 20px
+					height: 20px
+					background: #EDEDED
+					border-radius: 100%
+					position: absolute
+					top: 50%
+					left: -30px
+					transform: translate(0, -50%)
+				&:after
+					content: ''
+					display: none
+					width: 10px
+					height: 10px
+					background: $black
+					border-radius: 100%
+					position: absolute
+					top: 50%
+					left: -25px
+					transform: translate(0, -50%)
+		.colors
+			@include mq($max-width: 800px)
+				padding-left: 0
+			li
+				width: 30px
+				height: 30px
+				&:not(:last-child)
+					margin-right: 20px
+				&.active
+					&:after
+						display: block
+				&.black
+					background: #2E2E2E
+				&.red
+					background: #E91C2E
+				&.green
+					background: #367717
+				&.blue
+					background: #1A279A
+				&:before
+					display: none
+				&:after
+					transform: translate(0, 0)
+					background: #EDEDED
+					left: -4px
+					top: -4px
+					right: -4px
+					bottom: -4px
+					width: auto
+					height: auto
+					border-radius: 0
+					z-index: -1
+		.quantity
+			width: 100%
+			margin-top: 30px
+			padding-left: 30px
+			@include mq($max-width: 800px)
+				margin-top: 0
+

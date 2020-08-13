@@ -1,0 +1,37 @@
+#new-landing .folder-social
+	padding: 80px 0
+	@include mq($max-width: 1200px)
+		padding: 40px 0
+	.container
+		max-width: 1400px
+		@include mq($max-width: 1500px)
+			max-width: 1200px
+	.caption
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		max-width: 540px
+		margin: 0 auto 75px
+		@include mq($max-width: 1000px)
+			margin: 0 auto 35px
+		&__subtitle
+			margin-bottom: 0
+	.images
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@include mq($max-width: 575px)
+			justify-content: center
+			flex-wrap: wrap
+		img
+			display: block
+			width: 364px
+			height: auto
+			@include mq($max-width: 1500px)
+				width: 300px
+			@include mq($max-width: 1000px)
+				width: 30%
+			@include mq($max-width: 575px)
+				width: 48%
+				margin: 1%

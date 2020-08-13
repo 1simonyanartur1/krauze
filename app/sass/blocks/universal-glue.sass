@@ -1,4 +1,4 @@
-.universal-glue
+#new-landing .universal-glue
 	margin: 40px 0 65px
 	@include mq($max-width: 550px)
 		margin: 20px 0
@@ -11,12 +11,9 @@
 		display: flex
 		align-items: center
 		justify-content: space-between
-		align-items: center
 		position: relative
 		margin-bottom: 50px
-		position: relative
-		// height: 470px
-		width: 100%
+		height: 470px
 		@include mq($max-width: 1500px)
 			margin-bottom: 30px
 			height: 400px
@@ -27,27 +24,18 @@
 			height: auto
 		img
 			display: block
-			// position: absolute
-			// top: 50%
-			// transform: translateY(-50%)
 			&:first-child
 				left: 0
 				width: 40%
-				// width: 43%
-				// clip-path: polygon(0 0, 100% 0%, 61% 100%, 0% 100%)
 			&:nth-child(2)
 				position: absolute
 				left: 50%
+				height: auto
 				top: 50%
 				transform: translate(-50%, -50%)
 				width: 54%
-				// width: 47%
-				// clip-path: polygon(39% 0, 100% 0%, 61% 100%, 0 100%)
 			&:last-child
 				width: 40%
-				// right: 0
-				// width: 43%
-				// clip-path: polygon(39% 0, 100% 0%, 100% 100%, 0 100%)
 	.images2
 		display: none
 		margin-bottom: 20px
@@ -77,7 +65,7 @@
 				display: none
 		li
 			counter-increment: my-awesome-counter
-			font: 700 26px 'Gilroy', sans-serif
+			font: 700 26px 'Inter', sans-serif
 			position: relative
 			color: #686868
 			@include mq($max-width: 550px)
@@ -97,7 +85,7 @@
 				bottom: -35px
 				align-items: center
 				justify-content: center
-				font: 500 26px 'Gilroy', sans-serif
+				font: 500 26px 'Inter', sans-serif
 				color: #A8A8A8
 				border-radius: 100%
 				@include mq($max-width: 1200px)

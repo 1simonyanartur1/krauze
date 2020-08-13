@@ -1,4 +1,4 @@
-.mainblock-glue
+#new-landing .mainblock-glue
 	position: relative
 	margin-bottom: 80px
 	@include mq($max-width: 800px)
@@ -86,7 +86,7 @@
 		@include mq($max-width: 1000px)
 			width: 100%
 	h1
-		font: 500 24px 'Gilroy', sans-serif
+		font: 500 24px 'Inter', sans-serif
 		position: relative
 		@include mq($max-width: 550px)
 			font-size: 16px
@@ -100,7 +100,7 @@
 			margin-left: 5px
 			vertical-align: top
 	h2
-		font: 700 24px 'Gilroy', sans-serif
+		font: 700 24px 'Inter', sans-serif
 		max-width: 475px
 		margin-bottom: 55px
 		@include mq($max-width: 550px)
@@ -108,7 +108,8 @@
 		@include mq($max-width: 400px)
 			font-size: 14px
 	.btns
-		text-align: center
+		text-align: left
+		transform: translate(0, 80%)
 	.glues
 		margin-bottom: -40px
 		@include mq($max-width: 1000px)
@@ -118,6 +119,7 @@
 		@include mq($max-width: 700px)
 			width: 50%
 		img
+			vertical-align: bottom
 			margin: 0 10px
 			@include mq($max-width: 1000px)
 				margin: 0 1%

@@ -1,0 +1,67 @@
+#new-landing .folder-advantages
+	background: #FFF8F8
+	margin: 60px 0
+	padding: 25px 0 50px
+	@include mq($max-width: 1200px)
+	 margin: 40px 0
+	 padding: 15px 0
+	.container
+		max-width: 1370px
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: space-between
+		@include mq($max-width: 1500px)
+			max-width: 1170px
+	.img
+		display: block
+		width: 48%
+		@include mq($max-width: 1000px)
+			width: 100%
+			margin-bottom: 15px
+	.list
+		width: 48%
+		@include mq($max-width: 1000px)
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			text-align: center
+	.item
+		position: relative
+		padding: 35px 0
+		@include mq($max-width: 1000px)
+			width: 48%
+			padding: 10px 0
+			margin: 1%
+		&__title
+			font: 700 22px 'Inter', sans-serif
+			@include mq($max-width: 575px)
+				font-size: 16px
+		&__line
+			width: 130px
+			height: 2px
+			background: $black
+			margin: 15px 0
+			@include mq($max-width: 1000px)
+				width: 100%
+		&__text
+			font: 300 17px 'Inter', sans-serif
+			max-width: 370px
+			@include mq($max-width: 575px)
+				font-size: 14px
+		&__icon
+			display: block
+			width: 130px
+			height: auto
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			@include mq($max-width: 1000px)
+				transform: translate(0, 0)
+				position: static
+				width: 70px
+				height: auto
+				margin: 0 auto 10px
+

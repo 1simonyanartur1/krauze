@@ -1,0 +1,30 @@
+#new-landing .folder-colors
+	padding: 60px 0
+	@include mq($max-width: 1200px)
+		padding: 30px 0
+	.container
+		max-width: 1230px
+	.caption
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 65px
+		@include mq($max-width: 1200px)
+			margin-bottom: 30px
+	.inner
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+	img
+		display: block
+		width: 240px
+		height: auto
+		margin: 30px
+		@include mq($max-width: 1200px)
+			width: 200px
+			margin: 15px
+		@include mq($max-width: 1000px)
+			width: 48%
+			margin: 1%

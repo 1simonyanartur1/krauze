@@ -65,43 +65,57 @@ body
 	display: flex
 	flex-direction: column
 
-body,
-.change-scroll
-	&::-webkit-scrollbar
-		width: 10px
-	&::-webkit-scrollbar-track
-		background: $gray1
-	&::-webkit-scrollbar-thumb
-		background: $red
-	&::-webkit-scrollbar-thumb:hover
-		background: $gray2
+// body,
+// .change-scroll
+// 	&::-webkit-scrollbar
+// 		width: 10px
+// 	&::-webkit-scrollbar-track
+// 		background: $gray1
+// 	&::-webkit-scrollbar-thumb
+// 		background: $red
+// 	&::-webkit-scrollbar-thumb:hover
+// 		background: $gray2
 
-.site-block
+#new-landing .site-block
 	padding: 50px 0
 	@include mq($max-width: 550px)
 		padding: 25px 0
 
-.caption
+#new-landing .caption
 	margin-bottom: 50px
 	@include mq($max-width: 550px)
 		margin-bottom: 20px
 	&__title
-		font: 700 36px 'Gilroy', sans-serif
+		font: 700 36px 'Inter', sans-serif
 		@include mq($max-width: 700px)
 			font-size: 26px
+		@include mq($max-width: 575px)
+			font-size: 20px
+	&__subtitle
+		font: 700 20px 'Inter', sans-serif
+		margin-bottom: 20px
+		@include mq($max-width: 700px)
+			font-size: 15px
 	&__text
-		font: 400 18px/1.4 'Gilroy', sans-serif
+		font: 400 17px/1.4 'Inter', sans-serif
 		@include mq($max-width: 700px)
 			font-size: 16px
+	&__line
+		display: block
+		width: 130px
+		height: 2px
+		background: $black
+		margin: 15px 0
 
-.page-container
+.page-container,
+#new-landing
 	width: 100%
 	flex: 1 0 auto
 	height: auto
 	position: relative
 	overflow: hidden
 
-.container
+#new-landing .container
 	max-width: 1170px
 	padding: 0 15px
 	margin: 0 auto
@@ -111,7 +125,7 @@ body,
 	// @include mq($max-width: 380px)
 	// 	padding: 0 5px
 
-.line
+#new-landing .line
 	display: block
 	width: 136px
 	height: 2px
@@ -121,10 +135,10 @@ body,
 		margin-left: auto
 		margin-right: auto
 
-.copyright
+#new-landing .copyright
 	text-align: center
 	padding: 10px 0
-	font: 300 13px 'Gilroy', sans-serif
+	font: 300 13px 'Inter', sans-serif
 	color: $gray5
 	a
 		color: $gray5

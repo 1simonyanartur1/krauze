@@ -1,0 +1,24 @@
+#new-landing .density
+	padding: 90px 0
+	display: flex
+	align-items: center
+	@include mq($max-width: 1200px)
+		padding: 40px 0
+	@include mq($max-width: 1000px)
+		flex-wrap: wrap
+	&__img
+		display: block
+		width: calc( 100% - 600px )
+		@include mq($max-width: 1200px)
+			width: calc( 100% - 500px )
+		@include mq($max-width: 1000px)
+			width: 98%
+			margin-bottom: 15px
+	.caption
+		max-width: 400px
+		margin-left: 60px
+		@include mq($max-width: 1000px)
+			width: 100%
+			order: -1
+			max-width: 1000px
+			margin-left: 15px

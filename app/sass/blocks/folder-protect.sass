@@ -1,0 +1,59 @@
+#new-landing .folder-protect
+	position: relative
+	padding: 130px 0 75px
+	@include mq($max-width: 1200px)
+		padding: 35px 0
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+	.inner
+		width: 600px
+		margin-left: auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		@include mq($max-width: 1200px)
+			width: 100%
+			order: -1
+			margin-bottom: 25px
+	.caption
+		margin-bottom: 45px
+		@include mq($max-width: 1200px)
+			margin-bottom: 25px
+	.icons
+		display: flex
+		justify-content: space-between
+		position: relative
+		z-index: 2
+		@include mq($max-width: 575px)
+			flex-wrap: wrap
+			justify-content: center
+	&__img
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		width: 53%
+		transform: translate(0, -50%)
+		@include mq($max-width: 1200px)
+			position: static
+			transform: translate(0, 0)
+			width: 97%
+	.item
+		margin: 10px
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		@include mq($max-width: 575px)
+			width: 48%
+			margin: 1%
+			margin-bottom: 15px
+		&__icon
+			display: block
+			width: 80px
+			height: auto
+			margin-bottom: 15px
+		&__text
+			font: 300 14px 'Inter', sans-serif
