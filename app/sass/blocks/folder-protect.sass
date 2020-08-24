@@ -1,14 +1,16 @@
 #new-landing .folder-protect
 	position: relative
 	padding: 130px 0 75px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	flex-direction: row
+	@include mq($max-width: 1500px)
+		padding: 50px 0
 	@include mq($max-width: 1200px)
 		padding: 35px 0
-		display: flex
-		flex-wrap: wrap
-		flex-direction: row
 	.inner
 		width: 600px
-		margin-left: auto
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -31,14 +33,8 @@
 			justify-content: center
 	&__img
 		display: block
-		position: absolute
-		top: 50%
-		left: 0
 		width: 53%
-		transform: translate(0, -50%)
 		@include mq($max-width: 1200px)
-			position: static
-			transform: translate(0, 0)
 			width: 97%
 	.item
 		margin: 10px
