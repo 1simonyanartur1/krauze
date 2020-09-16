@@ -1,3 +1,49 @@
+#new-landing .blades
+	@include mq($max-width: 1200px)
+		margin-bottom: 50px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		font-size: 40px
+		color: $white
+		width: 50px
+		transition: all .3s ease-out
+		height: 50px
+		background: none
+		cursor: pointer
+		z-index: 5
+		width: 62px
+		height: 62px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 100%
+		border: 1px solid $white
+		@include mq($max-width: 1200px)
+			width: 50px
+			height: 50px
+			color: $black
+			border-color: $black
+			top: 106%
+		&:hover
+			color: $black
+			background: $white
+		&.left
+			transform: translate(0, -50%) rotate(-180deg)
+			left: 100px
+			@include mq($max-width: 1500px)
+				left: 50px
+			@include mq($max-width: 1200px)
+				right: 80px
+				left: auto
+		&.right
+			right: 100px
+			@include mq($max-width: 1500px)
+				right: 50px
+			@include mq($max-width: 1200px)
+				right: 20px
+	
 #new-landing .blade
 	display: flex
 	align-items: center
@@ -20,11 +66,12 @@
 		@include mq($max-width: 1000px)
 			width: 100%
 			text-align: center
+			position: static
 	&__img
 		position: absolute
 		z-index: 1
 		top: 50%
-		right: -5%
+		right: -10%
 		transform: translate(0, -50%)
 		@include mq($max-width: 1200px)
 			top: auto
@@ -36,34 +83,38 @@
 			position: static
 			width: 30%
 		@include mq($max-width: 550px)
-			width: 50%
+			width: 70%
+			margin-left: auto
 	&__label
 		display: block
-		width: 70px
+		width: 100px
 		height: auto
 		margin-right: 30px
 		@include mq($max-width: 1000px)
 			margin-right: 0
 			margin-bottom: 10px
+			position: absolute
+			left: 10px
+			top: 0
 	&__title
 		font: 700 45px 'Inter', sans-serif
 		margin-bottom: 15px
 		@include mq($max-width: 700px)
-			font-size: 40px
+			font-size: 35px
 		@include mq($max-width: 550px)
-			font-size: 28px
+			font-size: 22px
 	&__text
 		font: 400 16px/1.6 'Inter', sans-serif
-		margin-left: 100px
 		margin-bottom: 65px
 		@include mq($max-width: 1000px)
 			margin-left: auto
 			margin-right: auto
 			width: 70%
+			font-size: 14px
 		@include mq($max-width: 550px)
 			width: 100%
 			margin-bottom: 25px
-			font-size: 14px
+			font-size: 12px
 	&-list
 		display: flex
 		align-items: flex-start
@@ -92,18 +143,34 @@
 		display: flex
 		align-items: flex-start
 		@include mq($max-width: 1000px)
+		text-align: left
+		@include mq($max-width: 1000px)
 			flex-direction: column
 			align-items: center
 			text-align: center
+	.bg-text
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translate(0, -50%)
+		display: block
+		width: 50%
+		z-index: 1
+		@include mq($max-width: 1000px)
+			width: 100%
 	&.type1
-		background: url($imgUrl+'blades/bg1.jpg') no-repeat center center / cover
+		background: url($imgUrl+'blades/bg1.jpg') no-repeat left top / cover
 		color: $white
 	&.type2
 		background: url($imgUrl+'blades/bg2.jpg') no-repeat center center / cover
 	&.type3
-		background: url($imgUrl+'blades/bg3.jpg') no-repeat center center / cover
+		background: url($imgUrl+'blades/bg1.jpg') no-repeat center center / cover
 		color: $white
+		.blade__img
+			top: 57%
 	&.type4
 		background: url($imgUrl+'blades/bg4.jpg') no-repeat center center / cover
 	&.type5
 		background: url($imgUrl+'blades/bg5.jpg') no-repeat center center / cover
+
+

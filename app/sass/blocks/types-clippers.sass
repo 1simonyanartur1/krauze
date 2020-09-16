@@ -7,14 +7,22 @@
 		min-height: 850px
 		max-width: 1000px
 	.caption
-		@include mq($max-width: 1200px)
-			text-align: center
-			margin-bottom: 75px
+		&__title
+			color: $white
+			background: linear-gradient(87.79deg, #8E8E8E 5.67%, rgba(255, 255, 255, 0.99) 79.63%), #C4C4C4
+			padding: 15px 25px
 	.items
+		width: 970px
+		height: 770px
+		margin-bottom: 50px
+		position: relative
 		@include mq($max-width: 1200px)
 			display: flex
 			justify-content: space-between
 			flex-wrap: wrap
+			width: auto
+			height: auto
+			margin-bottom: 40px
 	.item
 		height: 380px
 		width: 155px
@@ -25,8 +33,12 @@
 			position: static
 			transform: translate(0,0) rotate(0) !important
 			margin-bottom: 25px
-		@include mq($max-width: 380px)
+		@include mq($max-width: 575px)
 			width: 100%
+			background: $white
+			box-shadow: 0px 4px 25px #BFC2C9
+			border-radius: 10px
+			padding-top: 50px
 		&:hover
 			z-index: 10
 			.window
@@ -36,51 +48,55 @@
 			top: 5%
 			transform: translate(-50%, 0) rotate(5deg)
 			.window
-				transform: translate(-100%, -50%) rotate(-4deg)
+				transform: translate(-50%, -50%) rotate(-5deg)
+			.item__label
+				transform: translate(-50%, -50%) rotate(-5deg)
 		&:nth-child(2)
 			right: 0
 			top: 50%
 			transform: translate(-50%, -50%) rotate(75deg)
 			.item__label
-				transform: rotate(-75deg)
+				transform: translate(-50%, -70%) rotate(-75deg)
 			.window
-				transform: translate(-100%, -50%) rotate(-74deg)
+				transform: translate(-50%, -50%) rotate(-75deg)
 		&:nth-child(3)
 			right: 30%
 			bottom: -10%
 			transform: translate(50%, 0) rotate(135deg)
 			.item__label
-				transform: rotate(-135deg)
+				transform: translate(-100%, -80%) rotate(-135deg)
 			.window
-				transform: translate(-100%, -50%) rotate(-134deg)
+				transform: translate(-50%, -50%) rotate(-135deg)
 		&:nth-child(4)
 			left: 0
 			top: 50%
 			transform: translate(50%, -50%) rotate(-75deg)
 			.item__label
-				transform: rotate(-285deg)
+				transform: translate(150%, -100%) rotate(-285deg)
 			.item__clipper
 				width: 120%
 			.window
-				transform: translate(-100%, -50%) rotate(75deg)
+				transform: translate(-50%, -50%) rotate(75deg)
 		&:nth-child(5)
 			left: 30%
 			bottom: -10%
 			transform: translate(-50%, 0) rotate(-135deg)
 			.window
-				transform: translate(-100%, -50%) rotate(135deg)
+				transform: translate(-50%, -50%) rotate(135deg)
 			.item__label
-				transform: rotate(-226deg)
+				transform: translate(190%, -65%) rotate(-226deg)
+		
 		.window
 			position: absolute
 			z-index: 10
 			left: 0
 			top: 50%
+			left: 50%
 			width: 440px
 			background: $white
 			box-shadow: 0px 4px 25px #BFC2C9
 			border-radius: 5px
-			padding: 15px 15px 0
+			padding: 15px 15px
 			display: none
 			@include mq($max-width: 1200px)
 				position: static
@@ -88,13 +104,15 @@
 				padding: 20px
 				display: block
 				transform: translate(0,0) rotate(0) !important
-			@include mq($max-width: 550px)
+			@include mq($max-width: 575px)
 				padding: 10px
+				background: none
+				box-shadow: none
 			&-top
 				display: flex
 				align-items: center
 				margin-bottom: 15px
-				@include mq($max-width: 550px)
+				@include mq($max-width: 575px)
 					flex-wrap: wrap
 			&__label
 				margin-right: 15px
@@ -102,14 +120,14 @@
 					display: none
 			&__title
 				font: 700 14px 'Inter', sans-serif
-				@include mq($max-width: 550px)
+				@include mq($max-width: 575px)
 					width: 100%
 			&__text
 				font: 300 12px/1.6 'Inter', sans-serif
 				margin-bottom: 10px
 			&__img
 				display: block
-				width: 50%
+				width: 100%
 				height: auto
 				margin: 0 auto
 		&__label
@@ -118,8 +136,15 @@
 			z-index: 2
 			top: 0
 			left: 0
+			width: 75px
+			height: auto
 			@include mq($max-width: 1200px)
 				transform: rotate(0) !important
+				width: auto
+			@include mq($max-width: 575px)
+				width: 70px
+				left: 10px
+				top: 10px
 		&__clipper
 			display: block
 			width: 140%
@@ -137,6 +162,10 @@
 				width: auto !important
 				margin-left: auto
 				margin-right: auto
-			@include mq($max-width: 550px)
-				max-height: 250px
-				max-width: 100% !important
+			@include mq($max-width: 575px)
+				// max-height: 250px
+				height: auto
+				width: 90% !important
+				// max-width: 100% !important
+				transform: rotate(0) !important
+				margin: 0 auto

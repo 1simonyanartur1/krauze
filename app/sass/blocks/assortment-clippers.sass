@@ -1,7 +1,10 @@
 .assortment-clippers
 	padding: 50px 0
 	.caption
-		text-align: center
+		color: $white
+		&__title
+			padding: 15px 25px
+			background: linear-gradient(87.79deg, #8E8E8E 5.67%, rgba(255, 255, 255, 0.99) 79.63%), #C4C4C4
 	.btn1
 		&:after
 			display: none
@@ -11,6 +14,10 @@
 		box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25)
 		border-radius: 10px
 		margin-bottom: 80px
+		@include mq($max-width: 575px)
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
 	.tab
 		display: flex
 		flex-wrap: wrap
@@ -19,6 +26,8 @@
 			justify-content: space-between
 		@include mq($max-width: 700px)
 			padding: 25px 0 0
+		@include mq($max-width: 575px)
+			width: 60%
 	.card
 		width: 25%
 		display: flex
@@ -31,6 +40,11 @@
 		@include mq($max-width: 700px)
 			padding: 0 10px
 			margin-bottom: 25px
+		@include mq($max-width: 575px)
+			width: 100%
+		&:hover
+			.card__title
+				color: $red
 		&:not(:last-child)
 			position: relative
 			&:after
@@ -55,6 +69,7 @@
 			font: 700 27px 'Inter', sans-serif
 			color: #5F5F5F
 			margin-bottom: 5px
+			transition: all .3s ease-out
 			@include mq($max-width: 1200px)
 				font-size: 22px
 			@include mq($max-width: 550px)
@@ -97,10 +112,14 @@
 		display: flex
 		@include mq($max-width: 700px)
 			flex-wrap: wrap
+		@include mq($max-width: 575px)
+			width: 40%
 		li
 			width: 20%
 			@include mq($max-width: 700px)
 				width: 33.3%
+			@include mq($max-width: 575px)
+				width: 100%
 			&:last-child
 				a
 					border-right: none
@@ -109,6 +128,7 @@
 		.ui-tabs-active
 			a
 				border-bottom: none
+				box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25)
 				@include mq($max-width: 700px)
 					border-bottom: 1px solid #ACACAC
 			img
@@ -120,6 +140,7 @@
 			height: 140px
 			border-bottom: 1px solid #ACACAC
 			border-right: 1px solid #ACACAC
+			border-radius: 10px
 			@include mq($max-width: 550px)
 				height: 100px
 			&:hover
@@ -133,5 +154,5 @@
 			border-radius: 10px
 			background: $white
 			transition: all .3s ease-out
-			@include mq($max-width: 550px)
-				max-width: 80%
+			// @include mq($max-width: 550px)
+				// max-width: 80%
