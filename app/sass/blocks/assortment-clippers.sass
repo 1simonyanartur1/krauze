@@ -56,14 +56,14 @@
 				position: absolute
 				top: 0
 				right: 0
-				@include mq($max-width: 550px)
+				@include mq($max-width: 575px)
 					display: none
 		&__img
 			display: block
 			width: 100%
 			height: auto
 			margin-bottom: 18px
-			@include mq($max-width: 550px)
+			@include mq($max-width: 575px)
 				width: 90%
 		&__title
 			font: 700 27px 'Inter', sans-serif
@@ -72,7 +72,7 @@
 			transition: all .3s ease-out
 			@include mq($max-width: 1200px)
 				font-size: 22px
-			@include mq($max-width: 550px)
+			@include mq($max-width: 575px)
 				font-size: 18px
 				margin-bottom: 0
 		&__subtitle
@@ -84,7 +84,7 @@
 			justify-content: space-between
 			align-items: center
 			width: 100%
-			@include mq($max-width: 550px)
+			@include mq($max-width: 575px)
 				width: 80%
 				flex-wrap: wrap
 				flex-direction: column
@@ -95,7 +95,7 @@
 			color: #000
 			&__img
 				margin-right: 10px
-				@include mq($max-width: 550px)
+				@include mq($max-width: 575px)
 					width: 10px
 		.length
 			display: flex
@@ -123,12 +123,15 @@
 			&:last-child
 				a
 					border-right: none
-					@include mq($max-width: 700px)
-						border-right: 1px solid #ACACAC
+					// @include mq($max-width: 700px)
+					// 	border-right: 1px solid #ACACAC
 		.ui-tabs-active
 			a
 				border-bottom: none
-				box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25)
+				box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.25)
+				border-bottom: none
+				background: $white
+				z-index: 2
 				@include mq($max-width: 700px)
 					border-bottom: 1px solid #ACACAC
 			img
@@ -138,11 +141,18 @@
 			align-items: center
 			justify-content: center
 			height: 140px
-			border-bottom: 1px solid #ACACAC
+			// border-bottom: 1px solid #ACACAC
 			border-right: 1px solid #ACACAC
-			border-radius: 10px
-			@include mq($max-width: 550px)
+			border-top-left-radius: 10px
+			border-top-right-radius: 10px
+			// border-radius: 0
+			position: relative
+			z-index: 1
+			background: #efefef
+			@include mq($max-width: 575px)
 				height: 100px
+				border-top-left-radius: 0
+				border-top-right-radius: 0
 			&:hover
 				img
 					opacity: .5
@@ -154,5 +164,3 @@
 			border-radius: 10px
 			background: $white
 			transition: all .3s ease-out
-			// @include mq($max-width: 550px)
-				// max-width: 80%

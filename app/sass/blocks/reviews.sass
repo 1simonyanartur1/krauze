@@ -2,6 +2,13 @@
 	padding: 50px 0
 	@include mq($max-width: 550px)
 		padding: 25px 0
+	&.type2
+		.caption
+			text-align: left
+			&__title
+				color: $white
+				background: linear-gradient(87.79deg, #8E8E8E 5.67%, rgba(255, 255, 255, 0.99) 79.63%), #C4C4C4
+				padding: 15px 25px
 	.caption
 		text-align: center
 		@include mq($max-width: 700px)
