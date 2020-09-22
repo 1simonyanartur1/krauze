@@ -15,10 +15,12 @@
 		height: 100%
 		@include mq($max-width: 1200px)
 			position: absolute
-			left: 0
+			left: auto
+			right: 0
 			bottom: 0
 		@include mq($max-width: 800px)
 			left: -20%
+			right: auto
 		@include mq($max-width: 700px)
 			left: -25%
 		@include mq($max-width: 575px)

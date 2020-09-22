@@ -1576,11 +1576,13 @@ body {
     @media only screen and (max-width: 1200px) {
       #new-landing .mainblock-clippers img {
         position: absolute;
-        left: 0;
+        left: auto;
+        right: 0;
         bottom: 0; } }
     @media only screen and (max-width: 800px) {
       #new-landing .mainblock-clippers img {
-        left: -20%; } }
+        left: -20%;
+        right: auto; } }
     @media only screen and (max-width: 700px) {
       #new-landing .mainblock-clippers img {
         left: -25%; } }
@@ -1737,11 +1739,11 @@ body {
   .assortment-clippers .btn1:after {
     display: none; }
   .assortment-clippers .tabs {
-    border: 1px solid #ACACAC;
+    border-top: none;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin-bottom: 80px; }
     @media only screen and (max-width: 575px) {
@@ -1755,6 +1757,9 @@ body {
         -ms-flex-align: start;
         align-items: flex-start; } }
   .assortment-clippers .tab {
+    border-left: 1px solid #ACACAC;
+    border-right: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1887,6 +1892,7 @@ body {
   .assortment-clippers .btns {
     text-align: center; }
   .assortment-clippers .ui-tabs-nav {
+    background: #efefef;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -1899,27 +1905,19 @@ body {
         width: 40%; } }
     .assortment-clippers .ui-tabs-nav li {
       width: 20%; }
-      @media only screen and (max-width: 700px) {
-        .assortment-clippers .ui-tabs-nav li {
-          width: 33.3%; } }
       @media only screen and (max-width: 575px) {
         .assortment-clippers .ui-tabs-nav li {
           width: 100%; } }
-      .assortment-clippers .ui-tabs-nav li:last-child a {
-        border-right: none; }
     .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
       border-bottom: none;
-      -webkit-box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
       border-bottom: none;
       background: #fff;
       z-index: 2; }
       @media only screen and (max-width: 700px) {
         .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
           border-bottom: 1px solid #ACACAC; } }
-    .assortment-clippers .ui-tabs-nav .ui-tabs-active img {
-      -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25);
-      box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.25); }
     .assortment-clippers .ui-tabs-nav a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1931,7 +1929,7 @@ body {
       -ms-flex-pack: center;
       justify-content: center;
       height: 140px;
-      border-right: 1px solid #ACACAC;
+      border: 1px solid #ACACAC;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       position: relative;
@@ -1949,10 +1947,27 @@ body {
       max-width: 50%;
       max-height: 90%;
       padding: 10px;
-      border-radius: 10px;
-      background: #fff;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out; }
+      @media only screen and (max-width: 700px) {
+        .assortment-clippers .ui-tabs-nav img {
+          max-width: 70%;
+          padding: 0; } }
+  @media only screen and (max-width: 700px) {
+    .assortment-clippers.type2 .tabs {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .assortment-clippers.type2 .ui-tabs-nav,
+    .assortment-clippers.type2 .tab {
+      width: 100%; }
+    .assortment-clippers.type2 .ui-tabs-nav li {
+      width: 20%; }
+    .assortment-clippers.type2 .card {
+      width: 50%; }
+      .assortment-clippers.type2 .card__title {
+        font-size: 14px; } }
 
 #new-landing .types-clippers {
   padding: 50px 0 100px; }
@@ -2398,8 +2413,6 @@ body {
   #new-landing .blade.type3 {
     background: url("../img/blades/bg1.jpg") no-repeat center center/cover;
     color: #fff; }
-    #new-landing .blade.type3 .blade__img {
-      top: 57%; }
   #new-landing .blade.type4 {
     background: url("../img/blades/bg4.jpg") no-repeat center center/cover; }
   #new-landing .blade.type5 {
