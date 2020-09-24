@@ -1751,7 +1751,11 @@ body {
     -webkit-box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
     box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    overflow: hidden; }
+    @media only screen and (max-width: 700px) {
+      .assortment-clippers .tabs {
+        border: 1px solid #ACACAC; } }
     @media only screen and (max-width: 575px) {
       .assortment-clippers .tabs {
         display: -webkit-box;
@@ -1779,7 +1783,8 @@ body {
         justify-content: space-between; } }
     @media only screen and (max-width: 700px) {
       .assortment-clippers .tab {
-        padding: 25px 0 0; } }
+        padding: 25px 0 0;
+        border: none; } }
     @media only screen and (max-width: 575px) {
       .assortment-clippers .tab {
         width: 60%; } }
@@ -1921,9 +1926,6 @@ body {
       border-bottom: none;
       background: #fff;
       z-index: 2; }
-      @media only screen and (max-width: 700px) {
-        .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
-          border-bottom: 1px solid #ACACAC; } }
     .assortment-clippers .ui-tabs-nav a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1941,6 +1943,11 @@ body {
       position: relative;
       z-index: 1;
       background: #efefef; }
+      @media only screen and (max-width: 700px) {
+        .assortment-clippers .ui-tabs-nav a {
+          border: 1px solid #ACACAC;
+          border-top: none;
+          border-left: none; } }
       @media only screen and (max-width: 575px) {
         .assortment-clippers .ui-tabs-nav a {
           height: 100px;
@@ -1961,6 +1968,7 @@ body {
           padding: 0; } }
   @media only screen and (max-width: 700px) {
     .assortment-clippers.type2 .tabs {
+      border-top: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1970,6 +1978,14 @@ body {
       width: 100%; }
     .assortment-clippers.type2 .ui-tabs-nav li {
       width: 20%; }
+      .assortment-clippers.type2 .ui-tabs-nav li:first-child a {
+        border-left: none; }
+      .assortment-clippers.type2 .ui-tabs-nav li:last-child a {
+        border-right: none; }
+      .assortment-clippers.type2 .ui-tabs-nav li.ui-tabs-active a {
+        border-bottom: none; }
+    .assortment-clippers.type2 .ui-tabs-nav a {
+      border: 1px solid #ACACAC; }
     .assortment-clippers.type2 .card {
       width: 50%; }
       .assortment-clippers.type2 .card__title {
