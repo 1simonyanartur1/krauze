@@ -26,7 +26,9 @@
 		@include mq($max-width: 575px)
 			position: static
 			width: 80%
-			margin-left: auto
+			margin-left: 0
+			margin-right: auto
+			width: 100%
 		@include mq($max-width: 400px)
 			width: 100%
 	.container
@@ -44,9 +46,12 @@
 			min-height: 330px
 	.inner
 		max-width: 450px
-		@include mq($max-width: 1000px)
+		@include mq($max-width: 1200px)
 			position: relative
 			z-index: 2
+			margin-right: auto
+		@include mq($max-width: 800px)
+			margin-right: 0
 			margin-left: auto
 		@include mq($max-width: 575px)
 			margin-bottom: 25px

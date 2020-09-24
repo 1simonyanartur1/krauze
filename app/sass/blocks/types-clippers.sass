@@ -43,6 +43,8 @@
 			left: 50%
 			top: 5%
 			transform: translate(-50%, 0) rotate(5deg)
+			@include mq($max-width: 1200px)
+				order: 0
 			.window
 				transform: translate(-50%, -50%) rotate(-5deg)
 			.item__label
@@ -67,6 +69,8 @@
 			left: 0
 			top: 50%
 			transform: translate(50%, -50%) rotate(-75deg)
+			@include mq($max-width: 1200px)
+				order: -1
 			.item__label
 				transform: translate(150%, -100%) rotate(-285deg)
 			.item__clipper
