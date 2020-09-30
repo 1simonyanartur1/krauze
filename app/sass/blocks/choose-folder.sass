@@ -1,8 +1,12 @@
-.choose-folder
+#new-landing .choose-folder
+	padding: 50px 0
+	background: #efefef
 	&__img
 		display: block
-		width: 240px
+		width: 340px
 		height: auto
+		padding: 25px
+		background: $white
 		@include mq($max-width: 700px)
 			width: 200px
 		@include mq($max-width: 575px)
@@ -11,6 +15,8 @@
 		display: flex
 		align-items: flex-start
 		justify-content: center
+	.caption
+		margin-bottom: 10px
 	&__title
 		font: 700 30px/1.6 'Inter', sans-serif
 		color: $black
@@ -24,10 +30,12 @@
 			font-size: 16px
 	.inner
 		margin-left: 130px
+		width: 535px
 		@include mq($max-width: 1000px)
 			margin-left: 20px
 		@include mq($max-width: 575px)
 			margin-left: 0
+			width: 100%
 	&-block
 		display: flex
 		flex-wrap: wrap
@@ -59,7 +67,7 @@
 					display: block
 					width: 20px
 					height: 20px
-					background: #EDEDED
+					background: #fff
 					border-radius: 100%
 					position: absolute
 					top: 50%
@@ -77,14 +85,18 @@
 					left: -25px
 					transform: translate(0, -50%)
 		.colors
+			margin-left: -10px
 			@include mq($max-width: 800px)
 				padding-left: 0
 			li
 				width: 30px
 				height: 30px
+				margin: 10px
+				transition: all .3s ease-out
 				&:not(:last-child)
-					margin-right: 20px
+					margin-right: 10px
 				&.active
+					box-shadow: 0 0 0 5px $white
 					&:after
 						display: block
 				&.black
@@ -99,7 +111,7 @@
 					display: none
 				&:after
 					transform: translate(0, 0)
-					background: #EDEDED
+					background: #fff
 					left: -4px
 					top: -4px
 					right: -4px
