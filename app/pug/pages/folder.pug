@@ -104,11 +104,10 @@ html
 							p.item__text Специальные выемки на обложке облегчают перелистывание.
 
 			section.folder-protect
-				img.folder-protect__img(src=imgUrl+"folder-protect/img.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+				img.folder-protect__img.left(src=imgUrl+"folder-protect/img1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 				.inner
 					.caption
 						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Защита и долгий срок службы
-						//- p.caption__text(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Пластиковая обложка - это  не только элегантный <br> презентабельный вид, но и надёжная защита.
 					.icons
 						.item(data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 							img.item__icon(src=imgUrl+"folder-protect/icon1.png", alt="")
@@ -119,13 +118,14 @@ html
 						.item(data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
 							img.item__icon(src=imgUrl+"folder-protect/icon3.png", alt="")
 							p.item__text Сохраняет <br> презентабельный вид
+				img.folder-protect__img.right(src=imgUrl+"folder-protect/img2.jpg", alt="" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 
 			section.security
 				.container
 					.caption
-						h2.caption__subtitle(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Безопасность
-						.caption__line(data-aos="flip-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
-						p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Уголки скруглены, что обеспечивает безопасность для одежды и человека.
+						h2.caption__subtitle Безопасность
+						.caption__line
+						p.caption__text Уголки скруглены, что обеспечивает безопасность для одежды и человека.
 					img.security__img(src=imgUrl+"security/img.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 
 			section.folder-color
@@ -161,7 +161,6 @@ html
 					.inner(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.caption
 							h2.caption__title Выбери свой «FolderBook» 
-						//- h2.choose-folder__title Выбери свой «FolderBook» 
 						h2.choose-folder__subtitle Самые востребованные форматы А5+ и А4
 						.choose-folder-block
 							p Формат:
@@ -169,7 +168,7 @@ html
 								li.active(data-format="uniq_props_format-is-a4/") А4
 								li(data-format="uniq_props_format-is-a5%2B/") А5+
 						.choose-folder-block
-							p Выбери свой цвет:
+							p.colors-text Выбери свой цвет:
 							ul.colors
 								li.active.black(data-color="uniq_props_covercolor-is-черный/")
 								li.red(data-color="uniq_props_covercolor-is-красный/")

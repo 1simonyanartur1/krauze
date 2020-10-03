@@ -2081,34 +2081,34 @@ body {
         -webkit-transform: translate(-50%, -50%) rotate(-135deg);
         transform: translate(-50%, -50%) rotate(-135deg); }
     #new-landing .types-clippers .item:nth-child(4) {
+      left: 30%;
+      bottom: -10%;
+      -webkit-transform: translate(-50%, 0) rotate(-135deg);
+      transform: translate(-50%, 0) rotate(-135deg); }
+      #new-landing .types-clippers .item:nth-child(4) .window {
+        -webkit-transform: translate(-50%, -50%) rotate(135deg);
+        transform: translate(-50%, -50%) rotate(135deg); }
+      #new-landing .types-clippers .item:nth-child(4) .item__label {
+        -webkit-transform: translate(190%, -65%) rotate(-226deg);
+        transform: translate(190%, -65%) rotate(-226deg); }
+    #new-landing .types-clippers .item:nth-child(5) {
       left: 0;
       top: 50%;
       -webkit-transform: translate(50%, -50%) rotate(-75deg);
       transform: translate(50%, -50%) rotate(-75deg); }
       @media only screen and (max-width: 1200px) {
-        #new-landing .types-clippers .item:nth-child(4) {
+        #new-landing .types-clippers .item:nth-child(5) {
           -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
           order: -1; } }
-      #new-landing .types-clippers .item:nth-child(4) .item__label {
+      #new-landing .types-clippers .item:nth-child(5) .item__label {
         -webkit-transform: translate(150%, -100%) rotate(-285deg);
         transform: translate(150%, -100%) rotate(-285deg); }
-      #new-landing .types-clippers .item:nth-child(4) .item__clipper {
+      #new-landing .types-clippers .item:nth-child(5) .item__clipper {
         width: 120%; }
-      #new-landing .types-clippers .item:nth-child(4) .window {
+      #new-landing .types-clippers .item:nth-child(5) .window {
         -webkit-transform: translate(-50%, -50%) rotate(75deg);
         transform: translate(-50%, -50%) rotate(75deg); }
-    #new-landing .types-clippers .item:nth-child(5) {
-      left: 30%;
-      bottom: -10%;
-      -webkit-transform: translate(-50%, 0) rotate(-135deg);
-      transform: translate(-50%, 0) rotate(-135deg); }
-      #new-landing .types-clippers .item:nth-child(5) .window {
-        -webkit-transform: translate(-50%, -50%) rotate(135deg);
-        transform: translate(-50%, -50%) rotate(135deg); }
-      #new-landing .types-clippers .item:nth-child(5) .item__label {
-        -webkit-transform: translate(190%, -65%) rotate(-226deg);
-        transform: translate(190%, -65%) rotate(-226deg); }
     #new-landing .types-clippers .item .window {
       position: absolute;
       z-index: 10;
@@ -2991,6 +2991,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-orient: horizontal;
@@ -3004,7 +3007,7 @@ body {
     #new-landing .folder-protect {
       padding: 35px 0; } }
   #new-landing .folder-protect .inner {
-    width: 600px;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3019,10 +3022,7 @@ body {
     @media only screen and (max-width: 1200px) {
       #new-landing .folder-protect .inner {
         width: 100%;
-        -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-        order: -1;
-        margin-bottom: 25px; } }
+        margin: 25px 0; } }
   #new-landing .folder-protect .caption {
     margin-bottom: 25px; }
   #new-landing .folder-protect .icons {
@@ -3043,10 +3043,22 @@ body {
         justify-content: center; } }
   #new-landing .folder-protect__img {
     display: block;
-    width: 53%; }
+    width: 30%; }
+    #new-landing .folder-protect__img.left {
+      -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); }
+      @media only screen and (max-width: 1200px) {
+        #new-landing .folder-protect__img.left {
+          margin-right: auto; } }
+    #new-landing .folder-protect__img.right {
+      -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); }
+      @media only screen and (max-width: 1200px) {
+        #new-landing .folder-protect__img.right {
+          margin-left: auto; } }
     @media only screen and (max-width: 1200px) {
       #new-landing .folder-protect__img {
-        width: 97%; } }
+        width: 80%; } }
   #new-landing .folder-protect .item {
     margin: 10px;
     display: -webkit-box;
@@ -3071,7 +3083,7 @@ body {
       height: auto;
       margin-bottom: 15px; }
     #new-landing .folder-protect .item__text {
-      font: 300 16px 'Inter', sans-serif; }
+      font: 300 14px 'Inter', sans-serif; }
 
 #new-landing .security {
   padding: 90px 0; }
@@ -3095,7 +3107,8 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 350px; }
+    width: 350px;
+    z-index: 2; }
     @media only screen and (max-width: 700px) {
       #new-landing .security .caption {
         position: static;
@@ -3265,7 +3278,8 @@ body {
         width: 200px; } }
     @media only screen and (max-width: 575px) {
       #new-landing .choose-folder__img {
-        display: none; } }
+        width: 30%;
+        padding: 10px 5px; } }
   #new-landing .choose-folder .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3276,6 +3290,11 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media only screen and (max-width: 575px) {
+      #new-landing .choose-folder .container {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
   #new-landing .choose-folder .caption {
     margin-bottom: 10px; }
   #new-landing .choose-folder__title {
@@ -3300,7 +3319,8 @@ body {
     @media only screen and (max-width: 575px) {
       #new-landing .choose-folder .inner {
         margin-left: 0;
-        width: 100%; } }
+        width: 70%;
+        padding-left: 10px; } }
   #new-landing .choose-folder-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3362,8 +3382,11 @@ body {
           left: -25px;
           -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%); }
+    #new-landing .choose-folder-block .colors-text {
+      width: 100%; }
     #new-landing .choose-folder-block .colors {
-      margin-left: -10px; }
+      margin-left: -10px;
+      width: 200px; }
       @media only screen and (max-width: 800px) {
         #new-landing .choose-folder-block .colors {
           padding-left: 0; } }

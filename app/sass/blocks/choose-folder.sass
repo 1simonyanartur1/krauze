@@ -10,11 +10,14 @@
 		@include mq($max-width: 700px)
 			width: 200px
 		@include mq($max-width: 575px)
-			display: none
+			width: 30%
+			padding: 10px 5px
 	.container
 		display: flex
 		align-items: flex-start
 		justify-content: center
+		@include mq($max-width: 575px)
+			align-items: center
 	.caption
 		margin-bottom: 10px
 	&__title
@@ -35,7 +38,8 @@
 			margin-left: 20px
 		@include mq($max-width: 575px)
 			margin-left: 0
-			width: 100%
+			width: 70%
+			padding-left: 10px
 	&-block
 		display: flex
 		flex-wrap: wrap
@@ -84,8 +88,11 @@
 					top: 50%
 					left: -25px
 					transform: translate(0, -50%)
+		.colors-text
+			width: 100%
 		.colors
 			margin-left: -10px
+			width: 200px
 			@include mq($max-width: 800px)
 				padding-left: 0
 			li

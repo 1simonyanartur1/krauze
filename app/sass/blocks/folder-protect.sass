@@ -3,6 +3,7 @@
 	padding: 130px 0 75px
 	display: flex
 	align-items: center
+	justify-content: space-between
 	flex-wrap: wrap
 	flex-direction: row
 	@include mq($max-width: 1500px)
@@ -10,15 +11,14 @@
 	@include mq($max-width: 1200px)
 		padding: 35px 0
 	.inner
-		width: 600px
+		width: 40%
 		display: flex
 		flex-direction: column
 		align-items: center
 		text-align: center
 		@include mq($max-width: 1200px)
 			width: 100%
-			order: -1
-			margin-bottom: 25px
+			margin: 25px 0
 	.caption
 		margin-bottom: 25px
 	.icons
@@ -31,9 +31,17 @@
 			justify-content: center
 	&__img
 		display: block
-		width: 53%
+		width: 30%
+		&.left
+			clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%)
+			@include mq($max-width: 1200px)
+				margin-right: auto
+		&.right
+			clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)
+			@include mq($max-width: 1200px)
+				margin-left: auto
 		@include mq($max-width: 1200px)
-			width: 97%
+			width: 80%
 	.item
 		margin: 10px
 		display: flex
@@ -50,4 +58,4 @@
 			height: auto
 			margin-bottom: 15px
 		&__text
-			font: 300 16px 'Inter', sans-serif
+			font: 300 14px 'Inter', sans-serif
