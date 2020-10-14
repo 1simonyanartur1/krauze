@@ -49,6 +49,11 @@
 				transform: translate(-50%, -50%) rotate(-5deg)
 			.item__label
 				transform: translate(-50%, -50%) rotate(-5deg)
+				left: -15px
+				@include mq($max-width: 1200px)
+					left: 0
+				@include mq($max-width: 575px)
+					left: 10px
 		&:nth-child(2)
 			right: 0
 			top: 50%
@@ -115,6 +120,9 @@
 					flex-wrap: wrap
 			&__label
 				margin-right: 15px
+				width: 50px
+				height: auto
+				display: block
 				@include mq($max-width: 1200px)
 					display: none
 			&__title

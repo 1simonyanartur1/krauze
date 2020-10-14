@@ -12,6 +12,7 @@
 		padding: 35px 0
 	.inner
 		width: 40%
+		// width: 100%
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -21,9 +22,17 @@
 			margin: 25px 0
 	.caption
 		margin-bottom: 25px
-	.icons
+		text-align: center
 		display: flex
-		justify-content: space-between
+		flex-direction: column
+		align-items: center
+		&__subtitle
+			margin-bottom: 0
+	.icons
+		width: 100%
+		display: flex
+		// justify-content: space-between
+		justify-content: center
 		position: relative
 		z-index: 2
 		@include mq($max-width: 575px)
@@ -43,11 +52,15 @@
 		@include mq($max-width: 1200px)
 			width: 80%
 	.item
-		margin: 10px
+		// margin: 10px
+		margin: 1%
 		display: flex
 		flex-direction: column
 		align-items: center
 		text-align: center
+		width: 24%
+		@include mq($max-width: 1700px)
+			width: 31%
 		@include mq($max-width: 575px)
 			width: 48%
 			margin: 1%

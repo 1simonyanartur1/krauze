@@ -1,6 +1,7 @@
 #new-landing .new-clippers
 	padding: 50px 0
 	.container
+		position: relative
 		@include mq($max-width: 1300px)
 			max-width: 1000px
 	.caption
@@ -58,3 +59,15 @@
 				right: -60px
 			@include mq($max-width: 1200px)
 				right: 20px
+	.list
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 2
+		font: 400 15px/1.4 'Inter', sans-serif
+		@include mq($max-width: 800px)
+			position: static
+			padding: 0 30px
+		li
+			margin-bottom: 5px
+			list-style-type: decimal

@@ -5,7 +5,6 @@ html
 	include ../blocks/head.pug
 		title Краузе - Фолдер
 	body
-
 		.page-container#new-landing
 			section.mainblock-folder
 				.container
@@ -35,6 +34,15 @@ html
 			section.new-clippers
 				.container
 					img(src=imgUrl+"folder-schema.jpg", alt="")
+					ol.list
+						li Пластиковая обложка
+						li Одна или две съемные тетради
+						li Обечайка
+						li Фиксирующая резинка
+						li Крепежные резинки для тетрадей
+						li Выемки для удобного перелистывания
+						li Выемки под фиксирующей резинкой
+						li Выемки под крепежными резинками
 
 			section.folder-colors
 				.container
@@ -58,7 +66,7 @@ html
 							img.item__img(src=imgUrl+"folder-complication/img1.jpg", alt="")
 							img.item__circle(src=imgUrl+"folder-complication/circle.png", alt="")
 						.item(data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
-							img.item__img(src=imgUrl+"folder-complication/img2.jpg", alt="")
+							img.item__img(src=imgUrl+"folder-complication/img1.jpg", alt="")
 							img.item__circle(src=imgUrl+"folder-complication/circle.png", alt="")
 
 			section.two-formats
@@ -71,16 +79,12 @@ html
 						p.caption__text(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Доступны два разных формата А4 и А5+
 					.inner
 						.item(data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
-							h3.item__title 
-								//- Erichkrause
-								//- strong FOLDERBOOK
+							h3.item__title
 								span А4
 							img.item__img(src=imgUrl+"two-formats/img1.png", alt="")
 						.item(data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
 							img.item__img(src=imgUrl+"two-formats/img2.png", alt="")
 							h3.item__title 
-								//- Erichkrause
-								//- strong FOLDERBOOK
 								span А5+
 
 			section.folder-advantages
@@ -108,6 +112,7 @@ html
 				.inner
 					.caption
 						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Защита и долгий срок службы
+						.caption__line
 					.icons
 						.item(data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 							img.item__icon(src=imgUrl+"folder-protect/icon1.png", alt="")
@@ -128,14 +133,27 @@ html
 						p.caption__text Уголки скруглены, что обеспечивает безопасность для одежды и человека.
 					img.security__img(src=imgUrl+"security/img.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 
-			section.folder-color
+			//- section.folder-color
+			//- 	.container
+			//- 		.caption
+			//- 			h2.caption__title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки
+			//- 			h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Выбери свой цвет. Или даже два!
+			//- 			.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+			//- 			p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки – тетради 48 листов в клетку со специально разработанным дизайном обложки для подписи названий, а также цветовой идентификации предметов. Сменные блоки FB Solution можно приобрести отдельно или использовать любую тетрадь на скобе ErichKrause.
+					//- img.folder-color__img(src=imgUrl+"folder-color/img.png", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+
+			section.folder-colors
 				.container
 					.caption
 						h2.caption__title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки
 						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Выбери свой цвет. Или даже два!
 						.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
-						p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки – тетради 48 листов в клетку со специально разработанным дизайном обложки для подписи названий, а также цветовой идентификации предметов. Сменные блоки FB Solution можно приобрести отдельно или использовать любую тетрадь на скобе ErichKrause.
-					img.folder-color__img(src=imgUrl+"folder-color/img.png", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки – тетради 48 листов в клетку со специально разработанным <br> дизайном обложки для подписи названий, а также цветовой идентификации предметов. <br> Сменные блоки FB Solution можно приобрести отдельно или использовать любую тетрадь <br> на скобе ErichKrause.
+					.inner
+						img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						img(src=imgUrl+"folder-colors/img2.jpg", alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+						img(src=imgUrl+"folder-colors/img3.jpg", alt="" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+						img(src=imgUrl+"folder-colors/img4.jpg", alt="" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" data-aos-offset="100")
 
 			section.folder-social
 				.container
@@ -161,7 +179,8 @@ html
 					.inner(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.caption
 							h2.caption__title Выбери свой «FolderBook» 
-						h2.choose-folder__subtitle Самые востребованные форматы А5+ и А4
+						//- h2.choose-folder__subtitle Самые востребованные форматы А5+ и А4
+						img.choose-folder__img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.choose-folder-block
 							p Формат:
 							ul.formats

@@ -1,5 +1,5 @@
 - var imgUrl = 'img/';
-
+ 
 doctype
 html
 	include ../blocks/head.pug
@@ -19,13 +19,13 @@ html
 
 			section.video
 				.container
-					img.video__img(src=imgUrl+"poster1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-					//- <video controls="controls" poster="img/poster1.jpg">
-						//- <source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
-						//- <source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						//- <source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
-						//- p Тег video не поддерживается вашим браузером.
-					//- </video>
+					//- img.video__img(src=imgUrl+"poster1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
+					<video controls="controls" poster="img/poster1.jpg">
+						<source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						<source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
+						p Тег video не поддерживается вашим браузером.
+					</video>
 					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
 						.caption
 							h2.caption__title Ножницы ErichKrause<sup>®</sup>
@@ -77,7 +77,7 @@ html
 							img.item__clipper(src=imgUrl+"types-clippers/clipper4.png", data-mobile="img/types-clippers/clipper4-m.png" alt="")
 							.window
 								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label5.jpg", alt="")
+									img.window__label(src=imgUrl+"types-clippers/label2+.jpg", alt="")
 									h3.window__title Улучшенная заточка лезвий
 								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
 								img.window__img(src=imgUrl+"gif.gif", alt="")

@@ -14,7 +14,7 @@
 		box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15)
 		border-radius: 10px
 		margin-bottom: 80px
-		overflow: hidden
+		// overflow: hidden
 		@include mq($max-width: 700px)
 			border: 1px solid #ACACAC
 		@include mq($max-width: 575px)
@@ -22,6 +22,7 @@
 			flex-wrap: wrap
 			align-items: flex-start
 	.tab
+		border: none
 		border-left: 1px solid #ACACAC
 		border-right: 1px solid #ACACAC
 		border-bottom: 1px solid #ACACAC
@@ -31,7 +32,7 @@
 		@include mq($max-width: 1000px)
 			justify-content: space-between
 		@include mq($max-width: 700px)
-			padding: 25px 0 0
+			padding: 15px 0 0
 			border: none
 		@include mq($max-width: 575px)
 			width: 60%
@@ -46,7 +47,7 @@
 			width: 49%
 		@include mq($max-width: 700px)
 			padding: 0 10px
-			margin-bottom: 25px
+			margin-bottom: 15px
 		@include mq($max-width: 575px)
 			width: 100%
 		&:hover
@@ -72,6 +73,7 @@
 			margin-bottom: 18px
 			@include mq($max-width: 575px)
 				width: 90%
+				margin-bottom: 0
 		&__title
 			font: 700 27px 'Inter', sans-serif
 			color: #5F5F5F
@@ -124,11 +126,6 @@
 			width: 40%
 		li
 			width: 20%
-			@include mq($max-width: 700px)
-			// 	&:first-child a
-			// 		border-left: none
-			// 	&:last-child a
-			// 		border-right: none
 			@include mq($max-width: 575px)
 				width: 100%
 		.ui-tabs-active
@@ -152,7 +149,6 @@
 			@include mq($max-width: 700px)
 				border: 1px solid #ACACAC
 				border-top: none
-				// border-bottom: none
 				border-left: none
 			@include mq($max-width: 575px)
 				height: 100px
@@ -179,6 +175,9 @@
 			.tab
 				width: 100%
 			.ui-tabs-nav
+				overflow: hidden
+				border-top-left-radius: 10px
+				border-top-right-radius: 10px
 				li
 					width: 20%
 					&:first-child a
@@ -187,9 +186,30 @@
 						border-right: none
 					&.ui-tabs-active a
 						border-bottom: none
-				a
-					border: 1px solid #ACACAC
 			.card
 				width: 50%
 				&__title
 					font-size: 14px
+
+
+	.ui-widget.ui-widget-content
+		border: none
+	.ui-widget-content
+		background: none
+	.ui-tabs
+		padding: 0
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+		border: none
+	.ui-tabs .ui-tabs-nav li
+		margin: 0
+	.ui-tabs .ui-tabs-nav li
+		float: none
+	.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+		background: none
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor
+		float: none
+		padding: 0
+	.ui-widget-header
+		border: none
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active
+		padding: 0

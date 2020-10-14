@@ -1,6 +1,7 @@
 #new-landing .mainblock-folder
 	background: url($imgUrl+'mainblock-folder/bg.jpg') no-repeat center center / cover
 	color: $white
+	// @include mq($max-width: 575px)
 	.container
 		display: flex
 		align-items: center
@@ -11,6 +12,10 @@
 			min-height: 400px
 		@include mq($max-width: 700px)
 			min-height: 300px
+		@include mq($max-width: 575px)
+			padding-bottom: 25px
+			min-height: 275px
+			align-items: flex-end
 	.inner
 		position: relative
 		z-index: 2
@@ -25,6 +30,8 @@
 			font-size: 40px
 		@include mq($max-width: 700px)
 			font-size: 28px
+		@include mq($max-width: 400px)
+			font-size: 23px
 	.subtitle
 		font: 300 24px 'Inter', sans-serif
 		margin-bottom: 25px
@@ -32,6 +39,8 @@
 			font-size: 22px
 		@include mq($max-width: 700px)
 			font-size: 16px
+		@include mq($max-width: 400px)
+			font-size: 13px
 	.text
 		font: 300 17px/1.8 'Inter', sans-serif
 		margin-bottom: 60px
@@ -49,5 +58,6 @@
 			right: -10%
 		@include mq($max-width: 575px)
 			right: -30%
+			bottom: 0
 		@include mq($max-width: 400px)
 			opacity: .5

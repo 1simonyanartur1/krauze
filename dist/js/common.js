@@ -180,7 +180,6 @@
 			} else if($(this).data('color') == 'uniq_props_covercolor-is-синий/') {
 				$('.choose-folder__img').attr('src', '../img/folder-colors/img4.jpg');
 			}
-
 		});
 		$(document).on('click', '.choose-folder .quantity li', function () {
 			$('.choose-folder .quantity li').removeClass('active');
