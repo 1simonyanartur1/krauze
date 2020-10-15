@@ -53,24 +53,29 @@
 		padding: 25px 0
 	.container
 		display: flex
-		align-items: center
 		position: relative
 		z-index: 2
 		min-height: 530px
 		@include mq($max-width: 1000px)
 			flex-direction: column
 			align-items: center
+			justify-content: space-between
 			min-height: 600px
 		@include mq($max-width: 575px)
-			min-height: 530px
+			min-height: 0
 	.inner
 		width: 60%
 		position: relative
 		z-index: 2
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px 0
 		@include mq($max-width: 1000px)
 			width: 100%
 			text-align: center
 			position: static
+			padding: 0
 	&__img
 		position: absolute
 		z-index: 1
@@ -86,9 +91,10 @@
 		@include mq($max-width: 1000px)
 			position: static
 			width: 30%
-		@include mq($max-width: 550px)
-			width: 70%
+		@include mq($max-width: 575px)
+			width: auto
 			margin-left: auto
+			height: 200px
 	&__label
 		display: block
 		width: 100px
@@ -109,7 +115,6 @@
 			font-size: 22px
 	&__text
 		font: 400 16px/1.6 'Inter', sans-serif
-		margin-bottom: 65px
 		@include mq($max-width: 1000px)
 			margin-left: auto
 			margin-right: auto
@@ -117,7 +122,6 @@
 			font-size: 14px
 		@include mq($max-width: 550px)
 			width: 100%
-			margin-bottom: 25px
 			font-size: 12px
 	&-list
 		display: flex
@@ -127,10 +131,11 @@
 		word-wrap: break-word
 		@include mq($max-width: 1000px)
 			justify-content: space-between
-		@include mq($max-width: 550px)
+		@include mq($max-width: 575px)
 			font-size: 12px
 			line-height: 1.4
 			flex-wrap: wrap
+			height: 200px
 		img
 			margin-bottom: 15px
 			display: inline-block
@@ -147,11 +152,17 @@
 		display: flex
 		align-items: flex-start
 		@include mq($max-width: 1000px)
-		text-align: left
-		@include mq($max-width: 1000px)
 			flex-direction: column
 			align-items: center
 			text-align: center
+			margin-bottom: 25px
+		@include mq($max-width: 575px)
+			height: 150px
+		&-wrap
+			display: block
+			width: calc( 100% - 130px )
+			@include mq($max-width: 575px)
+				width: 100%
 	.bg-text
 		position: absolute
 		left: 0
