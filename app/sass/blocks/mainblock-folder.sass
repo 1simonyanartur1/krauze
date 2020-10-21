@@ -1,7 +1,6 @@
 #new-landing .mainblock-folder
 	background: url($imgUrl+'mainblock-folder/bg.jpg') no-repeat center center / cover
 	color: $white
-	// @include mq($max-width: 575px)
 	.container
 		display: flex
 		align-items: center
@@ -41,6 +40,10 @@
 			font-size: 16px
 		@include mq($max-width: 400px)
 			font-size: 13px
+			font-size: 15px
+			width: 150px
+			margin-bottom: 10px
+			line-height: 1.6
 	.text
 		font: 300 17px/1.8 'Inter', sans-serif
 		margin-bottom: 60px
@@ -60,4 +63,4 @@
 			right: -30%
 			bottom: 0
 		@include mq($max-width: 400px)
-			opacity: .5
+			right: -40%

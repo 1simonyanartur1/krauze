@@ -13,6 +13,14 @@
 			margin-left: -100px
 		@include mq($max-width: 700px)
 			margin-left: 0
+		@include mq($max-width: 575px)
+			display: none
+	&__img2
+		display: none
+		width: 100%
+		height: auto
+		@include mq($max-width: 575px)
+			display: block
 	.caption
 		position: absolute
 		right: 0
