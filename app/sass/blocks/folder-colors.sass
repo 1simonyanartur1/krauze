@@ -1,5 +1,9 @@
 #new-landing .folder-colors
 	padding: 60px 0
+	&.type2
+		.caption
+			&__line
+				margin-bottom: 50px
 	@include mq($max-width: 1200px)
 		padding: 30px 0
 	.container
@@ -12,8 +16,6 @@
 		margin-bottom: 65px
 		@include mq($max-width: 1200px)
 			margin-bottom: 30px
-		&__line
-			margin-bottom: 50px
 	.inner
 		display: flex
 		flex-wrap: wrap

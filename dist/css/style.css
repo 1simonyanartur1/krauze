@@ -2619,6 +2619,8 @@ body {
 
 #new-landing .folder-colors {
   padding: 60px 0; }
+  #new-landing .folder-colors.type2 .caption__line {
+    margin-bottom: 50px; }
   @media only screen and (max-width: 1200px) {
     #new-landing .folder-colors {
       padding: 30px 0; } }
@@ -2640,8 +2642,6 @@ body {
     @media only screen and (max-width: 1200px) {
       #new-landing .folder-colors .caption {
         margin-bottom: 30px; } }
-    #new-landing .folder-colors .caption__line {
-      margin-bottom: 50px; }
   #new-landing .folder-colors .inner {
     display: -webkit-box;
     display: -ms-flexbox;
