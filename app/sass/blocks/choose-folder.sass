@@ -112,11 +112,13 @@
 			width: 100%
 		.colors
 			margin-left: -10px
-			width: 300px
+			width: 100%
+			justify-content: flex-start
 			@include mq($max-width: 800px)
 				padding-left: 0
 			@include mq($max-width: 575px)
-				width: 180px
+				margin-left: 0
+				justify-content: center
 			li
 				width: 30px
 				height: 30px
@@ -164,3 +166,18 @@
 	.btns
 		@include mq($max-width: 575px)
 			margin-top: 30px
+	.colors-block
+		width: 100px
+		height: auto
+		@include mq($max-width: 575px)
+			width: 100%
+		&:not(:last-child)
+			margin-right: 15px
+			@include mq($max-width: 575px)
+				margin-right: 0
+		&__title
+			padding-top: 5px
+			font: 500 16px 'Inter', sans-serif
+			@include mq($max-width: 575px)
+				font-size: 14px
+				padding-bottom: 10px

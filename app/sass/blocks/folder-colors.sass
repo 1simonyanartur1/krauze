@@ -21,10 +21,8 @@
 		flex-wrap: wrap
 		justify-content: center
 		align-items: center
-	img
-		display: block
+	.item
 		width: 240px
-		height: auto
 		margin: 30px
 		@include mq($max-width: 1200px)
 			width: 200px
@@ -33,4 +31,19 @@
 			width: 23%
 			margin: 1%
 		@include mq($max-width: 575px)
-			width: 31%
+			width: 48%
+		&__img
+			display: block
+			height: auto
+			width: 100%
+		&__title
+			padding-top: 20px
+			text-align: center
+			text-transform: uppercase
+			font: 700 18px 'Inter', sans-serif
+			@include mq($max-width: 1200px)
+				font-size: 16px
+			@include mq($max-width: 800px)
+				font-size: 14px
+			@include mq($max-width: 400px)
+				font-size: 12px
