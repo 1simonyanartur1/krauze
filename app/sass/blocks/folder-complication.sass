@@ -6,8 +6,12 @@
 		padding: 35px 0
 	.caption
 		margin-bottom: 100px
+		text-align: center
 		@include mq($max-width: 1200px)
 			margin-bottom: 50px
+		&__line
+			margin-left: auto
+			margin-right: auto
 	.inner
 		display: flex
 		align-items: center
@@ -44,7 +48,7 @@
 				text-align: right
 				transform: rotate(12deg)
 				span
-					color: $blue
+					// color: $blue
 		&__img
 			display: block
 			width: 100%
@@ -64,13 +68,14 @@
 				width: 100px
 				height: 100px
 		&__text
-			font: 400 30px 'Inter', sans-serif
+			font: 700 30px 'Inter', sans-serif
 			transform: rotate(-15deg)
 			@include mq($max-width: 700px)
 				font-size: 20px
 			span
-				font-size: 50px
-				color: $red
-				font-weight: 900
+				font-size: 70px
+				// color: $red
+				color: $black
+				font-weight: 800
 				@include mq($max-width: 700px)
 					font-size: 30px

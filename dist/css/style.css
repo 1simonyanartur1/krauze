@@ -2696,10 +2696,14 @@ body {
     #new-landing .folder-complication {
       padding: 35px 0; } }
   #new-landing .folder-complication .caption {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    text-align: center; }
     @media only screen and (max-width: 1200px) {
       #new-landing .folder-complication .caption {
         margin-bottom: 50px; } }
+    #new-landing .folder-complication .caption__line {
+      margin-left: auto;
+      margin-right: auto; }
   #new-landing .folder-complication .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2750,8 +2754,6 @@ body {
       text-align: right;
       -webkit-transform: rotate(12deg);
       transform: rotate(12deg); }
-      #new-landing .folder-complication .item:last-child .item__text span {
-        color: #1F66B8; }
     #new-landing .folder-complication .item__img {
       display: block;
       width: 100%; }
@@ -2774,16 +2776,16 @@ body {
           width: 100px;
           height: 100px; } }
     #new-landing .folder-complication .item__text {
-      font: 400 30px 'Inter', sans-serif;
+      font: 700 30px 'Inter', sans-serif;
       -webkit-transform: rotate(-15deg);
       transform: rotate(-15deg); }
       @media only screen and (max-width: 700px) {
         #new-landing .folder-complication .item__text {
           font-size: 20px; } }
       #new-landing .folder-complication .item__text span {
-        font-size: 50px;
-        color: #E91C2E;
-        font-weight: 900; }
+        font-size: 70px;
+        color: #000;
+        font-weight: 800; }
         @media only screen and (max-width: 700px) {
           #new-landing .folder-complication .item__text span {
             font-size: 30px; } }
