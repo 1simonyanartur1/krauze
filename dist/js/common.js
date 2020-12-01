@@ -52,7 +52,7 @@
 				autoplay: true,
 				autoplaySpeed: 5000
 			});
-			
+
 			$('.universal-glue .list li:first-child').addClass('active');
 
 			$('.universal-glue .images2').on('init, afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -121,8 +121,8 @@
 			// autoplaySpeed: 5000
 		});
 
-		if($(window).width() < 600) {
-			$('.types-clippers .item__clipper').each(function() {
+		if ($(window).width() < 600) {
+			$('.types-clippers .item__clipper').each(function () {
 				var imgMobile = $(this).data('mobile');
 				$(this).attr('src', imgMobile);
 			});
@@ -141,53 +141,34 @@
 
 
 		var btn = $('.choose-folder .btns .btn1');
-		var formats = $('.choose-folder .formats li.active');
-		var colors = $('.choose-folder .colors li.active');
-		var quantity = $('.choose-folder .quantity li.active');
+		var formats = '';
+		var colors = '';
+		var quantity = '';
+		// Исходная ссылка
+		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/price-price_rrp-from-52-to-329/model_name-is-folderbook/';
 
-		// console.log(formats.html());
-
-		if (formats.hasClass('active')) {
-			btn.attr('href', btn.attr('href') + formats.data('format'));
-		} else {}
-		if (colors.hasClass('active')) {
-			btn.attr('href', btn.attr('href') + colors.data('color'));
-		} else {}
-		if (quantity.hasClass('active')) {
-			btn.attr('href', btn.attr('href') + quantity.data('quantity'));
-		} else {}
-
-		btn.attr('href', btn.attr('href') + 'apply/');
-
+		// Функция формирует ссылку
 		$(document).on('click', '.choose-folder .formats li', function () {
 			$('.choose-folder .formats li').removeClass('active');
 			$(this).addClass('active');
-			formats = $(this);
-			btn.attr('href', btn.attr('href').replace(btn.attr('href'), 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/' + $(this).data('format') + colors.data('color') + quantity.data('quantity') + 'apply/'));
+			formats = $(this).data('format');
 		});
+		// Выделяем активный элемент цвета
 		$(document).on('click', '.choose-folder .colors li', function () {
 			$('.choose-folder .colors li').removeClass('active');
 			$(this).addClass('active');
-			colors = $(this);
-			btn.attr('href', btn.attr('href').replace(btn.attr('href'), 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/' + formats.data('format') + $(this).data('color') + quantity.data('quantity') + 'apply/'));
-
-			if($(this).data('color') == 'uniq_props_covercolor-is-красный/') {
-				$('.choose-folder__img').attr('src', '../img/folder-colors/img3.jpg');
-			} else if($(this).data('color') == 'uniq_props_covercolor-is-зеленый/') {
-				$('.choose-folder__img').attr('src', '../img/folder-colors/img2.jpg');
-			} else if($(this).data('color') == 'uniq_props_covercolor-is-черный/') {
-				$('.choose-folder__img').attr('src', '../img/folder-colors/img1.jpg');
-			} else if($(this).data('color') == 'uniq_props_covercolor-is-синий/') {
-				$('.choose-folder__img').attr('src', '../img/folder-colors/img4.jpg');
-			}
+			colors = $(this).data('color');
 		});
+		// Выделяем активный элемент кол-ва листов
 		$(document).on('click', '.choose-folder .quantity li', function () {
 			$('.choose-folder .quantity li').removeClass('active');
 			$(this).addClass('active');
-			quantity = $(this);
-			btn.attr('href', btn.attr('href').replace(btn.attr('href'), 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/' + formats.data('format') + colors.data('color') + $(this).data('quantity') + 'apply/'));
+			quantity = $(this).data('quantity');
 		});
 
+		$(document).on('click', '.choose-folder li', function () {
+			btn.attr('href', `${startLink}${formats}${colors}${quantity}apply/`);
+		});
 	});
 
 	setTimeout(function () {
