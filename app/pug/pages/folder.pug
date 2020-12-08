@@ -1,17 +1,17 @@
 - var imgUrl = 'img/';
-
+ 
 doctype
 html
 	include ../blocks/head.pug
 		title Краузе - Фолдер
 	body
 		.page-container#new-landing
+
 			section.mainblock-folder
 				.container
 					.inner
 						h1.title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") FolderBook
 						h4.subtitle(data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="") Два в одном: тетрадь и папка!
-						//- p.text(data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="") FolderBook - это особый тип современных тетрадей. Объединяет в себе функционал тетради и папки.
 						a.btn1(href="#" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Перейти в каталог
 					img(src=imgUrl+"mainblock-folder/img.png", alt="")
 			
@@ -28,7 +28,6 @@ html
 						.caption
 							h2.caption__title ErichKrause<sup>®</sup> FolderBook
 							.caption__line
-							//- p.caption__subtitle Erich Krause представляет
 							p.caption__text FolderBook - это особый тип современных тетрадей. Объединяет в себе функционал тетради и папки. Универсальная и удобная тетрадь-папка FolderBook обладает малым весом и компактными габаритами. Плотная обложка надежно защищает содержимое. Блоки легко менять и при этом они надежно фиксируются.
 
 			section.new-clippers
@@ -92,14 +91,12 @@ html
 							.item-inner
 								h3.item__title
 									span А4
-								//- .item__text <span>48</span> листов
 							img.item__img(src=imgUrl+"two-formats/img1.png", alt="")
 						.item(data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
 							img.item__img(src=imgUrl+"two-formats/img2.png", alt="")
 							.item-inner
 								h3.item__title 
 									span А5+
-								//- .item__text <span>2 * 48</span> листов
 
 			section.folder-advantages
 				.container
@@ -148,15 +145,6 @@ html
 					img.security__img(src=imgUrl+"security/img.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 					img.security__img2(src=imgUrl+"security/img2.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 
-			//- section.folder-color
-			//- 	.container
-			//- 		.caption
-			//- 			h2.caption__title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки
-			//- 			h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Выбери свой цвет. Или даже два!
-			//- 			.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
-			//- 			p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки – тетради 48 листов в клетку со специально разработанным дизайном обложки для подписи названий, а также цветовой идентификации предметов. Сменные блоки FB Solution можно приобрести отдельно или использовать любую тетрадь на скобе ErichKrause.
-					//- img.folder-color__img(src=imgUrl+"folder-color/img.png", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
-
 			section.folder-colors.type2 
 				.container
 					.caption
@@ -198,12 +186,11 @@ html
 
 			section.choose-folder
 				.container
-					img.choose-folder__img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+					img.choose-folder__img(src=imgUrl+"choose-folder/img.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 					.inner(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.caption
 							h2.caption__title Выбери свой «FolderBook» 
-						//- h2.choose-folder__subtitle Самые востребованные форматы А5+ и А4
-						img.choose-folder__img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						img.choose-folder__img(src=imgUrl+"choose-folder/img.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.choose-folder-block
 							p Формат:
 							ul.formats
@@ -213,24 +200,17 @@ html
 							p.colors-text Выбери свой цвет:
 							.colors-block
 								ul.colors
-									li.black(data-color="uniq_props_covercolor-is-черный/")
-									li.red(data-color="uniq_props_covercolor-is-красный/")
-									li.green(data-color="uniq_props_covercolor-is-зеленый/")
-									li.blue(data-color="uniq_props_covercolor-is-синий/")
+									li.black(data-color="uniq_props_covercolor-is-черный/" data-img="black.jpg")
+									li.red(data-color="uniq_props_covercolor-is-красный/" data-img="red.jpg")
+									li.green(data-color="uniq_props_covercolor-is-зеленый/" data-img="green.jpg")
+									li.blue(data-color="uniq_props_covercolor-is-синий/" data-img="blue.jpg")
 								.colors-block__title Classic
 							.colors-block
 								ul.colors
-									li.black(data-color="uniq_props_covercolor-is-черный/")
-									li.red(data-color="uniq_props_covercolor-is-красный/")
-									li.green(data-color="uniq_props_covercolor-is-зеленый/")
-									li.blue(data-color="uniq_props_covercolor-is-синий/")
-								.colors-block__title Accent
-							.colors-block
-								ul.colors
-									li.black(data-color="uniq_props_covercolor-is-черный/")
-									li.red(data-color="uniq_props_covercolor-is-красный/")
-									li.green(data-color="uniq_props_covercolor-is-зеленый/")
-									li.blue(data-color="uniq_props_covercolor-is-синий/")
+									li.lilac(data-color="uniq_props_covercolor-is-фиолетовый/" data-img="lilac.jpg")
+									li.pink(data-color="uniq_props_covercolor-is-розовый/" data-img="pink.jpg")
+									li.yellow(data-color="uniq_props_covercolor-is-желтый/" data-img="yellow.jpg")
+									li.light-blue(data-color="uniq_props_covercolor-is-голубой/" data-img="light-blue.jpg")
 								.colors-block__title Pastel
 						.choose-folder-block
 							p Количество листов:
@@ -239,7 +219,7 @@ html
 								li(data-quantity="uniq_props_sheetqty-is-96/") 2х48
 						ul.btns
 							li
-								a.btn1(href="" target="_blank" rel="noopener noreferrer") Перейти в каталог
+								a.btn1(href="https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/apply/" target="_blank" rel="noopener noreferrer") Перейти в каталог
 
 			section.brand
 				img.tape1(src=imgUrl+"brand/tape1.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")

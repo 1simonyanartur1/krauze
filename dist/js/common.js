@@ -145,9 +145,9 @@
 		var colors = '';
 		var quantity = '';
 		// Исходная ссылка
-		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/price-price_rrp-from-52-to-329/model_name-is-folderbook/';
+		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/';
 
-		// Функция формирует ссылку
+		// Выделяем формат тетради
 		$(document).on('click', '.choose-folder .formats li', function () {
 			$('.choose-folder .formats li').removeClass('active');
 			$(this).addClass('active');
@@ -158,6 +158,8 @@
 			$('.choose-folder .colors li').removeClass('active');
 			$(this).addClass('active');
 			colors = $(this).data('color');
+			// Заменяем активную картинку
+			$('.choose-folder__img').attr('src', '../img/choose-folder/' + $(this).data('img'));
 		});
 		// Выделяем активный элемент кол-ва листов
 		$(document).on('click', '.choose-folder .quantity li', function () {

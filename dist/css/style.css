@@ -3401,7 +3401,7 @@ body {
     display: block;
     width: 340px;
     height: auto;
-    padding: 25px;
+    padding: 15px;
     background: #fff; }
     @media only screen and (max-width: 700px) {
       #new-landing .choose-folder__img {
@@ -3589,6 +3589,22 @@ body {
           background: #367717; }
         #new-landing .choose-folder-block .colors li.blue {
           background: #1A279A; }
+        #new-landing .choose-folder-block .colors li.red2 {
+          background: #7C1622; }
+        #new-landing .choose-folder-block .colors li.orange {
+          background: #B17C48; }
+        #new-landing .choose-folder-block .colors li.green2 {
+          background: #4AD02B; }
+        #new-landing .choose-folder-block .colors li.blue2 {
+          background: #2F3E67; }
+        #new-landing .choose-folder-block .colors li.light-blue {
+          background: #96C4E5; }
+        #new-landing .choose-folder-block .colors li.lilac {
+          background: #C4ADF3; }
+        #new-landing .choose-folder-block .colors li.pink {
+          background: #F79DB9; }
+        #new-landing .choose-folder-block .colors li.yellow {
+          background: #EAE3AC; }
         #new-landing .choose-folder-block .colors li:before {
           display: none; }
         #new-landing .choose-folder-block .colors li:after {
