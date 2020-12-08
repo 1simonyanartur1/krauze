@@ -1933,10 +1933,7 @@ body {
       .assortment-clippers .ui-tabs-nav {
         width: 40%; } }
     .assortment-clippers .ui-tabs-nav li {
-      width: 20%; }
-      @media only screen and (max-width: 575px) {
-        .assortment-clippers .ui-tabs-nav li {
-          width: 100%; } }
+      width: 16.666%; }
     .assortment-clippers .ui-tabs-nav .ui-tabs-active a {
       border-bottom: none;
       -webkit-box-shadow: 14px -19px 24px rgba(0, 0, 0, 0.1);
@@ -1977,13 +1974,12 @@ body {
       display: block;
       max-width: 50%;
       max-height: 90%;
-      padding: 10px;
+      padding: 0;
       -webkit-transition: all .3s ease-out;
       transition: all .3s ease-out; }
       @media only screen and (max-width: 700px) {
         .assortment-clippers .ui-tabs-nav img {
-          max-width: 70%;
-          padding: 0; } }
+          max-width: 70%; } }
   @media only screen and (max-width: 700px) {
     .assortment-clippers.type2 .tabs {
       border-top: none;
@@ -1999,7 +1995,7 @@ body {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
       .assortment-clippers.type2 .ui-tabs-nav li {
-        width: 20%; }
+        width: 16.666%; }
         .assortment-clippers.type2 .ui-tabs-nav li:first-child a {
           border-left: none; }
         .assortment-clippers.type2 .ui-tabs-nav li:last-child a {
