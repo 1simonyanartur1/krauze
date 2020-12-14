@@ -151,6 +151,18 @@
 		$(document).on('click', '.choose-folder .formats li', function () {
 			$('.choose-folder .formats li').removeClass('active');
 			$(this).addClass('active');
+
+			if($('.formats li:first-child').hasClass('active')) {
+				$('.colors.pastel').addClass('disabled');
+			} else {
+				$('.colors.pastel').removeClass('disabled');
+			}
+			if($('.formats li:first-child').hasClass('active')) {
+				$('.colors.accent').addClass('disabled');
+			} else {
+				$('.colors.accent').removeClass('disabled');
+			}
+
 			formats = $(this).data('format');
 		});
 		// Выделяем активный элемент цвета
@@ -170,6 +182,10 @@
 
 		$(document).on('click', '.choose-folder li', function () {
 			btn.attr('href', `${startLink}${formats}${colors}${quantity}apply/`);
+		});
+
+		$('.choose-folder-block li').on('click', function() {
+			
 		});
 	});
 
