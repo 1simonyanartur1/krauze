@@ -6,14 +6,17 @@
 	.img-wrap
 		display: block
 		width: calc( 100% - 620px )
+		@include mq($max-width: 1000px)
+			width: auto
 	&__img
 		display: block
 		height: 500px
 		width: auto
-		@include mq($max-width: 700px)
-			height: 350px
+		@include mq($max-width: 1000px)
+			height: 400px
+		@include mq($max-width: 800px)
+			height: 300px
 		@include mq($max-width: 575px)
-			width: 35%
 			padding: 10px 5px
 			display: none
 	.container
@@ -39,7 +42,7 @@
 		margin-left: auto
 		width: 535px
 		@include mq($max-width: 1000px)
-			margin-left: 20px
+			width: 55%
 		@include mq($max-width: 575px)
 			margin: 20px 0 0 0
 			width: 100%
