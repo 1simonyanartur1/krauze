@@ -144,6 +144,13 @@
 		var formats = '';
 		var colors = '';
 		var quantity = '';
+
+		var imgFormat = 'a5';
+		var imgColor = 'black';
+		var imgSize = '96';
+		var f = 'А5+';
+		var c = 'classic';
+		var q = '48';
 		// Исходная ссылка
 		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/';
 
@@ -152,41 +159,95 @@
 			$('.choose-folder .formats li').removeClass('active');
 			$(this).addClass('active');
 
-			if($('.formats li:first-child').hasClass('active')) {
-				$('.colors.pastel').addClass('disabled');
+			// У акцента и постеля нету а4, это проверка на это условие
+			if ($('.formats li:first-child').hasClass('active')) {
+				$('.colors.pastel, .colors.accent').addClass('disabled');
+
+				if($('.colors.pastel li, .colors.accent li').hasClass('active')) {
+					$('.colors.pastel li, .colors.accent li').removeClass('active');
+					$('.colors.classic li:first-child').addClass('active');
+					$('.choose-folder__img').attr('src', '../img/choose-folder/classic-black-a5-48.png');
+					btn.attr('href', ``);
+					formats = 'uniq_props_format-is-a4/';
+					colors = 'item_collect_name-is-classic/uniq_props_covercolor-is-черный/';
+					changeUrl();
+
+					imgFormat = 'a5';
+					imgColor = 'black';
+					imgSize = '96';
+					f = 'А5+';
+					c = 'classic';
+					q = '2х48';
+					$('.choose-folder__img').attr('src', 'img/choose-folder/' + `${c}-${imgColor}-${imgFormat}-${imgSize}` + '.png');
+				} else {}
+
 			} else {
-				$('.colors.pastel').removeClass('disabled');
-			}
-			if($('.formats li:first-child').hasClass('active')) {
-				$('.colors.accent').addClass('disabled');
-			} else {
-				$('.colors.accent').removeClass('disabled');
+				$('.colors.pastel, .colors.accent').removeClass('disabled');
 			}
 
 			formats = $(this).data('format');
+			changeUrl();
 		});
 		// Выделяем активный элемент цвета
 		$(document).on('click', '.choose-folder .colors li', function () {
 			$('.choose-folder .colors li').removeClass('active');
 			$(this).addClass('active');
 			colors = $(this).data('color');
-			// Заменяем активную картинку
-			$('.choose-folder__img').attr('src', '../img/choose-folder/' + $(this).data('img'));
+			changeUrl();
 		});
 		// Выделяем активный элемент кол-ва листов
 		$(document).on('click', '.choose-folder .quantity li', function () {
 			$('.choose-folder .quantity li').removeClass('active');
 			$(this).addClass('active');
 			quantity = $(this).data('quantity');
+			changeUrl();
 		});
 
-		$(document).on('click', '.choose-folder li', function () {
+		function changeUrl() {
 			btn.attr('href', `${startLink}${formats}${colors}${quantity}apply/`);
-		});
-
-		$('.choose-folder-block li').on('click', function() {
+		}
+		function changeImg() {
+			// проверка отмечен ли формат
+			$('.choose-folder .formats li').on('click', function () {
+				f = $(this).text();
+				if(f == 'А4') {
+					imgFormat = 'a4'
+				} else if (f == 'А5+') {
+					imgFormat = 'a5'
+				}
+			});
+			// проверка отмечен ли цвет
+			$('.choose-folder .colors li').on('click', function () {
+				imgColor = $(this).attr('class');
+				if($(this).parents('.colors').hasClass('classic')) {
+					c = 'classic';
+				} else if ($(this).parents('.colors').hasClass('accent')) {
+					c = 'accent';
+				} else if ($(this).parents('.colors').hasClass('pastel')) {
+					c = 'pastel';
+				}
+			});
+			// проверка отмечен ли количество листов
+			$('.choose-folder .quantity li').on('click', function () {
+				q = $(this).text();
+				if(q == '48') {
+					imgSize = '48'
+				} else if (q == '2х48') {
+					imgSize = '96'
+				}
+			});
+			$('.choose-folder-block li').on('click', function () {
+				if(imgFormat.length != 0 && imgColor.length != 0 && imgSize.length != 0 && c.length != 0) {
+					$('.choose-folder__img').attr('src', 'img/choose-folder/' + `${c}-${imgColor}-${imgFormat}-${imgSize}` + '.png');
+				} else {}
+			});
 			
-		});
+		}
+
+		changeImg();
+
+		// Больше одного клика по активному элементу обработать
+
 	});
 
 	setTimeout(function () {

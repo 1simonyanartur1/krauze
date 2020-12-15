@@ -3393,13 +3393,16 @@ body {
   @media only screen and (max-width: 575px) {
     #new-landing .choose-folder {
       padding: 25px 0; } }
+  #new-landing .choose-folder .img-wrap {
+    display: block;
+    width: calc( 100% - 620px); }
   #new-landing .choose-folder__img {
     display: block;
-    width: 340px;
-    height: auto; }
+    height: 500px;
+    width: auto; }
     @media only screen and (max-width: 700px) {
       #new-landing .choose-folder__img {
-        width: 200px; } }
+        height: 350px; } }
     @media only screen and (max-width: 575px) {
       #new-landing .choose-folder__img {
         width: 35%;
@@ -3435,7 +3438,7 @@ body {
       #new-landing .choose-folder__subtitle {
         font-size: 16px; } }
   #new-landing .choose-folder .inner {
-    margin-left: 130px;
+    margin-left: auto;
     width: 535px; }
     @media only screen and (max-width: 1000px) {
       #new-landing .choose-folder .inner {

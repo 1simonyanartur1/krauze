@@ -186,21 +186,22 @@ html
 
 			section.choose-folder
 				.container
-					img.choose-folder__img(src=imgUrl+"choose-folder/img.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+					.img-wrap
+						img.choose-folder__img(src=imgUrl+"choose-folder/classic-black-a5-48.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 					.inner(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.caption
 							h2.caption__title Выбери свой «FolderBook» 
-						img.choose-folder__img(src=imgUrl+"choose-folder/img.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						img.choose-folder__img(src=imgUrl+"choose-folder/classic-black-a5-48.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
 						.choose-folder-block
 							p Формат:
 							ul.formats
 								li(data-format="uniq_props_format-is-a4/") А4
-								li(data-format="uniq_props_format-is-a5%2B/") А5+
+								li.active(data-format="uniq_props_format-is-a5%2B/") А5+
 						.choose-folder-block
 							p.colors-text Выбери свой цвет:
 							.colors-block
 								ul.colors.classic
-									li.black(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-черный/" data-img="classic-black-a5-48.png")
+									li.black.active(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-черный/" data-img="classic-black-a5-48.png")
 									li.red(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-красный/" data-img="classic-red-a5-48.png")
 									li.green(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-зеленый/" data-img="classic-green-a5-48.png")
 									li.blue(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-синий/" data-img="classic-blue-a5-48.png")
@@ -217,13 +218,13 @@ html
 									li.lilac(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-фиолетовый/" data-img="pastel-lilac-a5-48.png")
 									li.pink(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-розовый/" data-img="pastel-pink-a5-48.png")
 									li.yellow(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-желтый/" data-img="pastel-yellow-a5-48.png")
-									li.light-blue(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-голубой/" data-img="pastel-blue-a5-48.png")
+									li.light-blue(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-голубой/" data-img="pastel-light-blue-a5-48.png")
 								.colors-block__title Pastel
 						.choose-folder-block
 							p Количество листов:
 							ul.quantity
 								li(data-quantity="uniq_props_sheetqty-is-48/") 48
-								li(data-quantity="uniq_props_sheetqty-is-96/") 2х48
+								li.active(data-quantity="uniq_props_sheetqty-is-96/") 2х48
 						ul.btns
 							li
 								a.btn1(href="https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/apply/" target="_blank" rel="noopener noreferrer") Перейти в каталог
@@ -321,7 +322,7 @@ html
 						p <strong>ErichKrause® Crystal</strong> - уникальная новинка в категории жидкого клея. Благодаря оригинальному составу <strong>Crystal</strong>  обладает более высокой схватывающей способностью по сравнению с обычным канцелярским клеем. <strong>Crystal</strong> способен клеить даже дерево. Новый клей морозостоек, легко смывается с рук теплой водой, безопасен для здоровья, не содержит растворителей и токсичных компонентов. 
 						p Стильная упаковка выгодно подчеркивает отличительную особенность клея – кристальную прозрачность. <strong>ErichKrause® Crystal</strong> поставляется в прозрачных пластиковых флаконах двух форматов: <strong>50 мл и 135 мл.</strong> Флаконы оснащены удобными силиконовыми дозаторами для равномерного распределения жидкости по поверхности.
 						p <strong>Клей ErichKrause® Crystal</strong> – это надежный помощник в офисе, дома и во время творческих занятий. В последние годы очень популярным среди детей стало создание слаймов из канцелярского клея. С помощью клея <strong>Crystal</strong> можно создавать кристально прозрачный желеобразный материал, обладающий свойствами неньютоновской жидкости, который своей пластичностью и внешним видом восхитит даже бывалых слаймеров.
-			include ../blocks/footer.pug
+			//- include ../blocks/footer.pug
 
 			p.copyright Разработано студией 
 				a(href="https://mnogoland.ru/" target="_blank") MNOGOLAND

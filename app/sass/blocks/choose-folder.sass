@@ -3,12 +3,15 @@
 	background: #efefef
 	@include mq($max-width: 575px)
 		padding: 25px 0
+	.img-wrap
+		display: block
+		width: calc( 100% - 620px )
 	&__img
 		display: block
-		width: 340px
-		height: auto
+		height: 500px
+		width: auto
 		@include mq($max-width: 700px)
-			width: 200px
+			height: 350px
 		@include mq($max-width: 575px)
 			width: 35%
 			padding: 10px 5px
@@ -33,7 +36,7 @@
 		@include mq($max-width: 700px)
 			font-size: 16px
 	.inner
-		margin-left: 130px
+		margin-left: auto
 		width: 535px
 		@include mq($max-width: 1000px)
 			margin-left: 20px
