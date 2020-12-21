@@ -19,6 +19,7 @@
 		@include mq($max-width: 575px)
 			padding: 10px 5px
 			display: none
+			height: 240px
 	.container
 		display: flex
 		align-items: flex-start
@@ -44,7 +45,7 @@
 		@include mq($max-width: 1000px)
 			width: 55%
 		@include mq($max-width: 575px)
-			margin: 20px 0 0 0
+			margin: 0
 			width: 100%
 			padding: 0 0 0 0
 			text-align: center
@@ -64,23 +65,10 @@
 		align-items: center
 		margin: 30px 0
 		@include mq($max-width: 575px)
-			margin: 10px 0
-			width: 48%
+			margin: 5px 0
 			flex-direction: column
-			&:last-child
-				order: -1
-			&:nth-child(2)
-				width: 100%
-				display: flex
-				flex-direction: row
-				flex-wrap: wrap
-				.colors-block
-					width: 48%
-		@include mq($max-width: 370px)
-			&:first-child
-				width: 100%
-			&:last-child
-				width: 100%
+			align-items: center
+			width: 100%
 		p
 			font: 500 17px 'Inter', sans-serif
 			margin-right: 50px
@@ -88,15 +76,17 @@
 				width: 100%
 				margin-bottom: 15px
 			@include mq($max-width: 575px)
-				font-size: 15px
+				font-size: 14px
 				padding: 0
-				margin: 0 0 15px 0
+				margin: 0 0 10px 0
 		ul
 			display: flex
 			align-items: center
 			flex-wrap: wrap
 			@include mq($max-width: 800px)
 				padding-left: 30px
+				width: 100%
+				justify-content: center
 			li
 				font: 500 17px 'Inter', sans-serif
 				position: relative
@@ -147,9 +137,9 @@
 				margin: 10px
 				transition: all .3s ease-out
 				@include mq($max-width: 575px)
-					width: 20px
-					height: 20px
-					margin: 5px
+					width: 25px
+					height: 25px
+					margin: 7px
 				&:not(:last-child)
 					margin-right: 10px
 					@include mq($max-width: 575px)
@@ -253,14 +243,10 @@
 			padding-left: 30px
 			@include mq($max-width: 800px)
 				margin-top: 0
-			@include mq($max-width: 575px)
-				padding-left: 45px
-			@include mq($max-width: 370px)
-				padding-left: 30px
-				width: auto
+				width: 100%
 	.btns
 		@include mq($max-width: 575px)
-			margin-top: 30px
+			margin-top: 15px
 	.colors-block
 		width: 100px
 		height: auto
@@ -274,8 +260,8 @@
 			padding-top: 5px
 			font: 500 16px 'Inter', sans-serif
 			@include mq($max-width: 575px)
-				font-size: 14px
-				padding-bottom: 10px
+				font-size: 12px
+				padding: 5px 0
 
 	.colors,
 	.quantity
