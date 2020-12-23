@@ -3495,7 +3495,7 @@ body {
         width: 100%; } }
     #new-landing .choose-folder-block p {
       font: 500 17px 'Inter', sans-serif;
-      margin-right: 50px; }
+      margin-right: 20px; }
       @media only screen and (max-width: 800px) {
         #new-landing .choose-folder-block p {
           width: 100%;
@@ -3514,7 +3514,7 @@ body {
       align-items: center;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      @media only screen and (max-width: 800px) {
+      @media only screen and (max-width: 575px) {
         #new-landing .choose-folder-block ul {
           padding-left: 30px;
           width: 100%;
@@ -3583,7 +3583,7 @@ body {
           #new-landing .choose-folder-block .colors li {
             width: 25px;
             height: 25px;
-            margin: 7px; } }
+            margin: 0 7px; } }
         #new-landing .choose-folder-block .colors li:not(:last-child) {
           margin-right: 10px; }
           @media only screen and (max-width: 575px) {
@@ -3688,6 +3688,8 @@ body {
           height: auto;
           border-radius: 0;
           z-index: -1; }
+    #new-landing .choose-folder-block .formats {
+      padding-left: 30px; }
     #new-landing .choose-folder-block .quantity {
       width: 100%;
       margin-top: 30px;
@@ -3704,7 +3706,8 @@ body {
     height: auto; }
     @media only screen and (max-width: 575px) {
       #new-landing .choose-folder .colors-block {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 10px; } }
     #new-landing .choose-folder .colors-block:not(:last-child) {
       margin-right: 15px; }
       @media only screen and (max-width: 575px) {

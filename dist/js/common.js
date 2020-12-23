@@ -166,13 +166,13 @@
 				if($('.colors.pastel li, .colors.accent li').hasClass('active')) {
 					$('.colors.pastel li, .colors.accent li').removeClass('active');
 					$('.colors.classic li:first-child').addClass('active');
-					$('.choose-folder__img').attr('src', '../img/choose-folder/classic-black-a5-48.png');
+					// $('.choose-folder__img').attr('src', '../img/choose-folder/classic-black-a4-48.png');
 					btn.attr('href', ``);
 					formats = 'uniq_props_format-is-a4/';
 					colors = 'item_collect_name-is-classic/uniq_props_covercolor-is-черный/';
 					changeUrl();
 
-					imgFormat = 'a5';
+					imgFormat = 'a4';
 					imgColor = 'black';
 					imgSize = '96';
 					f = 'А5+';
