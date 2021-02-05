@@ -1,0 +1,97 @@
+#new-landing .one-glue
+	padding: 50px 0 0
+	@include mq($max-width: 700px)
+		padding: 50px 0 0
+	@include mq($max-width: 550px)
+		padding: 30px 0 0
+	.container
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		position: relative
+		width: 790px
+		@include mq($max-width: 800px)
+			max-width: 800px
+			width: auto
+	.wave
+		// position: absolute
+		position: relative
+		// left: 50%
+		// bottom: 0
+		margin-top: -350px
+		// transform: translate(-50%, 30%)
+		@include mq($max-width: 700px)
+			margin-top: -40%
+			width: 100%
+			display: block
+			height: auto
+	.glue
+		@include mq($max-width: 700px)
+			width: 100px
+	.caption
+		text-align: center
+	.list
+		display: flex
+	.prlx
+		position: absolute
+		z-index: 1
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		// @include mq($max-width: 700px)
+		// 	display: none
+		.c1,
+		.c2,
+		.c3,
+		.c4,
+		.c5,
+		.c6,
+		.c7,
+			position: absolute
+		.c1
+			top: 40% !important
+			right: auto !important
+			bottom: auto !important
+			left: 20% !important
+			@include mq($max-width: 550px)
+				display: none !important
+		.c2
+			top: auto !important
+			right: auto !important
+			bottom: auto !important
+			left: 10% !important
+		.c3
+			top: 25% !important
+			right: auto !important
+			bottom: auto !important
+			left: auto !important
+		.c4
+			top: 25% !important
+			right: auto !important
+			bottom: 0 !important
+			left: 10% !important
+			@include mq($max-width: 550px)
+				display: none !important
+		.c5
+			top: auto !important
+			right: 0 !important
+			bottom: auto !important
+			left: auto !important
+		.c6
+			top: 31% !important
+			right: 2% !important
+			bottom: auto !important
+			left: auto !important
+			@include mq($max-width: 370px)
+				display: none !important
+		.c7
+			top: 38% !important
+			right: -10% !important
+			bottom: auto !important
+			left: auto !important
+			@include mq($max-width: 700px)
+				display: none !important

@@ -1,0 +1,275 @@
+#new-landing .choose-folder
+	padding: 50px 0
+	background: #efefef
+	@include mq($max-width: 575px)
+		padding: 25px 0
+	.img-wrap
+		display: block
+		width: calc( 100% - 620px )
+		@include mq($max-width: 1000px)
+			width: auto
+	&__img
+		display: block
+		height: 500px
+		width: auto
+		@include mq($max-width: 1000px)
+			height: 400px
+		@include mq($max-width: 800px)
+			height: 300px
+		@include mq($max-width: 575px)
+			padding: 10px 5px
+			display: none
+			height: 240px
+	.container
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		@include mq($max-width: 575px)
+			flex-wrap: wrap
+	.caption
+		margin-bottom: 10px
+	&__title
+			font: 700 30px/1.6 'Inter', sans-serif
+			color: $black
+			@include mq($max-width: 700px)
+				font-size: 20px
+	&__subtitle
+		font: 700 24px/1.6 'Inter', sans-serif
+		color: #E91C2E
+		margin-bottom: 15px
+		@include mq($max-width: 700px)
+			font-size: 16px
+	.inner
+		margin-left: auto
+		width: 535px
+		@include mq($max-width: 1000px)
+			width: 55%
+		@include mq($max-width: 575px)
+			margin: 0
+			width: 100%
+			padding: 0 0 0 0
+			text-align: center
+			flex-wrap: wrap
+			align-items: center
+		.choose-folder__img
+			display: none
+			@include mq($max-width: 575px)
+				display: block
+				margin: 0 auto
+	.blocks
+		display: flex
+		flex-wrap: wrap
+	&-block
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin: 30px 0
+		@include mq($max-width: 575px)
+			margin: 5px 0
+			flex-direction: column
+			align-items: center
+			width: 100%
+		p
+			font: 500 17px 'Inter', sans-serif
+			margin-right: 20px
+			@include mq($max-width: 800px)
+				width: 100%
+				margin-bottom: 15px
+			@include mq($max-width: 575px)
+				font-size: 14px
+				padding: 0
+				margin: 0 0 10px 0
+		ul
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			@include mq($max-width: 575px)
+				padding-left: 30px
+				width: 100%
+				justify-content: center
+			li
+				font: 500 17px 'Inter', sans-serif
+				position: relative
+				cursor: pointer
+				@include mq($max-width: 575px)
+					font-size: 15px
+				&:not(:last-child)
+					margin-right: 50px
+				&.active
+					&:after
+						display: block
+				&:before
+					content: ''
+					display: block
+					width: 20px
+					height: 20px
+					background: #fff
+					border-radius: 100%
+					position: absolute
+					top: 50%
+					left: -30px
+					transform: translate(0, -50%)
+				&:after
+					content: ''
+					display: none
+					width: 10px
+					height: 10px
+					background: $black
+					border-radius: 100%
+					position: absolute
+					top: 50%
+					left: -25px
+					transform: translate(0, -50%)
+		.colors-text
+			width: 100%
+		.colors
+			margin-left: -10px
+			width: 100%
+			justify-content: flex-start
+			@include mq($max-width: 800px)
+				padding-left: 0
+			@include mq($max-width: 575px)
+				margin-left: 0
+				justify-content: center
+			li
+				width: 30px
+				height: 30px
+				margin: 10px
+				transition: all .3s ease-out
+				@include mq($max-width: 575px)
+					width: 25px
+					height: 25px
+					margin: 0 7px
+				&:not(:last-child)
+					margin-right: 10px
+					@include mq($max-width: 575px)
+						margin-right: 5px
+				&.active
+					box-shadow: 0 0 0 5px $white
+					&:after
+						display: block
+				&.black
+					background: #2E2E2E
+				&.red
+					background: #E91C2E
+				&.green
+					background: #367717
+				&.blue
+					background: #1A279A
+				&.red2
+					background: $red2
+				&.orange
+					background: $orange
+				&.green2
+					background: $green2
+				&.blue2
+					background: $blue2
+				&.light-blue
+					background: $light-blue
+				&.lilac
+					background: $lilac
+				&.pink
+					background: $pink
+				&.yellow
+					background: $yellow
+				&.black_red
+					background: $black
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 0
+						height: 100%
+						width: 6px
+						border-radius: 0
+						transform: translate(-50%, 0)
+						background: $red2
+				&.black_orange
+					background: $black
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 0
+						height: 100%
+						width: 6px
+						border-radius: 0
+						transform: translate(-50%, 0)
+						background: $orange
+				&.black_green
+					background: $black
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 0
+						height: 100%
+						width: 6px
+						border-radius: 0
+						transform: translate(-50%, 0)
+						background: $green2
+				&.black_blue
+					background: $black
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						left: 50%
+						top: 0
+						height: 100%
+						width: 6px
+						border-radius: 0
+						transform: translate(-50%, 0)
+						background: $blue2
+				&:before
+					display: none
+				&:after
+					transform: translate(0, 0)
+					background: #fff
+					left: -4px
+					top: -4px
+					right: -4px
+					bottom: -4px
+					width: auto
+					height: auto
+					border-radius: 0
+					z-index: -1
+		.formats
+			padding-left: 30px
+		.quantity
+			width: 100%
+			margin-top: 30px
+			padding-left: 30px
+			@include mq($max-width: 800px)
+				margin-top: 0
+				width: 100%
+	.btns
+		@include mq($max-width: 575px)
+			margin-top: 15px
+	.colors-block
+		width: 100px
+		height: auto
+		@include mq($max-width: 575px)
+			width: 100%
+			margin-bottom: 10px
+		&:not(:last-child)
+			margin-right: 15px
+			@include mq($max-width: 575px)
+				margin-right: 0
+		&__title
+			padding-top: 5px
+			font: 500 16px 'Inter', sans-serif
+			@include mq($max-width: 575px)
+				font-size: 12px
+				padding: 5px 0
+
+	.colors,
+	.quantity
+		&.disabled
+			opacity: .3
+			pointer-events: none
+
+

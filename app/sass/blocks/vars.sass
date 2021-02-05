@@ -1,0 +1,156 @@
+// Colors
+$white: #fff
+$black: #000
+
+$red: #E91C2E
+$red2: #7C1622
+$orange: #B17C48
+$green2: #4AD02B
+$blue: #1F66B8
+$blue2: #2F3E67
+$light-blue: #96C4E5
+$lilac: #C4ADF3
+$pink: #F79DB9
+$yellow: #EAE3AC
+$dark: #393939
+$dark2: #343434
+$gray1: #555555
+$gray2: #B4B4B4
+$gray3: #DEDEDE
+$gray4: #BDBDBD
+$gray5: #5A5A5A
+
+
+$imgUrl: '../img/'
+
+// Reset style
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	outline: 0
+	border: 0
+	&:before,
+	&:after 
+		padding: 0
+		margin: 0
+		outline: 0
+		border: 0
+
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] 
+	-webkit-appearance: button /* 2 */
+	background: none
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+input[type="number"],
+input[type="search"]
+	-webkit-appearance: none 
+
+
+ul,
+ol,
+nav 
+	list-style-type: none
+	li
+		list-style-type: none
+
+a
+	display: inline-block
+	text-decoration: none
+	transition: all .3s ease-out
+
+html,
+body
+	color: $black
+	height: 100%
+	display: flex
+	flex-direction: column
+
+// body,
+// .change-scroll
+// 	&::-webkit-scrollbar
+// 		width: 10px
+// 	&::-webkit-scrollbar-track
+// 		background: $gray1
+// 	&::-webkit-scrollbar-thumb
+// 		background: $red
+// 	&::-webkit-scrollbar-thumb:hover
+// 		background: $gray2
+
+#new-landing .site-block
+	padding: 50px 0
+	@include mq($max-width: 550px)
+		padding: 25px 0
+
+#new-landing .caption
+	margin-bottom: 50px
+	@include mq($max-width: 550px)
+		margin-bottom: 20px
+	&__title
+		font: 700 36px 'Inter', sans-serif
+		@include mq($max-width: 700px)
+			font-size: 26px
+		@include mq($max-width: 575px)
+			font-size: 20px
+	&__subtitle
+		font: 700 20px 'Inter', sans-serif
+		margin-bottom: 20px
+		@include mq($max-width: 700px)
+			font-size: 15px
+	&__text
+		font: 400 17px/1.4 'Inter', sans-serif
+		@include mq($max-width: 700px)
+			font-size: 16px
+	&__line
+		display: block
+		width: 130px
+		height: 2px
+		background: $black
+		margin: 15px 0
+
+.page-container,
+#new-landing
+	width: 100%
+	flex: 1 0 auto
+	height: auto
+	position: relative
+	overflow: hidden
+
+#new-landing .container
+	max-width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+	height: auto
+	// @include mq($max-width: 1500px)
+	// 	max-width: 1200px
+	// @include mq($max-width: 380px)
+	// 	padding: 0 5px
+
+#new-landing .line
+	display: block
+	width: 136px
+	height: 2px
+	background: $gray1
+	margin-bottom: 15px
+	@include mq($max-width: 700px)
+		margin-left: auto
+		margin-right: auto
+
+#new-landing .copyright
+	text-align: center
+	padding: 10px 0
+	font: 300 13px 'Inter', sans-serif
+	color: $gray5
+	a
+		color: $gray5
+		text-transform: uppercase
+		&:hover
+			color: $red

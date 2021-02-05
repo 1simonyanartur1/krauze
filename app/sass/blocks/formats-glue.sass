@@ -1,0 +1,148 @@
+#new-landing .formats-glue
+	position: relative
+	padding: 70px 0 100px
+	@include mq($max-width: 1000px)
+		padding: 50px 0
+	@include mq($max-width: 550px)
+		padding: 20px 0
+	&:before
+		content: ''
+		width: 100%
+		height: 550px
+		background: linear-gradient(180deg, rgba(237, 247, 255, 0) 0%, #EDF7FF 50.64%, rgba(237, 247, 255, 0) 100%)
+		position: absolute
+		z-index: -1
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+	.inner
+		display: flex
+		align-items: center
+		justify-content: space-around
+		flex-wrap: wrap
+		margin-top: 120px
+		@include mq($max-width: 1200px)
+			margin-top: 60px
+		@include mq($max-width: 550px)
+			margin-top: 20px
+	.container
+		position: relative
+	.caption
+		text-align: center
+	.card
+		background: $white
+		box-shadow: 0px 8px 30px rgba(159, 181, 196, 0.5)
+		display: flex
+		flex-direction: column
+		width: 430px
+		height: 360px
+		position: relative
+		@include mq($max-width: 1200px)
+			width: 320px
+			justify-content: flex-start
+		@include mq($max-width: 1000px)
+			width: 70%
+			height: auto
+			padding: 50px
+			margin-bottom: 50px
+		@include mq($max-width: 550px)
+			width: 100%
+			padding: 15px
+			margin-bottom: 35px
+		.glue1
+			position: absolute
+			bottom: -50px
+			right: -60px
+			width: 100px
+			@include mq($max-width: 1000px)
+				bottom: -20px
+			@include mq($max-width: 550px)
+				right: 20px
+				width: 60px
+		.glue2
+			bottom: -55px
+			left: -85px
+			position: absolute
+			@include mq($max-width: 1000px)
+				width: 100px
+				left: -50px
+				bottom: -20px
+			@include mq($max-width: 550px)
+				left: 20px
+				width: 90px
+		&__title
+			font: 700 20px 'Inter', sans-serif
+			margin-bottom: 25px
+		&__text
+			font: 17px 'Inter', sans-serif
+			@include mq($max-width: 550px)
+				font-size: 15px
+		&__img
+			display: block
+			max-width: 90%
+			height: auto
+			@include mq($max-width: 1200px)
+				height: 200px
+				width: auto
+			@include mq($max-width: 550px)
+				height: auto
+				width: 100%
+		&:first-child
+			text-align: right
+			padding-right: 50px
+			align-items: flex-end
+			@include mq($max-width: 550px)
+				padding-right: 130px
+		&:last-child
+			text-align: left
+			align-items: flex-start
+			padding-left: 50px
+			@include mq($max-width: 550px)
+				padding-left: 130px
+			.card__img
+				margin-top: -120px
+				@include mq($max-width: 1200px)
+					margin-top: 0
+
+	.prlx
+		position: absolute !important
+		z-index: 4
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		@include mq($max-width: 1200px)
+			display: none
+		.c1,
+		.c2,
+		.c3,
+		.c4,
+		.c5
+			position: absolute !important
+		.c1
+			top: auto !important
+			right: auto !important
+			bottom: 0 !important
+			left: -3% !important
+		.c2
+			top: auto !important
+			right: auto !important
+			bottom: 5% !important
+			left: -8% !important
+		.c3
+			top: auto !important
+			right: auto !important
+			bottom: 5% !important
+			left: 0 !important
+		.c4
+			top: auto !important
+			right: -5% !important
+			bottom: 40% !important
+			left: auto !important
+		.c5
+			top: auto !important
+			right: -10% !important
+			bottom: 27% !important
+			left: auto !important

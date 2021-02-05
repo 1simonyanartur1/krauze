@@ -1,0 +1,179 @@
+#new-landing .types-clippers
+	padding: 50px 0 100px
+	@include mq($max-width: 1000px)
+		padding: 20px 0 50px
+	.caption
+		&__title
+			color: $white
+			background: linear-gradient(87.79deg, #8E8E8E 5.67%, rgba(255, 255, 255, 0.99) 79.63%), #C4C4C4
+			padding: 15px 25px
+	.items
+		width: 800px
+		height: 640px
+		margin: 0 auto
+		position: relative
+		// @include mq($max-width: 1200px)
+		// 	display: flex
+		// 	justify-content: space-between
+		// 	flex-wrap: wrap
+		// 	width: auto
+		// 	height: auto
+		// 	margin-bottom: 40px
+	.item
+		height: 280px
+		width: 125px
+		position: absolute
+		// @include mq($max-width: 1200px)
+		// 	width: 48%
+		// 	height: auto
+		// 	position: static
+		// 	transform: translate(0,0) rotate(0) !important
+		// 	margin-bottom: 25px
+		// @include mq($max-width: 575px)
+		// 	width: 100%
+		// 	background: $white
+		// 	box-shadow: 0px 4px 25px #BFC2C9
+		// 	border-radius: 10px
+		// 	padding-top: 50px
+		// &:hover
+		// 	z-index: 10
+		// 	.window
+		// 		display: block
+		// &:nth-child(1)
+		// 	left: 50%
+		// 	top: 5%
+		// 	transform: translate(-50%, 0) rotate(5deg)
+		// 	@include mq($max-width: 1200px)
+		// 		order: 0
+		// 	.window
+		// 		transform: translate(-50%, -50%) rotate(-5deg)
+		// 	.item__label
+		// 		transform: translate(-50%, -50%) rotate(-5deg)
+		// 		left: -15px
+		// 		@include mq($max-width: 1200px)
+		// 			left: 0
+		// 		@include mq($max-width: 575px)
+		// 			left: 10px
+		// &:nth-child(2)
+		// 	right: 0
+		// 	top: 50%
+		// 	transform: translate(-50%, -50%) rotate(75deg)
+		// 	.item__label
+		// 		transform: translate(-50%, -70%) rotate(-75deg)
+		// 	.window
+		// 		transform: translate(-50%, -50%) rotate(-75deg)
+		// &:nth-child(3)
+		// 	right: 30%
+		// 	bottom: -10%
+		// 	transform: translate(50%, 0) rotate(135deg)
+		// 	.item__label
+		// 		transform: translate(-100%, -80%) rotate(-135deg)
+		// 	.window
+		// 		transform: translate(-50%, -50%) rotate(-135deg)
+		// &:nth-child(4)
+		// 	left: 30%
+		// 	bottom: -10%
+		// 	transform: translate(-50%, 0) rotate(-135deg)
+		// 	.window
+		// 		transform: translate(-50%, -50%) rotate(135deg)
+		// 	.item__label
+		// 		transform: translate(190%, -65%) rotate(-226deg)
+		// &:nth-child(5)
+		// 	left: 0
+		// 	top: 50%
+		// 	transform: translate(50%, -50%) rotate(-75deg)
+		// 	@include mq($max-width: 1200px)
+		// 		order: -1
+		// 	.item__label
+		// 		transform: translate(150%, -100%) rotate(-285deg)
+		// 	.item__clipper
+		// 		width: 120%
+		// 	.window
+		// 		transform: translate(-50%, -50%) rotate(75deg)
+		
+		.window
+			position: absolute
+			z-index: 10
+			left: 0
+			top: 50%
+			left: 50%
+			width: 440px
+			background: $white
+			box-shadow: 0px 4px 25px #BFC2C9
+			border-radius: 5px
+			padding: 15px 15px
+			display: none
+			@include mq($max-width: 1200px)
+				position: static
+				width: 100%
+				padding: 20px
+				display: block
+				transform: translate(0,0) rotate(0) !important
+			@include mq($max-width: 575px)
+				padding: 10px
+				background: none
+				box-shadow: none
+			&-top
+				display: flex
+				align-items: center
+				margin-bottom: 15px
+				@include mq($max-width: 575px)
+					flex-wrap: wrap
+			&__label
+				margin-right: 15px
+				width: 50px
+				height: auto
+				display: block
+				@include mq($max-width: 1200px)
+					display: none
+			&__title
+				font: 700 14px 'Inter', sans-serif
+				@include mq($max-width: 575px)
+					width: 100%
+			&__text
+				font: 300 12px/1.6 'Inter', sans-serif
+				margin-bottom: 10px
+			&__img
+				display: block
+				width: 100%
+				height: auto
+				margin: 0 auto
+		&__label
+			display: block
+			position: absolute
+			z-index: 2
+			top: 0
+			left: 0
+			width: 75px
+			height: auto
+			@include mq($max-width: 1200px)
+				transform: rotate(0) !important
+				width: auto
+			@include mq($max-width: 575px)
+				width: 70px
+				left: 10px
+				top: 10px
+		&__clipper
+			display: block
+			width: 140%
+			height: auto
+			position: absolute
+			z-index: 1
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			transition: all .3s ease-out
+			@include mq($max-width: 1200px)
+				position: static
+				transform: translate(0,0) rotate(0) !important
+				height: 450px
+				width: auto !important
+				margin-left: auto
+				margin-right: auto
+			@include mq($max-width: 575px)
+				// max-height: 250px
+				height: auto
+				width: 90% !important
+				// max-width: 100% !important
+				transform: rotate(0) !important
+				margin: 0 auto

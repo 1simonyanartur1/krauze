@@ -1,0 +1,104 @@
+#new-landing .universal-glue
+	margin: 40px 0 65px
+	@include mq($max-width: 550px)
+		margin: 20px 0
+	.caption
+		margin-bottom: 35px
+		text-align: center
+		&__title
+			margin-bottom: 10px
+	.images
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		margin-bottom: 50px
+		@include mq($max-width: 1500px)
+			margin-bottom: 30px
+			height: 400px
+		@include mq($max-width: 1400px)
+			height: 340px
+		@include mq($max-width: 1200px)
+			display: none
+			height: auto
+		img
+			display: block
+			&:first-child
+				left: 0
+				width: 40%
+			&:nth-child(2)
+				position: absolute
+				left: 50%
+				height: auto
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 54%
+			&:last-child
+				width: 40%
+	.images2
+		display: none
+		margin-bottom: 20px
+		@include mq($max-width: 1200px)
+			display: block
+		img
+			display: block
+			width: 100%
+			height: auto
+	.list
+		display: flex
+		align-items: center
+		justify-content: space-around
+		list-style: none
+		counter-reset: my-awesome-counter
+		position: relative
+		&:before
+			content: ''
+			display: block
+			height: 1px
+			width: 100%
+			background: #C5C5C5
+			position: absolute
+			left: 0
+			bottom: -10px
+			@include mq($max-width: 1200px)
+				display: none
+		li
+			counter-increment: my-awesome-counter
+			font: 700 26px 'Inter', sans-serif
+			position: relative
+			color: #686868
+			transition: all .3s ease-out
+			&.active
+				&:before
+					background: $black
+					color: $white
+			@include mq($max-width: 550px)
+				font-size: 20px
+				text-align: center
+			@include mq($max-width: 550px)
+				font-size: 18px
+			&:before
+				content: counter(my-awesome-counter)
+				transition: all .3s ease-out
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+				background: #F1F1F1
+				width: 56px
+				height: 56px
+				display: flex
+				position: absolute
+				left: -70px
+				bottom: -35px
+				align-items: center
+				justify-content: center
+				font: 500 26px 'Inter', sans-serif
+				color: #A8A8A8
+				border-radius: 100%
+				@include mq($max-width: 1200px)
+					position: static
+					margin-left: auto
+					margin-right: auto
+				@include mq($max-width: 550px)
+					width: 35px
+					height: 35px
+					font-size: 16px
+					margin-bottom: 10px
