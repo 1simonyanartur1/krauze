@@ -71,6 +71,18 @@
 			});
 		}
 
+		if ($(window).width() <= 1200) {
+			$('.types-clippers .item').removeAttr('data-fancybox');
+		} else {
+			$('.types-clippers .item').on('mouseover', function() {
+				$('.types-clippers .item').find('.item__clipper').css('opacity', '.3');
+				$(this).find('.item__clipper').css('opacity', '1');
+			});
+			$('.types-clippers .items').on('mouseleave', function() {
+				$('.types-clippers .item').find('.item__clipper').css('opacity', '1');
+			});
+		}
+
 		$('.reviews .slider').slick({
 			dots: true,
 			arrows: false,
@@ -94,6 +106,8 @@
 			]
 		});
 
+		
+
 		// $('.blades').slick({
 		// 	dots: false,
 		// 	arrows: true,
@@ -116,9 +130,7 @@
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
-			slidesToScroll: 1,
-			// autoplay: true,
-			// autoplaySpeed: 5000
+			slidesToScroll: 1
 		});
 
 		// if ($(window).width() < 600) {

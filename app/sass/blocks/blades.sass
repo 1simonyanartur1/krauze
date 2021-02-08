@@ -51,8 +51,15 @@
 	position: relative
 	height: 530px
 	padding: 40px 0
+	+mq($max-width: 1500px)
+		&:nth-child(2)
+			.blade__img
+				transform: translate(50%, -50%)
 	+mq($max-width: 1000px)
 		height: auto
+		&:nth-child(2)
+			.blade__img
+				transform: translate(0, 0)
 	&__white
 		color: white
 	&__black

@@ -19,8 +19,8 @@ var path = {
 		css: './dist/css/',
 		gulpfile: './gulpfile.js',
 		js: './dist/js/',
-		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/jquery-ui/jquery-ui.min.js'],
-		cssLibs: ['./app/libs/slick-carousel/slick/slick.css'],
+		jsLibs: ['./app/libs/jquery/dist/jquery.min.js', './app/libs/slick-carousel/slick/slick.min.js', './app/libs/jquery-ui/jquery-ui.min.js', './app/libs/fancybox/dist/jquery.fancybox.min.js'],
+		cssLibs: ['./app/libs/slick-carousel/slick/slick.css', './app/libs/fancybox/dist/jquery.fancybox.min.css'],
 		deleteLibs: ['./app/js/libs.js', './app/css/libs.css']
 	}
 }
