@@ -37,7 +37,7 @@ html
 					.items
 						.item(data-src="#w1")
 							img.item__label(src=imgUrl+"blades/label-2dplus.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png" data-img="../img/types-clippers/clippers-2dplus-mobile.png" alt="")
 							.window(id="w1")
 								.window-top
 									img.window__label(src=imgUrl+"blades/label-2dplus.png", alt="")
@@ -46,7 +46,7 @@ html
 								img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w2")
 							img.item__label(src=imgUrl+"blades/label-3d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png" data-img="../img/types-clippers/clippers-3d-mobile.png" alt="")
 							.window(id="w2")
 								.window-top
 									img.window__label(src=imgUrl+"blades/label-3d.png", alt="")
@@ -55,7 +55,7 @@ html
 								img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w3")
 							img.item__label(src=imgUrl+"blades/label-4d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png" data-img="../img/types-clippers/clippers-4d-mobile.png" alt="")
 							.window(id="w3")
 								.window-top
 									img.window__label(src=imgUrl+"blades/label-4d.png", alt="")
@@ -64,7 +64,7 @@ html
 								img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w4")
 							img.item__label(src=imgUrl+"blades/label-kids.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-kids.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-kids.png" data-img="../img/types-clippers/clippers-kids-mobile.png" alt="")
 							.window(id="w4")
 								.window-top
 									img.window__label(src=imgUrl+"blades/label-kids.png", alt="")
@@ -73,7 +73,7 @@ html
 								img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w4")
 							img.item__label(src=imgUrl+"blades/label-2d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-2d.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-2d.png" data-img="../img/types-clippers/clippers-2d-mobile.png" alt="")
 							.window(id="w5")
 								.window-top
 									img.window__label(src=imgUrl+"blades/label-2d.png", alt="")
@@ -84,6 +84,7 @@ html
 			section.blades
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
 					.container
+						img.blade__img(src=imgUrl+"blades/clippers-2d.png", alt="" )
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 								img.blade__label(src=imgUrl+"blades/label-2d.png", alt="")
@@ -97,9 +98,9 @@ html
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
 									img(src=imgUrl+"blades/icon-higher.png", alt="")
 									p Производительность <br> ножниц увеличена
-						img.blade__img(src=imgUrl+"blades/clippers-2d.png", alt="" )
 				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
 					.container
+						img.blade__img(src=imgUrl+"blades/clippers-2dplus.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 								img.blade__label(src=imgUrl+"blades/label-2dplus.png", alt="")
@@ -116,10 +117,9 @@ html
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 									img(src=imgUrl+"blades/icon-power.png", alt="")
 									p Минимум усилий <br> при работе с более <br> плотным материалом
-						img.blade__img(src=imgUrl+"blades/clippers-2dplus.png", alt="")
-				
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
 					.container
+						img.blade__img(src=imgUrl+"blades/clippers-3d.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 								img.blade__label(src=imgUrl+"blades/label-3d.png", alt="")
@@ -136,9 +136,9 @@ html
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 									img(src=imgUrl+"blades/icon-less.png", alt="")
 									p Минимум усилий <br> при максимальной <br> производительности 
-						img.blade__img(src=imgUrl+"blades/clippers-3d.png", alt="")
 				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
 					.container
+						img.blade__img(src=imgUrl+"blades/clippers-4d.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 								img.blade__label(src=imgUrl+"blades/label-4d.png", alt="")
@@ -155,9 +155,9 @@ html
 								li(data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="")
 									img(src=imgUrl+"blades/icon-less.png", alt="")
 									p Минимум усилий <br> при максимальной <br> производительности
-						img.blade__img(src=imgUrl+"blades/clippers-4d.png", alt="")
 				.blade.blade__black(style="background: url('../img/blades/kids-bg.jpg') no-repeat center center / cover;")
 					.container
+						img.blade__img(src=imgUrl+"blades/clippers-kids.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 								img.blade__label(src=imgUrl+"blades/label-kids.png", alt="")
@@ -174,7 +174,6 @@ html
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 									img(src=imgUrl+"blades/icon-colors.png", alt="")
 									p Яркий дизайн
-						img.blade__img(src=imgUrl+"blades/clippers-kids.png", alt="")
 
 			section.new-clippers
 				.container
