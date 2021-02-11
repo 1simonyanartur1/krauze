@@ -1,0 +1,49 @@
+#new-landing .folder-colors
+	padding: 60px 0
+	&.type2
+		.caption
+			&__line
+				margin-bottom: 50px
+	@include mq($max-width: 1200px)
+		padding: 30px 0
+	.container
+		max-width: 1230px
+	.caption
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 65px
+		@include mq($max-width: 1200px)
+			margin-bottom: 30px
+	.inner
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-start
+	.item
+		width: 240px
+		margin: 30px
+		@include mq($max-width: 1200px)
+			width: 200px
+			margin: 15px
+		@include mq($max-width: 1000px)
+			width: 23%
+			margin: 1%
+		@include mq($max-width: 575px)
+			width: 48%
+		&__img
+			display: block
+			height: auto
+			width: 100%
+		&__title
+			padding-top: 20px
+			text-align: center
+			text-transform: uppercase
+			font: 700 18px 'Inter', sans-serif
+			@include mq($max-width: 1200px)
+				font-size: 16px
+			@include mq($max-width: 800px)
+				font-size: 14px
+			@include mq($max-width: 400px)
+				font-size: 12px

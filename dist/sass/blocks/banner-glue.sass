@@ -1,0 +1,88 @@
+#new-landing .banner-glue
+	padding: 21px 0
+	background: $dark
+	margin-bottom: 120px
+	@include mq($max-width: 1000px)
+		margin-bottom: 60px
+	@include mq($max-width: 550px)
+		margin-bottom: 30px
+	.container
+		display: flex
+		justify-content: space-between
+		@include mq($max-width: 1700px)
+			max-width: 1000px
+		@include mq($max-width: 1400px)
+			max-width: 900px
+		@include mq($max-width: 1200px)
+			max-width: 760px
+	.img-wrap
+		width: 435px
+		position: relative
+		z-index: 2
+		@include mq($max-width: 1700px)
+			width: 300px
+		@include mq($max-width: 700px)
+			display: none
+		.paper
+			position: absolute
+			top: -50%
+			display: block
+			width: 130%
+			@include mq($max-width: 1400px)
+				width: 120%
+			@include mq($max-width: 1200px)
+				width: 100%
+				top: 0
+				left: 0
+		.glue
+			position: absolute
+			left: 72%
+			top: -20px
+			@include mq($max-width: 1700px)
+				left: 50%
+				top: -38px
+			@include mq($max-width: 1500px)
+				left: 42%
+				top: -45px
+				width: 120%
+			@include mq($max-width: 1200px)
+				width: 100%
+				top: 15%
+				left: auto
+				right: -40%
+				display: block
+
+	.inner
+		width: 690px
+		display: flex
+		align-items: center
+		@include mq($max-width: 1700px)
+			width: calc(100% - 320px)
+		@include mq($max-width: 1200px)
+			flex-direction: column
+			align-items: flex-start
+			width: auto
+		@include mq($max-width: 700px)
+			width: 100%
+			align-items: center
+		img
+			display: block
+			align-items: center
+			width: 240px
+			height: auto
+			margin-right: 40px
+			@include mq($max-width: 1700px)
+				width: 170px
+				margin-right: 20px
+			@include mq($max-width: 1200px)
+				margin-right: 0
+				margin-bottom: 25px
+			@include mq($max-width: 700px)
+				width: 180px
+		p
+			font: 500 19px 'Inter', sans-serif
+			color: $white
+			@include mq($max-width: 1700px)
+				font-size: 18px
+			@include mq($max-width: 700px)
+				text-align: center

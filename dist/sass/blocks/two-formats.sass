@@ -1,0 +1,166 @@
+#new-landing .two-formats
+	padding: 95px 0
+	position: relative
+	@include mq($max-width: 800px)
+		padding: 40px 0
+	.container
+		width: 100%
+		max-width: 1920px
+	.caption
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 50px
+		&__subtitle
+			margin-bottom: 0
+	.bg-text
+		position: absolute
+		z-index: -2
+		color: #EDEDED
+		font: 900 125px 'Inter', sans-serif
+		@include mq($max-width: 1500px)
+			font-size: 100px
+		@include mq($max-width: 1000px)
+			font-size: 80px
+		@include mq($max-width: 700px)
+			font-size: 60px
+		@include mq($max-width: 575px)
+			display: none
+		&.text1
+			top: 5%
+			left: 0
+			@include mq($max-width: 1000px)
+				top: 15%
+		&.text2
+			right: 0
+			bottom: 2%
+	.inner
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		@include mq($max-width: 1200px)
+			flex-wrap: wrap
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			width: 440px
+			height: 440px
+			border: 7px solid #F2F2F2
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+			border-radius: 100%
+			left: 50%
+			top: 50%
+			z-index: -1
+			transform: translate(-50%, -50%)
+			@include mq($max-width: 575px)
+				width: 250px
+				height: 250px
+	.item
+		display: flex
+		align-items: center
+		margin: 0 50px
+		@include mq($max-width: 1200px)
+			// width: 100%
+			margin: 0
+			width: 50%
+			justify-content: center
+		@include mq($max-width: 575px)
+			flex-direction: column
+			align-items: center
+			margin: 0
+		&:first-child
+			.item__img
+				width: 220px
+				@include mq($max-width: 575px)
+					margin-bottom: 50px
+					width: 110px
+			.item__title
+				margin-right: 50px
+				@include mq($max-width: 800px)
+					margin-right: 0
+				&:before
+					top: 50%
+					left: 0
+					transform: translate(0, -50%)
+				strong
+					color: #C32A2A
+					margin-left: 75px
+		&:last-child
+			.item-inner
+				margin-top: -100px
+				margin-left: 50px
+				@include mq($max-width: 800px)
+					margin-left: 0
+					margin-top: 0
+			.item__img
+				width: 230px
+				@include mq($max-width: 575px)
+					width: 100px
+			.item__text
+				span
+					color: $blue
+			.item__title
+				&:before
+					top: 50%
+					left: 10%
+					transform: translate(0, -50%)
+				strong
+					color: #1F66B8
+					margin-left: 75px
+		&__img
+			display: block
+		&__title
+			font: 300 58px 'Inter', sans-serif
+			position: relative
+			// &:after
+			// 	content: ''
+			// 	display: block
+			// 	width: 100%
+			// 	height: 1px
+			// 	background: #F7E3E3
+			// 	margin-bottom: 15px
+			@include mq($max-width: 1500px)
+				font-size: 45px
+			@include mq($max-width: 700px)
+				font-size: 32px
+			&:before
+				content: ''
+				display: block
+				width: 295px
+				height: 295px
+				border-radius: 100%
+				background: #FAFAFA
+				position: absolute
+				z-index: -1
+				@include mq($max-width: 1500px)
+					width: 220px
+					height: 220px
+				@include mq($max-width: 700px)
+					width: 140px
+					height: 140px
+				@include mq($max-width: 575px)
+					display: none
+			strong
+				display: block
+				text-transform: uppercase
+				font-weight: 900
+				font-size: 58px
+				font-family: 'Inter', sans-serif
+				@include mq($max-width: 1500px)
+					font-size: 40px
+				@include mq($max-width: 700px)
+					font-size: 30px
+			span
+				font: 800 70px 'Inter', sans-serif
+				@include mq($max-width: 1500px)
+					font-size: 40px
+				@include mq($max-width: 700px)
+					font-size: 32px
+		&__text
+			font: 700 20px 'Inter', sans-serif
+			span
+				color: $red
+				font-weight: 900

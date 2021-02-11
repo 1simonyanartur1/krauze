@@ -1,0 +1,330 @@
+- var imgUrl = 'img/';
+ 
+doctype
+html
+	include ../blocks/head.pug
+		title Краузе - Фолдер
+	body
+		.page-container#new-landing
+
+			section.mainblock-folder
+				.container
+					.inner
+						h1.title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") FolderBook
+						h4.subtitle(data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="") Два в одном: тетрадь и папка!
+						a.btn1(href="#" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Перейти в каталог
+					img(src=imgUrl+"mainblock-folder/img.png", alt="")
+			
+			section.video
+				.container
+					img.video__img(src=imgUrl+"poster1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
+					//- <video controls="controls" poster="img/poster1.jpg">
+						//- <source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						//- <source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						//- <source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
+						//- p Тег video не поддерживается вашим браузером.
+					//- </video>
+					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
+						.caption
+							h2.caption__title ErichKrause<sup>®</sup> FolderBook
+							.caption__line
+							p.caption__text FolderBook - это особый тип современных тетрадей. Объединяет в себе функционал тетради и папки. Универсальная и удобная тетрадь-папка FolderBook обладает малым весом и компактными габаритами. Плотная обложка надежно защищает содержимое. Блоки легко менять и при этом они надежно фиксируются.
+
+			section.new-clippers
+				.container
+					img(src=imgUrl+"folder-schema.png", alt="")
+					ol.list
+						li Пластиковая обложка
+						li Одна или две съемные тетради
+						li Обечайка
+						li Фиксирующая резинка
+						li Крепежные резинки для тетрадей
+						li Выемки для удобного перелистывания
+						li Выемки под фиксирующей резинкой
+						li Выемки под крепежными резинками
+
+			section.folder-colors
+				.container
+					.caption
+						h2.caption__title(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Цветовые коллекции
+						.caption__line(data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="100")
+					.inner
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img2.jpg", alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img3.jpg", alt="" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img4.jpg", alt="" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+
+			section.folder-complication
+				.container
+					.caption
+						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Доступные комплектации
+						.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						p.caption__text(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Доступны комплектации с одной или двумя тетрадями.
+					.inner
+						.item(data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							.item__text <span>48</span> листов
+							img.item__img(src=imgUrl+"folder-complication/img1.jpg", alt="")
+							img.item__circle(src=imgUrl+"folder-complication/circle.png", alt="")
+						.item(data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							.item__text <span>2 х 48</span> листов
+							img.item__img(src=imgUrl+"folder-complication/img1.jpg", alt="")
+							img.item__circle(src=imgUrl+"folder-complication/circle.png", alt="")
+
+			section.two-formats
+				p.bg-text.text1(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") разные
+				p.bg-text.text2(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") форматы
+				.container
+					.caption
+						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Два формата
+						.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						p.caption__text(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Доступны два разных формата А4 и А5+
+					.inner
+						.item(data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							.item-inner
+								h3.item__title
+									span А4
+							img.item__img(src=imgUrl+"two-formats/img1.png", alt="")
+						.item(data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							img.item__img(src=imgUrl+"two-formats/img2.png", alt="")
+							.item-inner
+								h3.item__title 
+									span А5+
+
+			section.folder-advantages
+				.container
+					img.img(src=imgUrl+"folder-advantages/img.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+					.list
+						.item(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-advantages/icon1.png", alt="")
+							p.item__title Легкость и удобство
+							.item__line
+							p.item__text Легкая и удобная замена тетрадей без замены обложки. 
+						.item(data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-advantages/icon2.png", alt="")
+							p.item__title Надежность
+							.item__line
+							p.item__text Фиксирующая резинка предотвращает нежелательное раскрытие!
+						.item(data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-advantages/icon3.png", alt="")
+							p.item__title Эргономичный дизайн
+							.item__line
+							p.item__text Специальные выемки на обложке облегчают перелистывание.
+
+			section.folder-protect
+				img.folder-protect__img.left(src=imgUrl+"folder-protect/img1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+				.inner
+					.caption
+						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Защита и долгий срок службы
+						.caption__line
+					.icons
+						.item(data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-protect/icon1.png", alt="")
+							p.item__text Надежно защищает от <br> случайного попадания влаги
+						.item(data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-protect/icon2.png", alt="")
+							p.item__text Защищает от <br> деформации
+						.item(data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+							img.item__icon(src=imgUrl+"folder-protect/icon3.png", alt="")
+							p.item__text Сохраняет <br> презентабельный вид
+				img.folder-protect__img.right(src=imgUrl+"folder-protect/img2.jpg", alt="" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+
+			section.security
+				.container
+					.caption
+						h2.caption__subtitle Безопасность
+						.caption__line
+						p.caption__text Уголки скруглены, что обеспечивает безопасность для одежды и человека.
+					img.security__img(src=imgUrl+"security/img.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+					img.security__img2(src=imgUrl+"security/img2.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+
+			section.folder-colors.type2 
+				.container
+					.caption
+						h2.caption__title(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки
+						.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Выбери свой цвет. Или даже два!
+						p.caption__text(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Сменные блоки – тетради 48 листов в клетку со специально разработанным <br> дизайном обложки для подписи названий, а также цветовой идентификации предметов. <br> Сменные блоки FB Solution можно приобрести отдельно или использовать любую тетрадь <br> на скобе ErichKrause.
+					.inner
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img1.jpg", alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img2.jpg", alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img3.jpg", alt="" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+						.item
+							img.item__img(src=imgUrl+"folder-colors/img4.jpg", alt="" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" data-aos-offset="100")
+							.item__title название коллекции
+
+			section.folder-social
+				.container
+					.caption
+						h2.caption__subtitle(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Персонализация
+						.caption__line(data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						p.caption__text(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Удобная разметка для подписи тетрадей на лицевой стороне. Светлые тона делают надписи хорошо читаемыми. Разные оттенки тетрадей помогают наглядно сортировать разные виды записей.
+					.images
+						img(src=imgUrl+"folder-social/img1.png", alt="" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						img(src=imgUrl+"folder-social/img2.png", alt="" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100")
+						img(src=imgUrl+"folder-social/img3.png", alt="" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000" data-aos-offset="100")
+
+			section.density
+				img.density__img(src=imgUrl+"density/img.jpg", alt="" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+				.caption
+					h2.caption__subtitle(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100") Плотность 60 г/м
+					.caption__line(data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="100")
+					p.caption__text(data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="100") Высокий уровень белизны и плотности бумаги обеспечивают мягкое и аккуратное письмо.
+
+			section.choose-folder
+				.container
+					.img-wrap
+						img.choose-folder__img(src=imgUrl+"choose-folder/classic-black-a5-48.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+					.inner(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						.caption
+							h2.caption__title Выбери свой «FolderBook» 
+						img.choose-folder__img(src=imgUrl+"choose-folder/classic-black-a5-48.png", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="100")
+						.blocks
+							.choose-folder-block
+								p Формат:
+								ul.formats
+									li(data-format="uniq_props_format-is-a4/") А4
+									li.active(data-format="uniq_props_format-is-a5%2B/") А5+
+							.choose-folder-block
+								p.colors-text Коллекция:
+								.colors-block
+									ul.colors.classic
+										li.black.active(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-черный/" data-img="classic-black-a5-48.png")
+										li.red(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-красный/" data-img="classic-red-a5-48.png")
+										li.green(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-зеленый/" data-img="classic-green-a5-48.png")
+										li.blue(data-color="item_collect_name-is-classic/uniq_props_covercolor-is-синий/" data-img="classic-blue-a5-48.png")
+									.colors-block__title Classic
+								.colors-block
+									ul.colors.accent
+										li.black_red(data-color="item_collect_name-is-accent/" data-img="accent-red-a5-48.png")
+										li.black_orange(data-color="item_collect_name-is-accent/" data-img="accent-orange-a5-48.png")
+										li.black_green(data-color="item_collect_name-is-accent/" data-img="accent-green-a5-48.png")
+										li.black_blue(data-color="item_collect_name-is-accent/" data-img="accent-blue-a5-48.png")
+									.colors-block__title Accent
+								.colors-block
+									ul.colors.pastel
+										li.lilac(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-фиолетовый/" data-img="pastel-lilac-a5-48.png")
+										li.pink(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-розовый/" data-img="pastel-pink-a5-48.png")
+										li.yellow(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-желтый/" data-img="pastel-yellow-a5-48.png")
+										li.light-blue(data-color="item_collect_name-is-pastel/uniq_props_covercolor-is-голубой/" data-img="pastel-light-blue-a5-48.png")
+									.colors-block__title Pastel
+							.choose-folder-block
+								p Количество листов:
+								ul.quantity
+									li(data-quantity="uniq_props_sheetqty-is-48/") 48
+									li.active(data-quantity="uniq_props_sheetqty-is-96/") 2х48
+						ul.btns
+							li
+								a.btn1(href="https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/apply/" target="_blank" rel="noopener noreferrer") Перейти в каталог
+
+			section.brand
+				img.tape1(src=imgUrl+"brand/tape1.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")
+				img.tape2(src=imgUrl+"brand/tape2.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")
+				.container
+					img.cup(src=imgUrl+"brand/cup.png", alt="" data-aos="fade-right" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
+					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
+						.caption
+							h2.caption__title ErichKrause - брэнд канцтоваров №1 в России
+							p.caption__text По результатам ежегодного всероссийского репрезентативного опроса, проводимого аналитическим центром Юрия Левады («Левада-Центр»), ErichKrause® в пятый год подряд признается самым известным брендом канцелярских товаров в Российской Федерации. 
+			section.reviews
+				.container
+					.caption
+						h2.caption__title(data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Отзывы наших клиентов
+					.slider(data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
+						.slide
+							h3.slide__title Мария
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Клеит буквально всё: картон и бумага, понятное дело, плюс ткань, нитки, фотографии. Плотно и надёжно сцепляется. Моментально схватывается с бумагой или другим источником, быстро сохнет. Резкого запаха нет.
+						.slide
+							h3.slide__title Анастасия
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Поделки с этим клеем получаются аккуратными. Сохнет очень быстро и просто отлично выполняет свою задачу. Легко смывается с рук тёплой водой.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+						.slide
+							h3.slide__title Татьяна
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+			section.site-block
+				.container
+					.text-container
+						h2 Клей канцелярский ErichKrause® Crystal – идеально прозрачный и невероятно густой
+						p <strong>ErichKrause® Crystal</strong> - уникальная новинка в категории жидкого клея. Благодаря оригинальному составу <strong>Crystal</strong>  обладает более высокой схватывающей способностью по сравнению с обычным канцелярским клеем. <strong>Crystal</strong> способен клеить даже дерево. Новый клей морозостоек, легко смывается с рук теплой водой, безопасен для здоровья, не содержит растворителей и токсичных компонентов. 
+						p Стильная упаковка выгодно подчеркивает отличительную особенность клея – кристальную прозрачность. <strong>ErichKrause® Crystal</strong> поставляется в прозрачных пластиковых флаконах двух форматов: <strong>50 мл и 135 мл.</strong> Флаконы оснащены удобными силиконовыми дозаторами для равномерного распределения жидкости по поверхности.
+						p <strong>Клей ErichKrause® Crystal</strong> – это надежный помощник в офисе, дома и во время творческих занятий. В последние годы очень популярным среди детей стало создание слаймов из канцелярского клея. С помощью клея <strong>Crystal</strong> можно создавать кристально прозрачный желеобразный материал, обладающий свойствами неньютоновской жидкости, который своей пластичностью и внешним видом восхитит даже бывалых слаймеров.
+			//- include ../blocks/footer.pug
+
+			p.copyright Разработано студией 
+				a(href="https://mnogoland.ru/" target="_blank") MNOGOLAND
+		include ../blocks/scripts.pug

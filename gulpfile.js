@@ -78,10 +78,6 @@ gulp.task('clean-prod', function () {
 	return gulp.src(['./dist/libs/', './dist/sass/', './dist/pug/'])
 		.pipe(clean());
 });
-gulp.task('clean-dist', function () {
-	return gulp.src(['./dist/*'])
-		.pipe(clean());
-});
 
 // Concat js libraries
 gulp.task('concat-js', function() {

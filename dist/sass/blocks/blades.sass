@@ -1,0 +1,170 @@
+#new-landing .blades
+	margin: 50px 0
+	@include mq($max-width: 1200px)
+		margin-bottom: 50px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		font-size: 40px
+		color: $white
+		width: 50px
+		transition: all .3s ease-out
+		height: 50px
+		background: none
+		cursor: pointer
+		z-index: 5
+		width: 62px
+		height: 62px
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 100%
+		border: 1px solid $white
+		@include mq($max-width: 1200px)
+			width: 50px
+			height: 50px
+			color: $black
+			border-color: $black
+			top: 106%
+		&:hover
+			color: $black
+			background: $white
+		&.left
+			transform: translate(0, -50%) rotate(-180deg)
+			left: 100px
+			@include mq($max-width: 1500px)
+				left: 50px
+			@include mq($max-width: 1200px)
+				right: 80px
+				left: auto
+		&.right
+			right: 100px
+			@include mq($max-width: 1500px)
+				right: 50px
+			@include mq($max-width: 1200px)
+				right: 20px
+	
+#new-landing .blade
+	display: flex
+	align-items: center
+	position: relative
+	height: 530px
+	padding: 40px 0
+	+mq($max-width: 1500px)
+		&:nth-child(2)
+			.blade__img
+				transform: translate(50%, -50%)
+	+mq($max-width: 1000px)
+		height: auto
+		&:nth-child(2)
+			.blade__img
+				transform: translate(0, 0)
+	&__white
+		color: white
+	&__black
+		color: black
+	.container
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		max-width: 1050px
+		width: 100%
+		height: 100%
+	.inner
+		max-width: 770px
+		width: 100%
+		margin: 0 auto 0 0
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		position: relative
+		z-index: 2
+		+mq($max-width: 1000px)
+			margin: 0 0 20px 0
+	&__img
+		display: block
+		position: absolute
+		top: 50%
+		right: 0
+		transform: translate(50%, -50%)
+		z-index: 1
+		width: auto
+		height: calc( 100% + 40px )
+		+mq($max-width: 1700px)
+			transform: translate(40%, -50%)
+		+mq($max-width: 1400px)
+			transform: translate(30%, -50%)
+		+mq($max-width: 1200px)
+			transform: translate(15%, -50%)
+		+mq($max-width: 1000px)
+			transform: translate(0, 0)
+			position: static
+			width: 70%
+			height: auto
+			margin: 0 auto
+		+mq($max-width: 575px)
+			width: 80%
+	&__label
+		display: block
+		width: 100px
+		height: auto
+		margin: 0 30px 0 0
+		transform: translate(0, -20%)
+		+mq($max-width: 1000px)
+			margin: 0
+	&__title
+		font: 700 45px 'Inter', sans-serif
+		+mq($max-width: 700px)
+			font-size: 30px
+	&__text
+		font: 400 17px/1.6 'Inter', sans-serif
+		margin-top: 15px
+		+mq($max-width: 700px)
+			font-size: 14px
+	&-list
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		+mq($max-width: 1000px)
+			margin: 50px 0 0 0
+			justify-content: center
+		li
+			width: calc( 33.3% - 15px )
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+			font: 500 17px/1.4 'Inter', sans-serif
+			+mq($max-width: 1000px)
+				width: 48%
+				margin: 2% 1%
+			+mq($max-width: 700px)
+				font-size: 14px
+			+mq($max-width: 400px)
+				font-size: 12px
+			&:not(:last-child)
+				margin: 0 15px 0 0
+				+mq($max-width: 1000px)
+					margin: 2% 1%
+			img
+				display: block
+				margin: 0 0 15px 0
+				+mq($max-width: 575px)
+					width: 100%
+	&-line
+		display: flex
+		align-items: flex-start
+		width: 100%
+		+mq($max-width: 1000px)
+			text-align: center
+			flex-direction: column
+			align-items: center
+		&-wrap
+			display: block
+			width: calc( 100% - 130px )
+			+mq($max-width: 1000px)
+				width: 100%
+
+

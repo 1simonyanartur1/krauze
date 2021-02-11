@@ -74,12 +74,17 @@
 		if ($(window).width() <= 1200) {
 			$('.types-clippers .item').removeAttr('data-fancybox');
 		} else {
-			$('.types-clippers .item').on('mouseover', function() {
+			$('.types-clippers .item').on('mouseover', function () {
 				$('.types-clippers .item').find('.item__clipper').css('opacity', '.3');
 				$(this).find('.item__clipper').css('opacity', '1');
 			});
-			$('.types-clippers .items').on('mouseleave', function() {
+			$('.types-clippers .items').on('mouseleave', function () {
 				$('.types-clippers .item').find('.item__clipper').css('opacity', '1');
+				$('.window').hide()
+			});
+			$('.types-clippers .item').on('mouseover', function () {
+				$('.window').hide()
+				$(this).find('.window').show();
 			});
 		}
 
@@ -106,7 +111,7 @@
 			]
 		});
 
-		
+
 
 		// $('.blades').slick({
 		// 	dots: false,
@@ -175,7 +180,7 @@
 			if ($('.formats li:first-child').hasClass('active')) {
 				$('.colors.pastel, .colors.accent').addClass('disabled');
 
-				if($('.colors.pastel li, .colors.accent li').hasClass('active')) {
+				if ($('.colors.pastel li, .colors.accent li').hasClass('active')) {
 					$('.colors.pastel li, .colors.accent li').removeClass('active');
 					$('.colors.classic li:first-child').addClass('active');
 					// $('.choose-folder__img').attr('src', '../img/choose-folder/classic-black-a4-48.png');
@@ -218,11 +223,12 @@
 		function changeUrl() {
 			btn.attr('href', `${startLink}${formats}${colors}${quantity}apply/`);
 		}
+
 		function changeImg() {
 			// проверка отмечен ли формат
 			$('.choose-folder .formats li').on('click', function () {
 				f = $(this).text();
-				if(f == 'А4') {
+				if (f == 'А4') {
 					imgFormat = 'a4'
 				} else if (f == 'А5+') {
 					imgFormat = 'a5'
@@ -231,7 +237,7 @@
 			// проверка отмечен ли цвет
 			$('.choose-folder .colors li').on('click', function () {
 				imgColor = $(this).attr('class');
-				if($(this).parents('.colors').hasClass('classic')) {
+				if ($(this).parents('.colors').hasClass('classic')) {
 					c = 'classic';
 				} else if ($(this).parents('.colors').hasClass('accent')) {
 					c = 'accent';
@@ -242,18 +248,18 @@
 			// проверка отмечен ли количество листов
 			$('.choose-folder .quantity li').on('click', function () {
 				q = $(this).text();
-				if(q == '48') {
+				if (q == '48') {
 					imgSize = '48'
 				} else if (q == '2х48') {
 					imgSize = '96'
 				}
 			});
 			$('.choose-folder-block li').on('click', function () {
-				if(imgFormat.length != 0 && imgColor.length != 0 && imgSize.length != 0 && c.length != 0) {
+				if (imgFormat.length != 0 && imgColor.length != 0 && imgSize.length != 0 && c.length != 0) {
 					$('.choose-folder__img').attr('src', 'img/choose-folder/' + `${c}-${imgColor}-${imgFormat}-${imgSize}` + '.png');
 				} else {}
 			});
-			
+
 		}
 
 		changeImg();

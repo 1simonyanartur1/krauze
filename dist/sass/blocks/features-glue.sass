@@ -1,0 +1,80 @@
+#new-landing .features-glue
+	position: relative
+	padding-bottom: 20px
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 480px
+		position: absolute
+		top: 50%
+		left: 0
+		z-index: -1
+		transform: translateY(-50%)
+		background: linear-gradient(180deg, rgba(237, 247, 255, 0) 0%, #EDF7FF 50.64%, rgba(237, 247, 255, 0) 100%)
+	.container
+		display: flex
+		justify-content: space-around
+		align-items: center
+	.img-wrap
+		position: relative
+		@include mq($max-width: 1700px)
+			height: 90vh
+		@include mq($max-width: 1200px)
+			height: auto
+		@include mq($max-width: 550px)
+			width: 25%
+			height: auto
+	&__img
+		@include mq($max-width: 1700px)
+			height: 100%
+		@include mq($max-width: 1200px)
+			height: auto
+	.bubbles
+		position: absolute
+		left: 50%
+		bottom: 0
+		transform: translateX(-50%)
+		opacity: .5
+		width: 90%
+		&.active
+			transition: all 15s ease-out
+			bottom: 100%
+			opacity: 1
+			transform: translate(-50%, 200%)
+	img
+		@include mq($max-width: 700px)
+			width: 100px
+		@include mq($max-width: 550px)
+			width: 100%
+	.inner
+		max-width: 500px
+		@include mq($max-width: 550px)
+			max-width: 700px
+			width: 75%
+			padding-left: 20px
+	.list
+		li
+			font: 500 26px 'Inter', sans-serif
+			position: relative
+			padding-left: 50px
+			@include mq($max-width: 700px)
+				font-size: 18px
+			@include mq($max-width: 550px)
+				font-size: 16px
+				padding-left: 35px
+			&:not(:last-child)
+				margin-bottom: 40px
+				@include mq($max-width: 550px)
+					margin-bottom: 20px
+			&:before
+				content: ''
+				width: 35px
+				height: 35px
+				background: url($imgUrl+'features-glue/check.png') no-repeat center center / contain
+				position: absolute
+				left: 0
+				top: 0
+				@include mq($max-width: 550px)
+					width: 25px
+					height: 25px
