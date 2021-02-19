@@ -72,10 +72,10 @@
 		}
 
 		if ($(window).width() <= 1200) {
-			$('.types-clippers .item__clipper').each(function () {
-				var imgMobile = $(this).data('img');
-				$(this).attr('src', imgMobile);
-			});
+			// $('.types-clippers .item__clipper').each(function () {
+			// 	var imgMobile = $(this).data('img');
+			// 	$(this).attr('src', imgMobile);
+			// });
 
 			$('.blades').slick({
 				dots: false,
@@ -86,8 +86,6 @@
 				speed: 300,
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				// autoplay: true,
-				// autoplaySpeed: 5000,
 				adaptiveHeight: true
 			});
 
@@ -141,10 +139,7 @@
 			slidesToScroll: 1
 		});
 
-
 		$(".tabs").tabs();
-
-
 
 		var btn = $('.choose-folder .btns .btn1');
 		var formats = '';
@@ -157,6 +152,7 @@
 		var f = 'А5+';
 		var c = 'classic';
 		var q = '48';
+
 		// Исходная ссылка
 		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/';
 

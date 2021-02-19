@@ -37,49 +37,74 @@ html
 					.items
 						.item(data-src="#w1")
 							img.item__label(src=imgUrl+"blades/label-2dplus.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png" data-img="../img/types-clippers/clippers-2dplus-mobile.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png"
+								srcset="../img/types-clippers/clippers-2dplus-mobile.png 400w, ../img/types-clippers/clippers-2dplus.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px"
+								alt="")
 							.window(id="w1")
-								.window-top
-									img.window__label(src=imgUrl+"blades/label-2dplus.png", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+								video.window__video(loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/2D-plus.mp4")
+								//- .window-top
+								//- 	img.window__label(src=imgUrl+"blades/label-2dplus.png", alt="")
+								//- 	h3.window__title Улучшенная заточка лезвий
+								//- p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
+								//- img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w2")
 							img.item__label(src=imgUrl+"blades/label-3d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png" data-img="../img/types-clippers/clippers-3d-mobile.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png"
+								srcset="../img/types-clippers/clippers-3d-mobile.png 400w, ../img/types-clippers/clippers-3d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
 							.window(id="w2")
-								.window-top
-									img.window__label(src=imgUrl+"blades/label-3d.png", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+								video.window__video(loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/3D.mp4")
+								//- .window-top
+								//- 	img.window__label(src=imgUrl+"blades/label-3d.png", alt="")
+								//- 	h3.window__title Улучшенная заточка лезвий
+								//- p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
+								//- img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w3")
 							img.item__label(src=imgUrl+"blades/label-4d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png" data-img="../img/types-clippers/clippers-4d-mobile.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-4d-mobile.png 400w, ../img/types-clippers/clippers-4d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
 							.window(id="w3")
-								.window-top
-									img.window__label(src=imgUrl+"blades/label-4d.png", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+								video.window__video(loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/4D.mp4")
+								//- .window-top
+								//- 	img.window__label(src=imgUrl+"blades/label-4d.png", alt="")
+								//- 	h3.window__title Улучшенная заточка лезвий
+								//- p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
+								//- img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w4")
 							img.item__label(src=imgUrl+"blades/label-kids.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-kids.png" data-img="../img/types-clippers/clippers-kids-mobile.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-kids-mobile.png 400w, ../img/types-clippers/clippers-kids.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
 							.window(id="w4")
-								.window-top
-									img.window__label(src=imgUrl+"blades/label-kids.png", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+								video.window__video(loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/KIDS.mp4")
+								//- .window-top
+								//- 	img.window__label(src=imgUrl+"blades/label-kids.png", alt="")
+								//- 	h3.window__title Улучшенная заточка лезвий
+								//- p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
+								//- img.window__img(src=imgUrl+"gif.gif", alt="")
 						.item(data-src="#w4")
 							img.item__label(src=imgUrl+"blades/label-2d.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clippers-2d.png" data-img="../img/types-clippers/clippers-2d-mobile.png" alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-2d-mobile.png 400w, ../img/types-clippers/clippers-2d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
 							.window(id="w5")
-								.window-top
-									img.window__label(src=imgUrl+"blades/label-2d.png", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+								video.window__video(loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/2D.mp4")
+								//- .window-top
+								//- 	img.window__label(src=imgUrl+"blades/label-2d.png", alt="")
+								//- 	h3.window__title Улучшенная заточка лезвий
+								//- p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
+								//- img.window__img(src=imgUrl+"gif.gif", alt="")
 
 			section.blades
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
