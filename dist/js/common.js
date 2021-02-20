@@ -90,6 +90,7 @@
 			});
 
 			$('.blade__text, .blade-list li').find('br').remove();
+			// $('.types-clippers .item').find('.window__video').get(0).play();
 		} else {
 			$('.types-clippers .item').on('mouseover', function () {
 				$('.types-clippers .item').find('.item__clipper').css('opacity', '.3');
@@ -100,8 +101,9 @@
 				$('.window').hide()
 			});
 			$('.types-clippers .item').on('mouseover', function () {
-				$('.window').hide()
+				$('.window').hide();
 				$(this).find('.window').show();
+				$(this).find('.window__video').get(0).play();
 			});
 		}
 
