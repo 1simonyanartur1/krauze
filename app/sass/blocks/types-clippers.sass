@@ -48,41 +48,42 @@
 			top: 0
 			transform: translate(-50%, 0)
 			.item__label
-				left: -120px
+				top: 10px
+				left: -60px
 		&:nth-child(2)
-			top: 27%
+			top: 25%
 			left: 73%
 			transform: translate(0, 0) rotate(72deg)
 			.window
 				transform: translate(-50%, -50%) rotate(-72deg)
 			.item__label
-				transform: translate(-50%, -50%) rotate(-72deg)
+				transform: translate(-25%, -75%) rotate(-72deg)
 		&:nth-child(3)
-			top: 65%
-			left: 66%
+			top: 63%
+			left: 63%
 			transform: translate(0, 0) rotate(144deg)
 			.window
 				transform: translate(-50%, -50%) rotate(-144deg)
 			.item__label
-				transform: translate(-75%, 0%) rotate(-144deg)
+				transform: translate(-65%, -30%) rotate(-144deg)
 		&:nth-child(4)
-			top: 66%
-			left: 27%
+			top: 63%
+			left: 23%
 			transform: translate(0, 0) rotate(-140deg)
 			.window
 				transform: translate(-50%, -50%) rotate(140deg)
 			.item__label
 				transform: translate(100%, -100%) rotate(140deg)
 		&:nth-child(5)
-			top: 21%
-			left: 6%
+			top: 18%
+			left: 3%
 			transform: translate(0, 0) rotate(-69deg)
 			@include mq($max-width: 1200px)
 				order: -1
 			.window
 				transform: translate(-50%, -50%) rotate(69deg)
 			.item__label
-				transform: translate(75%, -75%) rotate(69deg)
+				transform: translate(95%, -25%) rotate(69deg)
 		&__label
 			display: block
 			position: absolute
@@ -123,6 +124,7 @@
 	border-radius: 5px
 	padding: 2px
 	display: none
+	
 	+mq($max-width: 1700px)
 		max-width: 500px
 		min-width: 500px
