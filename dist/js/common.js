@@ -72,10 +72,6 @@
 		}
 
 		if ($(window).width() <= 1200) {
-			// $('.types-clippers .item__clipper').each(function () {
-			// 	var imgMobile = $(this).data('img');
-			// 	$(this).attr('src', imgMobile);
-			// });
 
 			$('.blades').slick({
 				dots: false,
@@ -90,20 +86,30 @@
 			});
 
 			$('.blade__text, .blade-list li').find('br').remove();
-			// $('.types-clippers .item').find('.window__video').get(0).play();
 		} else {
 			$('.types-clippers .item').on('mouseover', function () {
-				$('.types-clippers .item').find('.item__clipper').css('opacity', '.3');
-				$(this).find('.item__clipper').css('opacity', '1');
+				$('.types-clippers .item').find('.item__clipper, .item__label').css('opacity', '.3');
+				$(this).find('.item__clipper, .item__label').css('opacity', '1');
+				
+				var videoId = $(this).data('video');
+				$('.types-clippers .window').each(function() {
+					$(this).find('video').get(0).pause();
+					$(this).find('video').get(0).load();
+					if($(this).data('video') == videoId) {
+						$('.window').hide();
+						$(this).show();
+						$(this).find('video').get(0).play();
+					}
+				});
+			
 			});
 			$('.types-clippers .items').on('mouseleave', function () {
-				$('.types-clippers .item').find('.item__clipper').css('opacity', '1');
-				$('.window').hide()
-			});
-			$('.types-clippers .item').on('mouseover', function () {
+				$('.types-clippers .item').find('.item__clipper, .item__label').css('opacity', '1');
+				$('.window video').each(function() {
+					$(this).get(0).pause();
+					$(this).get(0).load();
+				});
 				$('.window').hide();
-				$(this).find('.window').show();
-				$(this).find('.window__video').get(0).play();
 			});
 		}
 
