@@ -96,8 +96,8 @@
 					$(this).find('video').get(0).pause();
 					$(this).find('video').get(0).load();
 					if($(this).data('video') == videoId) {
-						$('.window').hide(500);
-						$(this).show(500);
+						$('.window').hide();
+						$(this).show();
 						$(this).find('video').get(0).play();
 					}
 				});
