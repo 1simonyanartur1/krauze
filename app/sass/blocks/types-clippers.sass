@@ -120,6 +120,22 @@
 				margin: 25px 0
 		&-window
 			display: none
+			+mq($max-width: 1200px)
+				transform: translate(0, 0) rotate(0) !important
+				position: static
+				display: block
+				max-width: 100%
+				width: 100%
+				margin: 10px 0
+				min-width: 100%
+				background: none
+				box-shadow: none
+				padding: 0
+				margin: 0
+			&__video
+				display: block
+				width: 100%
+				height: auto
 .window
 	z-index: 10
 	position: absolute
@@ -135,18 +151,6 @@
 	+mq($max-width: 1700px)
 		max-width: 600px
 		min-width: 600px
-	+mq($max-width: 1200px)
-		transform: translate(0, 0) rotate(0) !important
-		position: static
-		display: block
-		max-width: 100%
-		width: 100%
-		margin: 10px 0
-		min-width: 100%
-		background: none
-		box-shadow: none
-		padding: 0
-		margin: 0
 	&__video
 		display: block
 		width: 100%
