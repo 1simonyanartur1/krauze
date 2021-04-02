@@ -19,6 +19,9 @@
 			justify-content: center
 			flex-wrap: wrap
 			height: auto
+		& > .window
+			+mq($max-width: 1200px)
+				display: none
 	.item
 		cursor: pointer
 		position: absolute
@@ -56,6 +59,8 @@
 			transform: translate(0, 0) rotate(72deg)
 			.item__clipper
 				width: 160px
+				+mq($max-width: 1200px)
+					width: 100%
 			.item__label
 				transform: translate(-25%, -75%) rotate(-72deg)
 		&:nth-child(3)
@@ -64,6 +69,8 @@
 			transform: translate(0, 0) rotate(144deg)
 			.item__clipper
 				width: 140px
+				+mq($max-width: 1200px)
+					width: 100%
 			.item__label
 				transform: translate(-65%, -30%) rotate(-144deg)
 		&:nth-child(4)
@@ -78,6 +85,8 @@
 			transform: translate(0, 0) rotate(-69deg)
 			.item__clipper
 				width: 130px
+				+mq($max-width: 1200px)
+					width: 100%
 			@include mq($max-width: 1200px)
 				order: -1
 			.item__label
@@ -109,6 +118,8 @@
 				height: auto
 				object-fit: contain
 				margin: 25px 0
+		&-window
+			display: none
 .window
 	z-index: 10
 	position: absolute
@@ -122,14 +133,8 @@
 	box-shadow: 0px 4px 25px #BFC2C9
 	display: none
 	+mq($max-width: 1700px)
-		max-width: 500px
-		min-width: 500px
-	+mq($max-width: 1380px)
-		max-width: 400px
-		min-width: 400px
-	+mq($max-width: 1300px)
-			max-width: 350px
-			min-width: 350px
+		max-width: 600px
+		min-width: 600px
 	+mq($max-width: 1200px)
 		transform: translate(0, 0) rotate(0) !important
 		position: static
