@@ -49,141 +49,154 @@
 	display: flex
 	align-items: center
 	position: relative
-	@include mq($max-width: 1000px)
-		padding: 25px 0
+	padding: 40px 0
+	+mq($max-width: 1500px)
+		&:nth-child(2)
+			.blade__img
+				transform: translate(50%, -50%)
+	@include mq($max-width: 1200px)
+		padding: 0 0
+		&:nth-child(2)
+			.blade__img
+				transform: translate(0, 0)
+	&__white
+		color: white
+	&__black
+		color: black
 	.container
 		display: flex
+		flex-wrap: wrap
 		position: relative
-		z-index: 2
+		max-width: 1050px
+		width: 100%
 		min-height: 530px
-		@include mq($max-width: 1000px)
+		@include mq($max-width: 1200px)
+			padding: 10px
+			position: relative
+			height: auto
+			min-height: 780px
 			flex-direction: column
 			align-items: center
-			justify-content: space-between
-			min-height: 600px
+		@include mq($max-width: 1000px)
+			min-height: 850px
 		@include mq($max-width: 575px)
-			min-height: 0
+			min-height: 600px
 	.inner
-		width: 60%
-		position: relative
-		z-index: 2
+		max-width: 770px
+		width: 100%
+		margin: 0 auto 0 0
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		padding: 25px 0
-		@include mq($max-width: 1000px)
-			width: 100%
+		position: relative
+		z-index: 2
+		+mq($max-width: 1200px)
+			position: static
+			margin: 0 0 0 0
+			max-width: 100%
+			justify-content: flex-start
+			align-items: center
 			text-align: center
-			position: static
-			padding: 0
 	&__img
+		display: block
 		position: absolute
-		z-index: 1
 		top: 50%
-		right: -10%
-		transform: translate(0, -50%)
-		@include mq($max-width: 1200px)
-			top: auto
-			right: 0
-			bottom: 0
-			width: 40%
+		right: 0
+		transform: translate(50%, -50%)
+		z-index: 1
+		width: auto
+		height: calc( 100% + 40px )
+		+mq($max-width: 1700px)
+			transform: translate(40%, -50%)
+		+mq($max-width: 1400px)
+			transform: translate(30%, -50%)
+		+mq($max-width: 1200px)
 			transform: translate(0, 0)
-		@include mq($max-width: 1000px)
 			position: static
-			width: 30%
-		@include mq($max-width: 575px)
 			width: auto
-			margin-left: auto
+			height: 250px
+			margin: 0 auto
+		+mq($max-width: 575px)
 			height: 200px
+			margin: 0 0 0 auto
 	&__label
 		display: block
 		width: 100px
 		height: auto
-		margin-right: 30px
-		@include mq($max-width: 1000px)
-			margin-right: 0
-			margin-bottom: 10px
+		margin: 0 30px 0 0
+		transform: translate(0, -20%)
+		+mq($max-width: 1200px)
 			position: absolute
-			left: 10px
-			top: 0
+			left: 15px
+			top: 15px
+			transform: translate(0, 0)
+		+mq($max-width: 575px)
+			width: 100px
 	&__title
 		font: 700 45px 'Inter', sans-serif
-		margin-bottom: 15px
-		@include mq($max-width: 700px)
-			font-size: 35px
-		@include mq($max-width: 550px)
+		+mq($max-width: 700px)
+			font-size: 30px
+		+mq($max-width: 575px)
 			font-size: 22px
 	&__text
-		font: 400 16px/1.6 'Inter', sans-serif
-		@include mq($max-width: 1000px)
-			margin-left: auto
-			margin-right: auto
-			width: 70%
+		font: 400 17px/1.6 'Inter', sans-serif
+		margin-top: 15px
+		+mq($max-width: 700px)
 			font-size: 14px
-		@include mq($max-width: 550px)
-			width: 100%
+		+mq($max-width: 575px)
 			font-size: 12px
 	&-list
+		width: 100%
 		display: flex
+		flex-wrap: wrap
 		align-items: flex-start
-		font: 400 16px/1.6 'Inter', sans-serif
-		text-align: center
-		word-wrap: break-word
-		@include mq($max-width: 1000px)
-			justify-content: space-between
-		@include mq($max-width: 575px)
-			font-size: 12px
-			line-height: 1.4
-			flex-wrap: wrap
-			height: 200px
-		img
-			margin-bottom: 15px
-			display: inline-block
-			height: 90px
-			@include mq($max-width: 550px)
-				height: 50px
+		+mq($max-width: 1200px)
+			margin: 50px 0 0 0
+			justify-content: center
+		+mq($max-width: 575px)
+			margin: 20px 0 0 0
 		li
-			padding: 0 15px
-			@include mq($max-width: 550px)
-				width: 33.3%
-				margin-bottom: 15px
-				padding: 0 5px
-	&-line
-		display: flex
-		align-items: flex-start
-		@include mq($max-width: 1000px)
+			width: calc( 33.3% - 15px )
+			display: flex
 			flex-direction: column
 			align-items: center
 			text-align: center
-			margin-bottom: 25px
-		@include mq($max-width: 575px)
-			height: 150px
+			font: 500 17px/1.4 'Inter', sans-serif
+			+mq($max-width: 1200px)
+				width: 33.3%
+				padding: 0 2px
+			+mq($max-width: 700px)
+				font-size: 14px
+			+mq($max-width: 575px)
+				font-size: 12px
+				font-weight: 300
+			+mq($max-width: 400px)
+				font-size: 11px
+			+mq($max-width: 370px)
+				font-size: 9px
+			&:not(:last-child)
+				margin: 0 15px 0 0
+				+mq($max-width: 1200px)
+					margin: 0
+			img
+				display: block
+				margin: 0 0 15px 0
+				+mq($max-width: 575px)
+					height: 50px
+				// 	width: 100%
+	&-line
+		display: flex
+		align-items: flex-start
+		width: 100%
+		+mq($max-width: 1200px)
+			text-align: center
+			flex-direction: column
+			align-items: center
+			margin: 25px 0
 		&-wrap
 			display: block
 			width: calc( 100% - 130px )
-			@include mq($max-width: 575px)
+			+mq($max-width: 1000px)
 				width: 100%
-	.bg-text
-		position: absolute
-		left: 0
-		top: 50%
-		transform: translate(0, -50%)
-		display: block
-		width: 50%
-		z-index: 1
-		@include mq($max-width: 1000px)
-			width: 100%
-	&.type1
-		background: url($imgUrl+'blades/bg1.jpg') no-repeat left top / cover
-		color: $white
-	&.type2
-		background: url($imgUrl+'blades/bg2.jpg') no-repeat center center / cover
-	&.type3
-		background: url($imgUrl+'blades/bg1.jpg') no-repeat center center / cover
-		color: $white
-	&.type4
-		background: url($imgUrl+'blades/bg4.jpg') no-repeat center center / cover
-	&.type5
-		background: url($imgUrl+'blades/bg5.jpg') no-repeat center center / cover
 
 

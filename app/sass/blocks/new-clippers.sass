@@ -35,13 +35,16 @@
 		justify-content: center
 		border-radius: 100%
 		color: $black
-		border: 1px solid $black
+		border: 1px solid #ACACAC
 		@include mq($max-width: 1500px)
 			width: 50px
 			height: 50px
 		@include mq($max-width: 1200px)
 			top: 108%
 			transform: translate(0, 0)
+		&:before
+			margin: 0
+			width: auto
 		&:hover
 			color: $white
 			background: $black

@@ -71,6 +71,48 @@
 			});
 		}
 
+		if ($(window).width() <= 1200) {
+
+			$('.blades').slick({
+				dots: false,
+				arrows: true,
+				prevArrow: '<button class="left icon-right-open-mini"></button>',
+				nextArrow: '<button class="right icon-right-open-mini"></button>',
+				infinite: true,
+				speed: 300,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: true
+			});
+
+			$('.blade__text, .blade-list li').find('br').remove();
+		} else {
+			$('.types-clippers .item').on('mouseover', function () {
+				$('.types-clippers .item').find('.item__clipper, .item__label').css('opacity', '.3');
+				$(this).find('.item__clipper, .item__label').css('opacity', '1');
+				
+				var videoId = $(this).data('video');
+				$('.types-clippers .window').each(function() {
+					$(this).find('video').get(0).pause();
+					$(this).find('video').get(0).load();
+					if($(this).data('video') == videoId) {
+						$('.window').hide();
+						$(this).show();
+						$(this).find('video').get(0).play();
+					}
+				});
+			
+			});
+			$('.types-clippers .items').on('mouseleave', function () {
+				$('.types-clippers .item').find('.item__clipper, .item__label').css('opacity', '1');
+				$('.window video').each(function() {
+					$(this).get(0).pause();
+					$(this).get(0).load();
+				});
+				$('.window').hide();
+			});
+		}
+
 		$('.reviews .slider').slick({
 			dots: true,
 			arrows: false,
@@ -94,20 +136,6 @@
 			]
 		});
 
-		$('.blades').slick({
-			dots: false,
-			arrows: true,
-			prevArrow: '<button class="left icon-right-open-mini"></button>',
-			nextArrow: '<button class="right icon-right-open-mini"></button>',
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			// autoplay: true,
-			// autoplaySpeed: 5000,
-			adaptiveHeight: true
-		});
-
 		$('.new-clippers .slider').slick({
 			dots: false,
 			arrows: true,
@@ -116,29 +144,10 @@
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
-			slidesToScroll: 1,
-			// autoplay: true,
-			// autoplaySpeed: 5000
+			slidesToScroll: 1
 		});
 
-		if ($(window).width() < 600) {
-			$('.types-clippers .item__clipper').each(function () {
-				var imgMobile = $(this).data('mobile');
-				$(this).attr('src', imgMobile);
-			});
-		} else {}
-
 		$(".tabs").tabs();
-
-		// $('.types-clippers .item__clipper').on('mouseover', function () {
-		// 	$('.types-clippers .item__clipper').css({
-		// 		'opacity': '.5'
-		// 	})
-		// 	$(this).css({
-		// 		'opacity': '1'
-		// 	});
-		// });
-
 
 		var btn = $('.choose-folder .btns .btn1');
 		var formats = '';
@@ -151,6 +160,7 @@
 		var f = 'А5+';
 		var c = 'classic';
 		var q = '48';
+
 		// Исходная ссылка
 		var startLink = 'https://www.erichkrause.com/catalog/Tetradi_i_bloknoty_s_plastikovoy_oblozhkoy_418/filter/model_name-is-folderbook/';
 
@@ -163,7 +173,7 @@
 			if ($('.formats li:first-child').hasClass('active')) {
 				$('.colors.pastel, .colors.accent').addClass('disabled');
 
-				if($('.colors.pastel li, .colors.accent li').hasClass('active')) {
+				if ($('.colors.pastel li, .colors.accent li').hasClass('active')) {
 					$('.colors.pastel li, .colors.accent li').removeClass('active');
 					$('.colors.classic li:first-child').addClass('active');
 					// $('.choose-folder__img').attr('src', '../img/choose-folder/classic-black-a4-48.png');
@@ -206,11 +216,12 @@
 		function changeUrl() {
 			btn.attr('href', `${startLink}${formats}${colors}${quantity}apply/`);
 		}
+
 		function changeImg() {
 			// проверка отмечен ли формат
 			$('.choose-folder .formats li').on('click', function () {
 				f = $(this).text();
-				if(f == 'А4') {
+				if (f == 'А4') {
 					imgFormat = 'a4'
 				} else if (f == 'А5+') {
 					imgFormat = 'a5'
@@ -219,7 +230,7 @@
 			// проверка отмечен ли цвет
 			$('.choose-folder .colors li').on('click', function () {
 				imgColor = $(this).attr('class');
-				if($(this).parents('.colors').hasClass('classic')) {
+				if ($(this).parents('.colors').hasClass('classic')) {
 					c = 'classic';
 				} else if ($(this).parents('.colors').hasClass('accent')) {
 					c = 'accent';
@@ -230,18 +241,18 @@
 			// проверка отмечен ли количество листов
 			$('.choose-folder .quantity li').on('click', function () {
 				q = $(this).text();
-				if(q == '48') {
+				if (q == '48') {
 					imgSize = '48'
 				} else if (q == '2х48') {
 					imgSize = '96'
 				}
 			});
 			$('.choose-folder-block li').on('click', function () {
-				if(imgFormat.length != 0 && imgColor.length != 0 && imgSize.length != 0 && c.length != 0) {
+				if (imgFormat.length != 0 && imgColor.length != 0 && imgSize.length != 0 && c.length != 0) {
 					$('.choose-folder__img').attr('src', 'img/choose-folder/' + `${c}-${imgColor}-${imgFormat}-${imgSize}` + '.png');
 				} else {}
 			});
-			
+
 		}
 
 		changeImg();

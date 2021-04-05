@@ -14,7 +14,6 @@
 		box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.15)
 		border-radius: 10px
 		margin-bottom: 80px
-		// overflow: hidden
 		@include mq($max-width: 700px)
 			border: 1px solid #ACACAC
 		@include mq($max-width: 575px)
@@ -126,12 +125,15 @@
 			width: 40%
 		li
 			width: 16.666%
-			// @include mq($max-width: 575px)
-				// width: 100%
+			&:first-child
+				a
+					border-radius: 10px 0 0 0
+			&:last-child
+				a
+					border-radius: 0 10px 0 0
 		.ui-tabs-active
 			a
 				border-bottom: none
-				box-shadow: 14px -19px 24px rgba(0, 0, 0, 0.10)
 				border-bottom: none
 				background: $white
 				z-index: 2
@@ -141,8 +143,6 @@
 			justify-content: center
 			height: 140px
 			border: 1px solid #ACACAC
-			border-top-left-radius: 10px
-			border-top-right-radius: 10px
 			position: relative
 			z-index: 1
 			background: #efefef
@@ -159,7 +159,7 @@
 					opacity: .5
 		img
 			display: block
-			max-width: 50%
+			width: 50%
 			max-height: 90%
 			padding: 0
 			transition: all .3s ease-out
@@ -199,6 +199,7 @@
 		padding: 0
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
 		border: none
+		background: none
 	.ui-tabs .ui-tabs-nav li
 		margin: 0
 	.ui-tabs .ui-tabs-nav li

@@ -1,11 +1,10 @@
-- var imgUrl = 'img/';
-  
+- var imgUrl = '../img/';
+
 doctype
 html
 	include ../blocks/head.pug
 		title Краузе - Ножницы
 	body
-
 		.page-container#new-landing
 			section.mainblock-clippers
 				.container
@@ -20,10 +19,10 @@ html
 			section.video
 				.container
 					//- img.video__img(src=imgUrl+"poster1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-					<video controls="controls" poster="img/poster1.jpg">
-						<source src="video/snowman.ogv" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						<source src="video/snowman.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<video controls="controls" poster="../img/poster-clippers.jpg">
+						<source src="../img/Eminem.mp4" type='video/ogg; codecs="theora, vorbis"'>
+						<source src="../img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+						<source src="../img/Eminem.mp4" type='video/webm; codecs="vp8, vorbis"'>
 						p Тег video не поддерживается вашим браузером.
 					</video>
 					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
@@ -35,153 +34,161 @@ html
 				.container
 					.caption(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 						h2.caption__title Типы лезвий
-					ul.items
-						li.item
-							img.item__label(src=imgUrl+"assortment-clippers/img1.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clipper1.png", data-mobile="img/types-clippers/clipper1-m.png" alt="")
-							.window
-								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label1.jpg", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
-						li.item
-							img.item__label(src=imgUrl+"assortment-clippers/img3.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clipper2.png", data-mobile="img/types-clippers/clipper2-m.png" alt="")
-							.window
-								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label2.jpg", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
-						li.item
-							img.item__label(src=imgUrl+"assortment-clippers/img4.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clipper3.png", data-mobile="img/types-clippers/clipper3-m.png" alt="")
-							.window
-								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label3.jpg", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
-						li.item
-							img.item__label(src=imgUrl+"assortment-clippers/img5.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clipper5.png", data-mobile="img/types-clippers/clipper5-m.png" alt="")
-							.window
-								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label4.jpg", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
-						li.item
-							img.item__label(src=imgUrl+"assortment-clippers/img2.png", alt="")
-							img.item__clipper(src=imgUrl+"types-clippers/clipper4.png", data-mobile="img/types-clippers/clipper4-m.png" alt="")
-							.window
-								.window-top
-									img.window__label(src=imgUrl+"types-clippers/label2+.jpg", alt="")
-									h3.window__title Улучшенная заточка лезвий
-								p.window__text Лезвия стандартной формы с усовершенствованной двойной заточкой режущей кромки. Базовая модель для офиса с хорошими режущими свойствами. Доступна большинству пользователей, кому нужны классические ножницы с хорошими режущими характеристиками.
-								img.window__img(src=imgUrl+"gif.gif", alt="")
+					.items
+						.item(data-video="w1")
+							img.item__label(src=imgUrl+"blades/label-2d-plus.svg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png"
+								srcset="../img/types-clippers/clippers-2dplus-mobile.png 400w, ../img/types-clippers/clippers-2dplus.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px"
+								alt="")
+							.item-window(data-video="w1")
+								video.item-window__video(poster="../video/poster-2d-plus.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/2D-plus.mp4")
+						.item(data-video="w2")
+							img.item__label(src=imgUrl+"blades/label-3d.svg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png"
+								srcset="../img/types-clippers/clippers-3d-mobile.png 400w, ../img/types-clippers/clippers-3d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
+							.item-window(data-video="w2")
+								video.item-window__video(poster="../video/poster-3d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/3D.mp4")
+						.item(data-video="w3")
+							img.item__label(src=imgUrl+"blades/label-4d.svg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-4d-mobile.png 400w, ../img/types-clippers/clippers-4d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
+							.item-window(data-video="w3")
+								video.item-window__video(poster="../video/poster-4d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/4D.mp4")
+						.item(data-video="w4")
+							img.item__label(src=imgUrl+"blades/label-kids.svg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-kids-mobile.png 400w, ../img/types-clippers/clippers-kids.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
+							.item-window(data-video="w4")
+								video.item-window__video(poster="../video/poster-kids.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/KIDS.mp4")
+						.item(data-video="w5")
+							img.item__label(src=imgUrl+"blades/label-2d.svg", alt="")
+							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
+								srcset="../img/types-clippers/clippers-2d-mobile.png 400w, ../img/types-clippers/clippers-2d.png 1000w"
+								sizes="(max-width: 1200px) 100px, (max-width: 1920px) 600px" 
+								alt="")
+							.item-window(data-video="w5")
+								video.item-window__video(poster="../video/poster-2d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+									source(src="../video/2D.mp4")
+						.window(data-video="w1")
+							video.window__video(poster="../video/poster-2d-plus.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="../video/2D-plus.mp4")
+						.window(data-video="w2")
+							video.window__video(poster="../video/poster-3d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="../video/3D.mp4")
+						.window(data-video="w3")
+							video.window__video(poster="../video/poster-4d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="../video/4D.mp4")
+						.window(data-video="w4")
+							video.window__video(poster="../video/poster-kids.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="../video/KIDS.mp4")
+						.window(data-video="w5")
+							video.window__video(poster="../video/poster-2d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="../video/2D.mp4")
 
 			section.blades
-				.blade.type1
-					img.bg-text(src=imgUrl+"blades/bg-text1.png", alt="")
+				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
 					.container
-						img.blade__img(src=imgUrl+"blades/img1.png", alt="" )
+						img.blade__img(src=imgUrl+"blades/clippers-2d.png", alt="" )
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-								img.blade__label(src=imgUrl+"assortment-clippers/img1.png", alt="")
+								img.blade__label(src=imgUrl+"blades/label-2d.svg", alt="")
 								.blade-line-wrap
 									h2.blade__title Изящная практичность
 									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Легкие и удобные ножницы для широкого круга <br> задач с отличными режущими характеристиками.
 							ul.blade-list
 								li(data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i1.png", alt="")
-									p Более легкий рез при максимально возможном количестве листов.
+									img(src=imgUrl+"blades/icon-advanced.png", alt="")
+									p Режуща кромка стала <br> острее благодаря <br> уменьшенному углу заточки
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i2.png", alt="")
-									p Производительность ножниц увеличена на 40-70% 
-								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i3.png", alt="")
-									p Режущая кромка теперь стала острее благодаря уменьшенному углу
-				.blade.type2
-					img.bg-text(src=imgUrl+"blades/bg-text2.png", alt="")
+									img(src=imgUrl+"blades/icon-higher.png", alt="")
+									p Производительность <br> ножниц увеличена
+				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
 					.container
-						img.blade__img(src=imgUrl+"blades/img2.png", alt="")
+						img.blade__img(src=imgUrl+"blades/clippers-2dplus.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-								img.blade__label(src=imgUrl+"assortment-clippers/img2.png", alt="")
+								img.blade__label(src=imgUrl+"blades/label-2d-plus.svg", alt="")
 								.blade-line-wrap
-									h2.blade__title Превосходство без усилий
-									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Благодаря уникальной форме лезвий ножницы уменьшают прилагаемое усилие и позволяют с легкостью в одно движение разрезать даже плотный картон.
+									h2.blade__title Легко и без усилий
+									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Благодаря уникальной форме лезвий ножницы уменьшают <br> прилагаемое усилие и позволяют с легкостью в одно движение <br> разрезать даже плотный картон.
 							ul.blade-list
 								li(data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i4.png", alt="")
-									p Усовершенствованные лезвия дугообразной формы
+									img(src=imgUrl+"blades/icon-advanced.png", alt="")
+									p Уникальная <br> дугообразная <br> форма режущей кромки
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i5.png", alt="")
-									p Нержавеющая сталь Толщина лезвий 2.5мм
+									img(src=imgUrl+"blades/icon-angle.png", alt="")
+									p Рез в одно движение <br> благодаря более широкому <br> углу схождения лезвий 
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i6.png", alt="")
-									p Эргономичные ручки с мягкими резиновыми вставками
-				.blade.type3
-					img.bg-text(src=imgUrl+"blades/bg-text3.png", alt="")
+									img(src=imgUrl+"blades/icon-power.png", alt="")
+									p Минимум усилий <br> при работе с более <br> плотным материалом
+				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
 					.container
-						img.blade__img(src=imgUrl+"blades/img3.png", alt="")
+						img.blade__img(src=imgUrl+"blades/clippers-3d.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-								img.blade__label(src=imgUrl+"assortment-clippers/img3.png", alt="")
+								img.blade__label(src=imgUrl+"blades/label-3d.svg", alt="")
 								.blade-line-wrap
 									h2.blade__title Удовольствие от работы
-									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Ножницы с уникальными характеристиками дарят удовольствие от работы в офисе и дома благодаря особым преимуществам и специальной технологии заточки лезвий.
+									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Ножницы эргономичной формы с уникальной формой и особой заточкой <br> лезвий дарят максимум комфорта в работе как с бумагой, <br> так и более плотными материалами
 							ul.blade-list
 								li(data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i4.png", alt="")
-									p Усовершенствованные лезвия дугообразной формы
+									img(src=imgUrl+"blades/icon-soft.png", alt="")
+									p Противоскользящие <br> вставки на ручках для <br> дополнительного <br> удобства в использовании 
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i7.png", alt="")
-									p Многопрофильная заточка
+									img(src=imgUrl+"blades/icon-multy.png", alt="")
+									p Особо острая режущая <br> кромка благодаря <br> многопрофильной заточке <br> и дугообразной форме
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i8.png", alt="")
-									p Широкий угол схождения лезвий
-				.blade.type4
-					img.bg-text(src=imgUrl+"blades/bg-text4.png", alt="")
+									img(src=imgUrl+"blades/icon-less.png", alt="")
+									p Минимум усилий <br> при максимальной <br> производительности 
+				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
 					.container
-						img.blade__img(src=imgUrl+"blades/img4.png", alt="")
+						img.blade__img(src=imgUrl+"blades/clippers-4d.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-								img.blade__label(src=imgUrl+"assortment-clippers/img4.png", alt="")
+								img.blade__label(src=imgUrl+"blades/label-4d.svg", alt="")
 								.blade-line-wrap
 									h2.blade__title Лезвия нового поколения
-									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Особая технология производства и заточки делают данные модели флагманами среди всего ассортимента ножниц, обеспечивая непревзойденную эффективность.
+									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Особая технология производства и заточки делают данные <br> модели флагманами среди всего ассортимента ножниц, <br> обеспечивая непревзойденную эффективность.
 							ul.blade-list
 								li(data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i7.png", alt="")
-									p Многопрофильная заточка
+									img(src=imgUrl+"blades/icon-unique.png", alt="")
+									p Уникальная технология <br> производства <br> и заточки лезвий
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i8.png", alt="")
-									p Широкий угол схождения
+									img(src=imgUrl+"blades/icon-extremely.png", alt="")
+									p Особо острые <br> и мощные среди <br> аналогов 
 								li(data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i9.png", alt="")
-									p Вогнутая внутрення поверхность
-				.blade.type5
+									img(src=imgUrl+"blades/icon-less.png", alt="")
+									p Минимум усилий <br> при максимальной <br> производительности
+				.blade.blade__black(style="background: url('../img/blades/kids-bg.jpg') no-repeat center center / cover;")
 					.container
-						img.blade__img(src=imgUrl+"blades/img5.png", alt="")
+						img.blade__img(src=imgUrl+"blades/clippers-kids.png", alt="")
 						.inner
 							.blade-line(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-								img.blade__label(src=imgUrl+"assortment-clippers/img5.png", alt="")
+								img.blade__label(src=imgUrl+"blades/label-kids.svg", alt="")
 								.blade-line-wrap
 									h2.blade__title  Забота и комфорт
-									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")  Детские ножницы со скругленными концами лезвий для безопасного использования во время творческих занятий.
+									p.blade__text(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Детские ножницы с закругленными концами лезвий <br> для безопасного использования <br> во время творческих занятий.
 							ul.blade-list
 								li(data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i66.png", alt="")
-									p Многопрофильная заточка
+									img(src=imgUrl+"blades/icon-safe.png", alt="")
+									p Безопасные <br> закругленные концы <br> лезвий
 								li(data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i10.png", alt="")
-									p Широкий угол схождения
+									img(src=imgUrl+"blades/icon-kid.png", alt="")
+									p Специальные размеры <br> и особая эргономика <br> для детских рук
 								li(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-									img(src=imgUrl+"blades/i11.png", alt="")
-									p Дугообразная форма
+									img(src=imgUrl+"blades/icon-colors.png", alt="")
+									p Яркий дизайн
 
 			section.new-clippers
 				.container
@@ -201,76 +208,113 @@ html
 						ul
 							li
 								a(href="#tab1")
-									img(src=imgUrl+"assortment-clippers/img1.png", alt="")
+									img(src=imgUrl+"blades/label-2d.svg", alt="")
 							li
 								a(href="#tab2")
-									img(src=imgUrl+"assortment-clippers/img2.png", alt="")
+									img(src=imgUrl+"blades/label-2d-plus.svg", alt="")
 							li
 								a(href="#tab3")
-									img(src=imgUrl+"assortment-clippers/img3.png", alt="")
+									img(src=imgUrl+"blades/label-3d.svg", alt="")
 							li
 								a(href="#tab4")
-									img(src=imgUrl+"assortment-clippers/img4.png", alt="")
+									img(src=imgUrl+"blades/label-4d.svg", alt="")
 							li
 								a(href="#tab5")
-									img(src=imgUrl+"assortment-clippers/img5.png", alt="")
+									img(src=imgUrl+"blades/label-kids.svg", alt="")
 							li
 								a(href="#tab6")
-									img(src=imgUrl+"assortment-clippers/img5.png", alt="")
+									img(src=imgUrl+"blades/label-hand.svg", alt="")
 						#tab1.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
-								h3.card__title Standard+
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img33.jpg", alt="")
-								h3.card__title Standard+ Ergo
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img44.jpg", alt="")
-								h3.card__title Dynamic
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/881/881d9879b82aefa6e837507794c3466e.jpg" alt="">
+									<h3 class="card__title">Standard</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/205/205dafd133b8a3f0bf0e0f4e3e1fa5dd.jpg" alt="">
+									<h3 class="card__title">Standard+</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B+ergo/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/630/6308f0471c10c63a3810491603d53876.jpg" alt="">
+									<h3 class="card__title">Standard+ Ergo</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-dynamic/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/503/50348d5108599159392d738103cbcc9b.jpg" alt="">
+									<h3 class="card__title">Dynamic</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 						#tab2.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
-								h3.card__title Standard+
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img33.jpg", alt="")
-								h3.card__title Standard+ Ergo
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-unity/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/6c5/6c54152bb322679c84b706223b539487.jpg" alt="">
+									<h3 class="card__title">Unity</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-top+model/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/ca5/ca5c7658e64c06e4273fd738537498c1.jpg" alt="">
+									<h3 class="card__title">TopModel</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-comfort/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/eae/eaed41a5fe0d9fe85d36e77e77da8e93.jpg" alt="">
+									<h3 class="card__title">Comfort</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 						#tab3.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img22.jpg", alt="")
-								h3.card__title Standard+
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/nozhnitsy_erichkrause_protector_20_5sm_s_chekhlom_sero_oranzhevyy_v_blistere_1_sht__48057/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/569/56953120f8620fb16ed94f2790a0fea0.jpg" alt="">
+									<h3 class="card__title">Protector</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-titanium/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/570/570c5b7c65600373418815999d740bef.jpg" alt="">
+									<h3 class="card__title">Titanium</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-explorer/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/494/494e1a7c88ea45949cb5f92114f4de82.jpg" alt="">
+									<h3 class="card__title">Explorer</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 						#tab4.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-megapolis%C2%AE/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/a66/a6625eb68cb30db305df5a45825e2134.jpg" alt="">
+									<h3 class="card__title">Megapolis</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-ferro/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/1eb/1ebf0e2a3c410345087b2c6c0194b268.jpg" alt="">
+									<h3 class="card__title">Ferro</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 						#tab5.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/8c6/8c6c7ecd78e2e3ce30628fd8732c7b57.jpg" alt="">
+									<h3 class="card__title">Glance</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-joy+ergo-or-joy%C2%AE/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/c0a/c0af183d545b9fed99d328a53db69460.jpg" alt="">
+									<h3 class="card__title">Joy</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-junior/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/2bc/2bcfc9bcfa7da703966b8225e017a086.jpg" alt="">
+									<h3 class="card__title">Junior</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-artberry%C2%AE+ergo-or-artberry%C2%AE+mini-or-artberry%C2%AE+wilde+friends/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/b6d/b6deb64b51b266761677173836c0b5e4.jpg" alt="">
+									<h3 class="card__title">ArtBerry</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 						#tab6.tab
-							a(href="#").card
-								img.card__img(src=imgUrl+"assortment-clippers/img11.jpg", alt="")
-								h3.card__title Standard
-								h4.card__subtitle ErichKrause<sup>®</sup>
+							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
+									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/8c6/8c6c7ecd78e2e3ce30628fd8732c7b57.jpg" alt="">
+									<h3 class="card__title">Glance</h3>
+									<h4 class="card__subtitle"></h4>
+							</a>
 					ul.btns(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="200")
 						li
 							a(href="#").btn1 Перейти в каталог
@@ -282,22 +326,23 @@ html
 					img.cup(src=imgUrl+"brand/cup.png", alt="" data-aos="fade-right" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
 					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="700" data-aos-offset="100")
 						.caption
-							h2.caption__title ErichKrause - брэнд канцтоваров №1 в России
-							p.caption__text По результатам ежегодного всероссийского репрезентативного опроса, проводимого аналитическим центром Юрия Левады («Левада-Центр»), ErichKrause® в пятый год подряд признается самым известным брендом канцелярских товаров в Российской Федерации. 
+							h2.caption__title ErichKrause® - бренд канцтоваров №1 в России
+							p.caption__text По результатам ежегодного всероссийского репрезентативного опроса, проводимого аналитическим центром Юрия Левады («Левада-Центр»), ErichKrause® в 2015-2020 годах признан самым известным брендом канцелярских товаров в Российской Федерации.
+
 			section.reviews.type2
 				.container
 					.caption
 						h2.caption__title(data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Отзывы наших клиентов
 					.slider(data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
 						.slide
-							h3.slide__title Мария
+							h3.slide__title Ксения
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Клеит буквально всё: картон и бумага, понятное дело, плюс ткань, нитки, фотографии. Плотно и надёжно сцепляется. Моментально схватывается с бумагой или другим источником, быстро сохнет. Резкого запаха нет.
+							p.slide__text Ножницы острые и прочные, способные расправиться с материалами любой жёсткости. Оформление, как всегда, на высоте. За время использования гвоздик не разболтался, лезвие не затупилось, а прорезиненные кольца остались на месте. Кстати, они не ржавеют (я их ополаскивала).
 						.slide
 							h3.slide__title Анастасия
 							ul.stars
@@ -306,68 +351,40 @@ html
 								li
 								li
 								li
-							p.slide__text Поделки с этим клеем получаются аккуратными. Сохнет очень быстро и просто отлично выполняет свою задачу. Легко смывается с рук тёплой водой.
+							p.slide__text Этими ножницами невозможно пораниться и это очень важно для детей, которые только учатся обращаться с ножницами. Они компактные и поместятся даже в маленький пенал
 						.slide
-							h3.slide__title Татьяна
+							h3.slide__title Оксана
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+							p.slide__text За всё время использования этих ножниц (больше месяца) они отлично себя показали, справляются с любой стойкой материей. Не травмируют пальцы, не оставляют мозоли, не тупятся и не расшатываются в гвоздике. Мне очень нравится. Детям тоже. 
 						.slide
-							h3.slide__title Татьяна
+							h3.slide__title Белла
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
-						.slide
-							h3.slide__title Татьяна
-							ul.stars
-								li
-								li
-								li
-								li
-								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
-						.slide
-							h3.slide__title Татьяна
-							ul.stars
-								li
-								li
-								li
-								li
-								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
-						.slide
-							h3.slide__title Татьяна
-							ul.stars
-								li
-								li
-								li
-								li
-								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
-						.slide
-							h3.slide__title Татьяна
-							ul.stars
-								li
-								li
-								li
-								li
-								li
-							p.slide__text Моим деткам очень нравится самим делать слаймы. Основным ингредиентом является клей. Испробовали мы их огромное количество. Самым оптимальным оказался канцелярский клей Erich Krause.
+							p.slide__text Моим детям 3, 6 и 10 лет. Младший сын уже неплохо орудует пластиковым "крокодильчиком" и другой моделью металлических ножниц от Erich Krause. Отличные ножницы для детишек от 5-лет и старше - привлекательные по дизайну, удобные, острые и качественные.
+
 			section.site-block
 				.container
-					.text-container
-						h2 Клей канцелярский ErichKrause® Crystal – идеально прозрачный и невероятно густой
-						p <strong>ErichKrause® Crystal</strong> - уникальная новинка в категории жидкого клея. Благодаря оригинальному составу <strong>Crystal</strong>  обладает более высокой схватывающей способностью по сравнению с обычным канцелярским клеем. <strong>Crystal</strong> способен клеить даже дерево. Новый клей морозостоек, легко смывается с рук теплой водой, безопасен для здоровья, не содержит растворителей и токсичных компонентов. 
-						p Стильная упаковка выгодно подчеркивает отличительную особенность клея – кристальную прозрачность. <strong>ErichKrause® Crystal</strong> поставляется в прозрачных пластиковых флаконах двух форматов: <strong>50 мл и 135 мл.</strong> Флаконы оснащены удобными силиконовыми дозаторами для равномерного распределения жидкости по поверхности.
-						p <strong>Клей ErichKrause® Crystal</strong> – это надежный помощник в офисе, дома и во время творческих занятий. В последние годы очень популярным среди детей стало создание слаймов из канцелярского клея. С помощью клея <strong>Crystal</strong> можно создавать кристально прозрачный желеобразный материал, обладающий свойствами неньютоновской жидкости, который своей пластичностью и внешним видом восхитит даже бывалых слаймеров.	
+					<div class="text-container">
+						h2 Ножницы ErichKrause®
+						p Компания Erich Krause выпускает широкий ассортимент ножниц&nbsp;с повышенным уровнем комфорта и безопасности.&nbsp;<br>
+						<br>
+						p Ножницы – универсальный инструмент, который всегда под рукой. Частое и активное использование подразумевает повышенные требования к прочности и долговечности. Новый уровень комфорта и безопасности, реализованный в ножницах ErichKrause®&nbsp; исключает случайное открытие ножниц, обеспечивает максимальную сохранность лезвий, защищает от повреждений во время хранения и транспортировки, гарантирует долгий срок службы.<br>
+						<br>
+						p Ножницы оснащены усовершенствованными лезвиями с дугообразной геометрией режущей кромки, широким углом схождения и многопрофильной заточкой. Отличаются высокой эффективностью и производительностью, позволяя с легкостью разрезать больший объем бумаги по сравнению с обычными ножницами.&nbsp;&nbsp;Угол режущей кромки стал еще острее. Ножницы обладают большей эффективностью по сравнению с аналогами конкурентов.<br>
+						<br>
+						p Ручки&nbsp;ножниц имеют классическую или эргономичную форму и выполнены из ударопрочного пластика с мягкими противоскользящими резиновыми вставками для большего комфорта и удобства в работе.&nbsp;Благодаря особой эргономичной форме ручек ножницы удобно держать в руке. Резать ими удивительно легко и приятно даже плотную бумагу и картон. <br>
+						<br>
+						p Эффективные и красивые ножницы ErichKrause®&nbsp;станут надежным помощниками в офисной работе и домашних делах.<br>
+					</div>
 
 		p.copyright Разработано студией 
 			a(href="https://mnogoland.ru/" target="_blank") MNOGOLAND
