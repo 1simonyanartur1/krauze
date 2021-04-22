@@ -70,6 +70,8 @@
 		max-width: 1050px
 		width: 100%
 		min-height: 530px
+		@include mq($max-width: 1500px)
+			min-height: 400px
 		@include mq($max-width: 1200px)
 			padding: 10px
 			position: relative
@@ -107,9 +109,10 @@
 		width: auto
 		height: calc( 100% + 40px )
 		+mq($max-width: 1700px)
-			transform: translate(40%, -50%)
-		+mq($max-width: 1400px)
-			transform: translate(30%, -50%)
+			transform: translate(20%, -50%)
+			height: 95%
+		// +mq($max-width: 1400px)
+		// 	transform: translate(30%, -50%)
 		+mq($max-width: 1200px)
 			transform: translate(0, 0)
 			position: static
@@ -134,6 +137,8 @@
 			width: 100px
 	&__title
 		font: 700 45px 'Inter', sans-serif
+		+mq($max-width: 1700px)
+			font-size: 40px
 		+mq($max-width: 700px)
 			font-size: 30px
 		+mq($max-width: 575px)
@@ -141,6 +146,8 @@
 	&__text
 		font: 400 17px/1.6 'Inter', sans-serif
 		margin-top: 15px
+		+mq($max-width: 1700px)
+			font-size: 15px
 		+mq($max-width: 700px)
 			font-size: 14px
 		+mq($max-width: 575px)
@@ -162,6 +169,8 @@
 			align-items: center
 			text-align: center
 			font: 500 17px/1.4 'Inter', sans-serif
+			+mq($max-width: 1700px)
+				font-size: 14px
 			+mq($max-width: 1200px)
 				width: 33.3%
 				padding: 0 2px
