@@ -35,7 +35,7 @@ html
 					.caption(data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 						h2.caption__title Типы лезвий
 					.items
-						.item(data-video="w1")
+						.item(data-src="../video/2D-plus.mp4" data-poster="../video/poster-2d-plus.jpg")
 							img.item__label(src=imgUrl+"blades/label-2d-plus.svg", alt="")
 							img.item__clipper(src=imgUrl+"types-clippers/clippers-2dplus.png"
 								srcset="../img/types-clippers/clippers-2dplus-mobile.png 400w, ../img/types-clippers/clippers-2dplus.png 1000w"
@@ -44,7 +44,7 @@ html
 							.item-window(data-video="w1")
 								video.item-window__video(poster="../video/poster-2d-plus.jpg", loop, muted, playsinline, webkit-playinginline, controls)
 									source(src="../video/2D-plus.mp4")
-						.item(data-video="w2")
+						.item(data-src="../video/3D.mp4" data-poster="../video/poster-3d.jpg")
 							img.item__label(src=imgUrl+"blades/label-3d.svg", alt="")
 							img.item__clipper(src=imgUrl+"types-clippers/clippers-3d.png"
 								srcset="../img/types-clippers/clippers-3d-mobile.png 400w, ../img/types-clippers/clippers-3d.png 1000w"
@@ -53,7 +53,7 @@ html
 							.item-window(data-video="w2")
 								video.item-window__video(poster="../video/poster-3d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
 									source(src="../video/3D.mp4")
-						.item(data-video="w3")
+						.item(data-src="../video/4D.mp4" data-poster="../video/poster-4d.jpg")
 							img.item__label(src=imgUrl+"blades/label-4d.svg", alt="")
 							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
 								srcset="../img/types-clippers/clippers-4d-mobile.png 400w, ../img/types-clippers/clippers-4d.png 1000w"
@@ -62,7 +62,7 @@ html
 							.item-window(data-video="w3")
 								video.item-window__video(poster="../video/poster-4d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
 									source(src="../video/4D.mp4")
-						.item(data-video="w4")
+						.item(data-src="../video/KIDS.mp4" data-poster="../video/poster-kids.jpg")
 							img.item__label(src=imgUrl+"blades/label-kids.svg", alt="")
 							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
 								srcset="../img/types-clippers/clippers-kids-mobile.png 400w, ../img/types-clippers/clippers-kids.png 1000w"
@@ -71,7 +71,7 @@ html
 							.item-window(data-video="w4")
 								video.item-window__video(poster="../video/poster-kids.jpg", loop, muted, playsinline, webkit-playinginline, controls)
 									source(src="../video/KIDS.mp4")
-						.item(data-video="w5")
+						.item(data-src="../video/2D.mp4" data-poster="../video/poster-2d.jpg")
 							img.item__label(src=imgUrl+"blades/label-2d.svg", alt="")
 							img.item__clipper(src=imgUrl+"types-clippers/clippers-4d.png"
 								srcset="../img/types-clippers/clippers-2d-mobile.png 400w, ../img/types-clippers/clippers-2d.png 1000w"
@@ -80,21 +80,9 @@ html
 							.item-window(data-video="w5")
 								video.item-window__video(poster="../video/poster-2d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
 									source(src="../video/2D.mp4")
-						.window(data-video="w1")
-							video.window__video(poster="../video/poster-2d-plus.jpg", loop, muted, playsinline, webkit-playinginline, controls)
-								source(src="../video/2D-plus.mp4")
-						.window(data-video="w2")
-							video.window__video(poster="../video/poster-3d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
-								source(src="../video/3D.mp4")
-						.window(data-video="w3")
-							video.window__video(poster="../video/poster-4d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
-								source(src="../video/4D.mp4")
-						.window(data-video="w4")
-							video.window__video(poster="../video/poster-kids.jpg", loop, muted, playsinline, webkit-playinginline, controls)
-								source(src="../video/KIDS.mp4")
-						.window(data-video="w5")
-							video.window__video(poster="../video/poster-2d.jpg", loop, muted, playsinline, webkit-playinginline, controls)
-								source(src="../video/2D.mp4")
+						.one-window
+							video.one-window__video(poster="../video/none-poster.jpg", loop, muted, playsinline, webkit-playinginline, controls)
+								source(src="")
 
 			section.blades
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
