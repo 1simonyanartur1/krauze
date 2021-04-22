@@ -96,7 +96,7 @@
 				$('.types-clippers .one-window').attr('poster', videoPoster);
 				$('.types-clippers .one-window video').attr('src', videoSrc);
 				$('.types-clippers .one-window video').get(0).play();
-				$('.types-clippers .one-window').show(500);
+				$('.types-clippers .one-window').show(300);
 			});
 			$('.types-clippers .items').on('mouseleave', function () {
 				$('.types-clippers .item').find('.item__clipper, .item__label').css('opacity', '1');
@@ -104,7 +104,7 @@
 					$(this).get(0).pause();
 					$(this).get(0).load();
 				});
-				$('.types-clippers .one-window').hide(500);
+				$('.types-clippers .one-window').hide(300);
 			});
 		}
 
