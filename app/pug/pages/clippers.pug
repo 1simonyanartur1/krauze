@@ -14,17 +14,17 @@ html
 						h1(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="") Продуманы и созданы профессионалами!
 						ul.btns(data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 							li
-								a(href="#").btn1 Перейти в каталог
+								a(href="#" target="_blank").btn1 Перейти в каталог
 
 			section.video
 				.container
-					//- img.video__img(src=imgUrl+"poster1.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-					<video controls="controls" poster="../img/poster-clippers.jpg">
-						<source src="../img/Eminem.mp4" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="../img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						<source src="../img/Eminem.mp4" type='video/webm; codecs="vp8, vorbis"'>
-						p Тег video не поддерживается вашим браузером.
-					</video>
+					img.video__img(src=imgUrl+"poster-clippers.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
+					//- <video controls="controls" poster="../img/poster-clippers.jpg">
+					//- 	<source src="../img/Eminem.mp4" type='video/ogg; codecs="theora, vorbis"'>
+					//- 	<source src="../img/Eminem.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					//- 	<source src="../img/Eminem.mp4" type='video/webm; codecs="vp8, vorbis"'>
+					//- 	p Тег video не поддерживается вашим браузером.
+					//- </video>
 					.inner(data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="0")
 						.caption
 							h2.caption__title Ножницы ErichKrause<sup>®</sup>
@@ -182,11 +182,11 @@ html
 				.container
 					.caption(data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
 						h2.caption__title Новинка
-					.slider
-						.slide
-							img(src=imgUrl+"new-clippers/img.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
-						.slide
-							img(src=imgUrl+"new-clippers/img.jpg", alt="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
+					.slider(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="")
+						a(href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-protector/apply/" target="_blank").slide
+							img(src=imgUrl+"new-clippers/img.jpg", alt="")
+						a(href="https://www.erichkrause.com/catalog/Nozhnicy_37/" target="_blank").slide
+							img(src=imgUrl+"new-clippers/img2.jpg", alt="")
 
 			section.assortment-clippers.type2
 				.container
@@ -213,99 +213,99 @@ html
 								a(href="#tab6")
 									img(src=imgUrl+"blades/label-hand.svg", alt="")
 						#tab1.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/881/881d9879b82aefa6e837507794c3466e.jpg" alt="">
 									<h3 class="card__title">Standard</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/205/205dafd133b8a3f0bf0e0f4e3e1fa5dd.jpg" alt="">
 									<h3 class="card__title">Standard+</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B+ergo/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-standard%2B+ergo/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/630/6308f0471c10c63a3810491603d53876.jpg" alt="">
 									<h3 class="card__title">Standard+ Ergo</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-dynamic/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-dynamic/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/503/50348d5108599159392d738103cbcc9b.jpg" alt="">
 									<h3 class="card__title">Dynamic</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 						#tab2.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-unity/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-unity/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/6c5/6c54152bb322679c84b706223b539487.jpg" alt="">
 									<h3 class="card__title">Unity</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-top+model/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-top+model/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/ca5/ca5c7658e64c06e4273fd738537498c1.jpg" alt="">
 									<h3 class="card__title">TopModel</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-comfort/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-comfort/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/eae/eaed41a5fe0d9fe85d36e77e77da8e93.jpg" alt="">
 									<h3 class="card__title">Comfort</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 						#tab3.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/nozhnitsy_erichkrause_protector_20_5sm_s_chekhlom_sero_oranzhevyy_v_blistere_1_sht__48057/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/nozhnitsy_erichkrause_protector_20_5sm_s_chekhlom_sero_oranzhevyy_v_blistere_1_sht__48057/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/569/56953120f8620fb16ed94f2790a0fea0.jpg" alt="">
 									<h3 class="card__title">Protector</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-titanium/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-titanium/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/570/570c5b7c65600373418815999d740bef.jpg" alt="">
 									<h3 class="card__title">Titanium</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-explorer/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-explorer/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/494/494e1a7c88ea45949cb5f92114f4de82.jpg" alt="">
 									<h3 class="card__title">Explorer</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 						#tab4.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-megapolis%C2%AE/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-megapolis%C2%AE/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/a66/a6625eb68cb30db305df5a45825e2134.jpg" alt="">
 									<h3 class="card__title">Megapolis</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-ferro/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_kancelyarskie_150/filter/price-price_rrp-from-1-to-571/model_name-is-ferro/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/1eb/1ebf0e2a3c410345087b2c6c0194b268.jpg" alt="">
 									<h3 class="card__title">Ferro</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 						#tab5.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/8c6/8c6c7ecd78e2e3ce30628fd8732c7b57.jpg" alt="">
 									<h3 class="card__title">Glance</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-joy+ergo-or-joy%C2%AE/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-joy+ergo-or-joy%C2%AE/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/c0a/c0af183d545b9fed99d328a53db69460.jpg" alt="">
 									<h3 class="card__title">Joy</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-junior/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-junior/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/2bc/2bcfc9bcfa7da703966b8225e017a086.jpg" alt="">
 									<h3 class="card__title">Junior</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-artberry%C2%AE+ergo-or-artberry%C2%AE+mini-or-artberry%C2%AE+wilde+friends/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-artberry%C2%AE+ergo-or-artberry%C2%AE+mini-or-artberry%C2%AE+wilde+friends/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/b6d/b6deb64b51b266761677173836c0b5e4.jpg" alt="">
 									<h3 class="card__title">ArtBerry</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 						#tab6.tab
-							<a class="card" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
+							<a class="card" target="_blank" href="https://www.erichkrause.com/catalog/Nozhnicy_detskie_152/filter/price-price_rrp-from-64-to-175/model_name-is-glance/apply/">
 									<img class="card__img" src="https://www.erichkrause.com/upload/iblock/8c6/8c6c7ecd78e2e3ce30628fd8732c7b57.jpg" alt="">
 									<h3 class="card__title">Glance</h3>
 									<h4 class="card__subtitle"></h4>
 							</a>
 					ul.btns(data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="200")
 						li
-							a(href="#").btn1 Перейти в каталог
+							a(href="https://www.erichkrause.com/catalog/Nozhnicy_37/" target="_blank").btn1 Перейти в каталог
 
 			section.brand
 				img.tape1(src=imgUrl+"brand/tape1.jpg", alt="" data-aos="fade-in" data-aos-delay="250" data-aos-duration="1500" data-aos-offset="100")
@@ -323,41 +323,59 @@ html
 						h2.caption__title(data-aos="fade-down" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200") Отзывы наших клиентов
 					.slider(data-aos="flip-left" data-aos-delay="150" data-aos-duration="1000" data-aos-offset="200")
 						.slide
-							h3.slide__title Ксения
+							h3.slide__title Юлиана
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Ножницы острые и прочные, способные расправиться с материалами любой жёсткости. Оформление, как всегда, на высоте. За время использования гвоздик не разболтался, лезвие не затупилось, а прорезиненные кольца остались на месте. Кстати, они не ржавеют (я их ополаскивала).
+							p.slide__text Ручки пластиковые, но прочные (при неоднократном падении на кафель не треснули), в руках не скользят, удобны в эксплуатации. Лезвия острые, без зазоров, "ножи" друг об друга не задевают.
 						.slide
-							h3.slide__title Анастасия
+							h3.slide__title Ольга
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Этими ножницами невозможно пораниться и это очень важно для детей, которые только учатся обращаться с ножницами. Они компактные и поместятся даже в маленький пенал
+							p.slide__text Лезвия прекрасно заточены, их можно назвать неубиваемыми - спустя четыре года ни намёка на затупленность; с лёгкостью разрезают даже пластик.
 						.slide
-							h3.slide__title Оксана
+							h3.slide__title Екатерина
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text За всё время использования этих ножниц (больше месяца) они отлично себя показали, справляются с любой стойкой материей. Не травмируют пальцы, не оставляют мозоли, не тупятся и не расшатываются в гвоздике. Мне очень нравится. Детям тоже. 
+							p.slide__text Очень острые, удобные, хорошие ножницы, режут и бумагу, и картон, и нитки. И выглядят интересно, и чувствуется качество.
 						.slide
-							h3.slide__title Белла
+							h3.slide__title Анна
 							ul.stars
 								li
 								li
 								li
 								li
 								li
-							p.slide__text Моим детям 3, 6 и 10 лет. Младший сын уже неплохо орудует пластиковым "крокодильчиком" и другой моделью металлических ножниц от Erich Krause. Отличные ножницы для детишек от 5-лет и старше - привлекательные по дизайну, удобные, острые и качественные.
+							p.slide__text Лезвия отлично заточены и с лёгкостью режут как тонкую бумагу (не зажёвывая её при этом), так и картон. Кроме того я попробовала резать этими ножницами пластиковую упаковку, ткань и полиэтиленовый пакет - никаких затруднений не встретила.
+						.slide
+							h3.slide__title Екатерина
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text За время пока мы орудуем ножницами они не затупились нисколечко, не “жуют” бумагу и по-прежнему радуют нас звонким хрустом режушейся бумаги. Даже многократно сложенный лист бумаги поддается вырезанию.
+						.slide
+							h3.slide__title Марина
+							ul.stars
+								li
+								li
+								li
+								li
+								li
+							p.slide__text Чудесные ножницы. Удобные, острые. Думаю, их оценят не только взрослые люди, но и школьники на уроках труда или дома.
 
 			section.site-block
 				.container
@@ -374,7 +392,4 @@ html
 						p Эффективные и красивые ножницы ErichKrause®&nbsp;станут надежным помощниками в офисной работе и домашних делах.<br>
 					</div>
 
-		p.copyright Разработано студией 
-			a(href="https://mnogoland.ru/" target="_blank") MNOGOLAND
-		
 		include ../blocks/scripts.pug
