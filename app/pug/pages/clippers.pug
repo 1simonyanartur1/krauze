@@ -83,9 +83,11 @@ html
 						.one-window
 							video.one-window__video(poster="#", loop, muted, playsinline, webkit-playinginline, controls)
 								source(src="#")
+								//- , controlslist="nofullscreen nodownload noremoteplayback foobar"
 
 			section.blades
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
+					img.blade__label(src=imgUrl+"blades/label-2d.svg", alt="")
 					.container
 						img.blade__img(src=imgUrl+"blades/clippers-2d.png", alt="" )
 						.inner
@@ -102,6 +104,7 @@ html
 									img(src=imgUrl+"blades/icon-higher.png", alt="")
 									p Производительность <br> ножниц увеличена
 				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
+					img.blade__label(src=imgUrl+"blades/label-2d-plus.svg", alt="")
 					.container
 						img.blade__img(src=imgUrl+"blades/clippers-2dplus.png", alt="")
 						.inner
@@ -121,6 +124,7 @@ html
 									img(src=imgUrl+"blades/icon-power.png", alt="")
 									p Минимум усилий <br> при работе с более <br> плотным материалом
 				.blade.blade__white(style="background: url('../img/blades/3d-bg.jpg') no-repeat center center / cover;")
+					img.blade__label(src=imgUrl+"blades/label-3d.svg", alt="")
 					.container
 						img.blade__img(src=imgUrl+"blades/clippers-3d.png", alt="")
 						.inner
@@ -140,6 +144,7 @@ html
 									img(src=imgUrl+"blades/icon-less.png", alt="")
 									p Минимум усилий <br> при максимальной <br> производительности 
 				.blade.blade__black(style="background: url('../img/blades/4d-bg.jpg') no-repeat center center / cover;")
+					img.blade__label(src=imgUrl+"blades/label-4d.svg", alt="")
 					.container
 						img.blade__img(src=imgUrl+"blades/clippers-4d.png", alt="")
 						.inner
@@ -159,6 +164,7 @@ html
 									img(src=imgUrl+"blades/icon-less.png", alt="")
 									p Минимум усилий <br> при максимальной <br> производительности
 				.blade.blade__black(style="background: url('../img/blades/kids-bg.jpg') no-repeat center center / cover;")
+					img.blade__label(src=imgUrl+"blades/label-kids.svg", alt="")
 					.container
 						img.blade__img(src=imgUrl+"blades/clippers-kids.png", alt="")
 						.inner
